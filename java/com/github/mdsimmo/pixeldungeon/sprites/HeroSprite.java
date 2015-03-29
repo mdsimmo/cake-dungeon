@@ -15,20 +15,20 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.sprites;
+package com.github.mdsimmo.pixeldungeon.sprites;
 
 import android.graphics.RectF;
 
-import com.watabou.gltextures.SmartTexture;
-import com.watabou.gltextures.TextureCache;
-import com.watabou.noosa.Camera;
-import com.watabou.noosa.Image;
-import com.watabou.noosa.TextureFilm;
-import com.watabou.pixeldungeon.Assets;
-import com.watabou.pixeldungeon.Dungeon;
-import com.watabou.pixeldungeon.actors.hero.Hero;
-import com.watabou.pixeldungeon.actors.hero.HeroClass;
-import com.watabou.utils.Callback;
+import com.github.mdsimmo.gltextures.SmartTexture;
+import com.github.mdsimmo.gltextures.TextureCache;
+import com.github.mdsimmo.noosa.Camera;
+import com.github.mdsimmo.noosa.Image;
+import com.github.mdsimmo.noosa.TextureFilm;
+import com.github.mdsimmo.pixeldungeon.Assets;
+import com.github.mdsimmo.pixeldungeon.Dungeon;
+import com.github.mdsimmo.pixeldungeon.actors.hero.Hero;
+import com.github.mdsimmo.pixeldungeon.actors.hero.HeroClass;
+import com.github.mdsimmo.utils.Callback;
 
 public class HeroSprite extends CharSprite {
 	

@@ -15,20 +15,20 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.windows;
+package com.github.mdsimmo.pixeldungeon.windows;
 
 import java.util.Collections;
 
-import com.watabou.noosa.BitmapText;
-import com.watabou.noosa.Image;
-import com.watabou.noosa.ui.Component;
-import com.watabou.pixeldungeon.Dungeon;
-import com.watabou.pixeldungeon.Journal;
-import com.watabou.pixeldungeon.PixelDungeon;
-import com.watabou.pixeldungeon.scenes.PixelScene;
-import com.watabou.pixeldungeon.ui.Icons;
-import com.watabou.pixeldungeon.ui.ScrollPane;
-import com.watabou.pixeldungeon.ui.Window;
+import com.github.mdsimmo.noosa.BitmapText;
+import com.github.mdsimmo.noosa.Image;
+import com.github.mdsimmo.noosa.ui.Component;
+import com.github.mdsimmo.pixeldungeon.Dungeon;
+import com.github.mdsimmo.pixeldungeon.Journal;
+import com.github.mdsimmo.pixeldungeon.PixelDungeon;
+import com.github.mdsimmo.pixeldungeon.scenes.PixelScene;
+import com.github.mdsimmo.pixeldungeon.ui.Icons;
+import com.github.mdsimmo.pixeldungeon.ui.ScrollPane;
+import com.github.mdsimmo.pixeldungeon.ui.Window;
 
 public class WndJournal extends Window {
 	

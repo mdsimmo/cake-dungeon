@@ -15,23 +15,23 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.items;
+package com.github.mdsimmo.pixeldungeon.items;
 
 import java.util.ArrayList;
 
-import com.watabou.noosa.audio.Sample;
-import com.watabou.noosa.tweeners.AlphaTweener;
-import com.watabou.pixeldungeon.Assets;
-import com.watabou.pixeldungeon.Dungeon;
-import com.watabou.pixeldungeon.actors.Actor;
-import com.watabou.pixeldungeon.actors.hero.Hero;
-import com.watabou.pixeldungeon.actors.mobs.npcs.Bee;
-import com.watabou.pixeldungeon.effects.Pushing;
-import com.watabou.pixeldungeon.effects.Splash;
-import com.watabou.pixeldungeon.levels.Level;
-import com.watabou.pixeldungeon.scenes.GameScene;
-import com.watabou.pixeldungeon.sprites.ItemSpriteSheet;
-import com.watabou.utils.Random;
+import com.github.mdsimmo.noosa.audio.Sample;
+import com.github.mdsimmo.noosa.tweeners.AlphaTweener;
+import com.github.mdsimmo.pixeldungeon.Assets;
+import com.github.mdsimmo.pixeldungeon.Dungeon;
+import com.github.mdsimmo.pixeldungeon.actors.Actor;
+import com.github.mdsimmo.pixeldungeon.actors.hero.Hero;
+import com.github.mdsimmo.pixeldungeon.actors.mobs.npcs.Bee;
+import com.github.mdsimmo.pixeldungeon.effects.Pushing;
+import com.github.mdsimmo.pixeldungeon.effects.Splash;
+import com.github.mdsimmo.pixeldungeon.levels.Level;
+import com.github.mdsimmo.pixeldungeon.scenes.GameScene;
+import com.github.mdsimmo.pixeldungeon.sprites.ItemSpriteSheet;
+import com.github.mdsimmo.utils.Random;
 
 public class Honeypot extends Item {
 	

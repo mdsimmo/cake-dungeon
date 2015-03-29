@@ -15,16 +15,16 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.sprites;
+package com.github.mdsimmo.pixeldungeon.sprites;
 
-import com.watabou.noosa.Game;
-import com.watabou.noosa.Image;
-import com.watabou.noosa.TextureFilm;
-import com.watabou.pixeldungeon.Assets;
-import com.watabou.pixeldungeon.Dungeon;
-import com.watabou.pixeldungeon.DungeonTilemap;
-import com.watabou.pixeldungeon.levels.Level;
-import com.watabou.pixeldungeon.plants.Plant;
+import com.github.mdsimmo.noosa.Game;
+import com.github.mdsimmo.noosa.Image;
+import com.github.mdsimmo.noosa.TextureFilm;
+import com.github.mdsimmo.pixeldungeon.Assets;
+import com.github.mdsimmo.pixeldungeon.Dungeon;
+import com.github.mdsimmo.pixeldungeon.DungeonTilemap;
+import com.github.mdsimmo.pixeldungeon.levels.Level;
+import com.github.mdsimmo.pixeldungeon.plants.Plant;
 
 public class PlantSprite extends Image {
 

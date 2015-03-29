@@ -15,16 +15,16 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.sprites;
+package com.github.mdsimmo.pixeldungeon.sprites;
 
 import javax.microedition.khronos.opengles.GL10;
 
 import android.opengl.GLES20;
 
-import com.watabou.noosa.TextureFilm;
-import com.watabou.pixeldungeon.Assets;
-import com.watabou.pixeldungeon.effects.Speck;
-import com.watabou.pixeldungeon.effects.particles.ShaftParticle;
+import com.github.mdsimmo.noosa.TextureFilm;
+import com.github.mdsimmo.pixeldungeon.Assets;
+import com.github.mdsimmo.pixeldungeon.effects.Speck;
+import com.github.mdsimmo.pixeldungeon.effects.particles.ShaftParticle;
 
 public class GhostSprite extends MobSprite {
 	

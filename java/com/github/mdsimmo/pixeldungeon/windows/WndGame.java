@@ -15,20 +15,20 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.windows;
+package com.github.mdsimmo.pixeldungeon.windows;
 
 import java.io.IOException;
 
-import com.watabou.noosa.Game;
-import com.watabou.pixeldungeon.Dungeon;
-import com.watabou.pixeldungeon.PixelDungeon;
-import com.watabou.pixeldungeon.scenes.GameScene;
-import com.watabou.pixeldungeon.scenes.InterlevelScene;
-import com.watabou.pixeldungeon.scenes.RankingsScene;
-import com.watabou.pixeldungeon.scenes.TitleScene;
-import com.watabou.pixeldungeon.ui.Icons;
-import com.watabou.pixeldungeon.ui.RedButton;
-import com.watabou.pixeldungeon.ui.Window;
+import com.github.mdsimmo.noosa.Game;
+import com.github.mdsimmo.pixeldungeon.Dungeon;
+import com.github.mdsimmo.pixeldungeon.PixelDungeon;
+import com.github.mdsimmo.pixeldungeon.scenes.GameScene;
+import com.github.mdsimmo.pixeldungeon.scenes.InterlevelScene;
+import com.github.mdsimmo.pixeldungeon.scenes.RankingsScene;
+import com.github.mdsimmo.pixeldungeon.scenes.TitleScene;
+import com.github.mdsimmo.pixeldungeon.ui.Icons;
+import com.github.mdsimmo.pixeldungeon.ui.RedButton;
+import com.github.mdsimmo.pixeldungeon.ui.Window;
 
 public class WndGame extends Window {
 	

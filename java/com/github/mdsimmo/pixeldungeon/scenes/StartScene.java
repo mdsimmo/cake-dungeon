@@ -15,38 +15,38 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.scenes;
+package com.github.mdsimmo.pixeldungeon.scenes;
 
 import java.util.HashMap;
 
-import com.watabou.noosa.BitmapText;
-import com.watabou.noosa.BitmapTextMultiline;
-import com.watabou.noosa.Camera;
-import com.watabou.noosa.Game;
-import com.watabou.noosa.Group;
-import com.watabou.noosa.Image;
-import com.watabou.noosa.audio.Sample;
-import com.watabou.noosa.particles.Emitter;
-import com.watabou.noosa.ui.Button;
-import com.watabou.pixeldungeon.Assets;
-import com.watabou.pixeldungeon.Badges;
-import com.watabou.pixeldungeon.Dungeon;
-import com.watabou.pixeldungeon.GamesInProgress;
-import com.watabou.pixeldungeon.PixelDungeon;
-import com.watabou.pixeldungeon.actors.hero.HeroClass;
-import com.watabou.pixeldungeon.effects.BannerSprites;
-import com.watabou.pixeldungeon.effects.Speck;
-import com.watabou.pixeldungeon.effects.BannerSprites.Type;
-import com.watabou.pixeldungeon.ui.Archs;
-import com.watabou.pixeldungeon.ui.ExitButton;
-import com.watabou.pixeldungeon.ui.Icons;
-import com.watabou.pixeldungeon.ui.RedButton;
-import com.watabou.pixeldungeon.utils.Utils;
-import com.watabou.pixeldungeon.windows.WndChallenges;
-import com.watabou.pixeldungeon.windows.WndClass;
-import com.watabou.pixeldungeon.windows.WndMessage;
-import com.watabou.pixeldungeon.windows.WndOptions;
-import com.watabou.utils.Callback;
+import com.github.mdsimmo.noosa.BitmapText;
+import com.github.mdsimmo.noosa.BitmapTextMultiline;
+import com.github.mdsimmo.noosa.Camera;
+import com.github.mdsimmo.noosa.Game;
+import com.github.mdsimmo.noosa.Group;
+import com.github.mdsimmo.noosa.Image;
+import com.github.mdsimmo.noosa.audio.Sample;
+import com.github.mdsimmo.noosa.particles.Emitter;
+import com.github.mdsimmo.noosa.ui.Button;
+import com.github.mdsimmo.pixeldungeon.Assets;
+import com.github.mdsimmo.pixeldungeon.Badges;
+import com.github.mdsimmo.pixeldungeon.Dungeon;
+import com.github.mdsimmo.pixeldungeon.GamesInProgress;
+import com.github.mdsimmo.pixeldungeon.PixelDungeon;
+import com.github.mdsimmo.pixeldungeon.actors.hero.HeroClass;
+import com.github.mdsimmo.pixeldungeon.effects.BannerSprites;
+import com.github.mdsimmo.pixeldungeon.effects.Speck;
+import com.github.mdsimmo.pixeldungeon.effects.BannerSprites.Type;
+import com.github.mdsimmo.pixeldungeon.ui.Archs;
+import com.github.mdsimmo.pixeldungeon.ui.ExitButton;
+import com.github.mdsimmo.pixeldungeon.ui.Icons;
+import com.github.mdsimmo.pixeldungeon.ui.RedButton;
+import com.github.mdsimmo.pixeldungeon.utils.Utils;
+import com.github.mdsimmo.pixeldungeon.windows.WndChallenges;
+import com.github.mdsimmo.pixeldungeon.windows.WndClass;
+import com.github.mdsimmo.pixeldungeon.windows.WndMessage;
+import com.github.mdsimmo.pixeldungeon.windows.WndOptions;
+import com.github.mdsimmo.utils.Callback;
 
 public class StartScene extends PixelScene {
 

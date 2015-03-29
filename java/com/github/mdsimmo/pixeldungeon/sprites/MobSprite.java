@@ -15,14 +15,14 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.sprites;
+package com.github.mdsimmo.pixeldungeon.sprites;
 
-import com.watabou.noosa.tweeners.AlphaTweener;
-import com.watabou.noosa.tweeners.ScaleTweener;
-import com.watabou.pixeldungeon.DungeonTilemap;
-import com.watabou.pixeldungeon.actors.mobs.Mob;
-import com.watabou.utils.PointF;
-import com.watabou.utils.Random;
+import com.github.mdsimmo.noosa.tweeners.AlphaTweener;
+import com.github.mdsimmo.noosa.tweeners.ScaleTweener;
+import com.github.mdsimmo.pixeldungeon.DungeonTilemap;
+import com.github.mdsimmo.pixeldungeon.actors.mobs.Mob;
+import com.github.mdsimmo.utils.PointF;
+import com.github.mdsimmo.utils.Random;
 
 public class MobSprite extends CharSprite {
 

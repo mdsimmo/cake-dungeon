@@ -15,24 +15,24 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.levels.features;
+package com.github.mdsimmo.pixeldungeon.levels.features;
 
-import com.watabou.pixeldungeon.Challenges;
-import com.watabou.pixeldungeon.Dungeon;
-import com.watabou.pixeldungeon.actors.Char;
-import com.watabou.pixeldungeon.actors.buffs.Barkskin;
-import com.watabou.pixeldungeon.actors.buffs.Buff;
-import com.watabou.pixeldungeon.actors.hero.Hero;
-import com.watabou.pixeldungeon.actors.hero.HeroSubClass;
-import com.watabou.pixeldungeon.effects.CellEmitter;
-import com.watabou.pixeldungeon.effects.particles.LeafParticle;
-import com.watabou.pixeldungeon.items.Dewdrop;
-import com.watabou.pixeldungeon.items.Generator;
-import com.watabou.pixeldungeon.items.rings.RingOfHerbalism.Herbalism;
-import com.watabou.pixeldungeon.levels.Level;
-import com.watabou.pixeldungeon.levels.Terrain;
-import com.watabou.pixeldungeon.scenes.GameScene;
-import com.watabou.utils.Random;
+import com.github.mdsimmo.pixeldungeon.Challenges;
+import com.github.mdsimmo.pixeldungeon.Dungeon;
+import com.github.mdsimmo.pixeldungeon.actors.Char;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Barkskin;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Buff;
+import com.github.mdsimmo.pixeldungeon.actors.hero.Hero;
+import com.github.mdsimmo.pixeldungeon.actors.hero.HeroSubClass;
+import com.github.mdsimmo.pixeldungeon.effects.CellEmitter;
+import com.github.mdsimmo.pixeldungeon.effects.particles.LeafParticle;
+import com.github.mdsimmo.pixeldungeon.items.Dewdrop;
+import com.github.mdsimmo.pixeldungeon.items.Generator;
+import com.github.mdsimmo.pixeldungeon.items.rings.RingOfHerbalism.Herbalism;
+import com.github.mdsimmo.pixeldungeon.levels.Level;
+import com.github.mdsimmo.pixeldungeon.levels.Terrain;
+import com.github.mdsimmo.pixeldungeon.scenes.GameScene;
+import com.github.mdsimmo.utils.Random;
 
 public class HighGrass {
 

@@ -15,23 +15,23 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.items.armor.glyphs;
+package com.github.mdsimmo.pixeldungeon.items.armor.glyphs;
 
-import com.watabou.pixeldungeon.Badges;
-import com.watabou.pixeldungeon.Dungeon;
-import com.watabou.pixeldungeon.ResultDescriptions;
-import com.watabou.pixeldungeon.actors.Char;
-import com.watabou.pixeldungeon.actors.buffs.Buff;
-import com.watabou.pixeldungeon.items.armor.Armor;
-import com.watabou.pixeldungeon.items.armor.Armor.Glyph;
-import com.watabou.pixeldungeon.sprites.CharSprite;
-import com.watabou.pixeldungeon.sprites.ItemSprite;
-import com.watabou.pixeldungeon.sprites.ItemSprite.Glowing;
-import com.watabou.pixeldungeon.ui.BuffIndicator;
-import com.watabou.pixeldungeon.utils.GLog;
-import com.watabou.pixeldungeon.utils.Utils;
-import com.watabou.utils.Bundle;
-import com.watabou.utils.Random;
+import com.github.mdsimmo.pixeldungeon.Badges;
+import com.github.mdsimmo.pixeldungeon.Dungeon;
+import com.github.mdsimmo.pixeldungeon.ResultDescriptions;
+import com.github.mdsimmo.pixeldungeon.actors.Char;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Buff;
+import com.github.mdsimmo.pixeldungeon.items.armor.Armor;
+import com.github.mdsimmo.pixeldungeon.items.armor.Armor.Glyph;
+import com.github.mdsimmo.pixeldungeon.sprites.CharSprite;
+import com.github.mdsimmo.pixeldungeon.sprites.ItemSprite;
+import com.github.mdsimmo.pixeldungeon.sprites.ItemSprite.Glowing;
+import com.github.mdsimmo.pixeldungeon.ui.BuffIndicator;
+import com.github.mdsimmo.pixeldungeon.utils.GLog;
+import com.github.mdsimmo.pixeldungeon.utils.Utils;
+import com.github.mdsimmo.utils.Bundle;
+import com.github.mdsimmo.utils.Random;
 
 public class Viscosity extends Glyph {
 

@@ -15,17 +15,17 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.windows;
+package com.github.mdsimmo.pixeldungeon.windows;
 
-import com.watabou.noosa.BitmapTextMultiline;
-import com.watabou.noosa.Image;
-import com.watabou.noosa.ui.Component;
-import com.watabou.pixeldungeon.items.Item;
-import com.watabou.pixeldungeon.scenes.PixelScene;
-import com.watabou.pixeldungeon.sprites.ItemSprite;
-import com.watabou.pixeldungeon.ui.HealthBar;
-import com.watabou.pixeldungeon.ui.Window;
-import com.watabou.pixeldungeon.utils.Utils;
+import com.github.mdsimmo.noosa.BitmapTextMultiline;
+import com.github.mdsimmo.noosa.Image;
+import com.github.mdsimmo.noosa.ui.Component;
+import com.github.mdsimmo.pixeldungeon.items.Item;
+import com.github.mdsimmo.pixeldungeon.scenes.PixelScene;
+import com.github.mdsimmo.pixeldungeon.sprites.ItemSprite;
+import com.github.mdsimmo.pixeldungeon.ui.HealthBar;
+import com.github.mdsimmo.pixeldungeon.ui.Window;
+import com.github.mdsimmo.pixeldungeon.utils.Utils;
 
 public class IconTitle extends Component {
 

@@ -15,19 +15,19 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.ui;
+package com.github.mdsimmo.pixeldungeon.ui;
 
-import com.watabou.gltextures.SmartTexture;
-import com.watabou.gltextures.TextureCache;
-import com.watabou.noosa.Image;
-import com.watabou.noosa.TextureFilm;
-import com.watabou.noosa.tweeners.AlphaTweener;
-import com.watabou.noosa.ui.Component;
-import com.watabou.pixeldungeon.Assets;
-import com.watabou.pixeldungeon.Dungeon;
-import com.watabou.pixeldungeon.actors.Char;
-import com.watabou.pixeldungeon.actors.buffs.Buff;
-import com.watabou.utils.SparseArray;
+import com.github.mdsimmo.gltextures.SmartTexture;
+import com.github.mdsimmo.gltextures.TextureCache;
+import com.github.mdsimmo.noosa.Image;
+import com.github.mdsimmo.noosa.TextureFilm;
+import com.github.mdsimmo.noosa.tweeners.AlphaTweener;
+import com.github.mdsimmo.noosa.ui.Component;
+import com.github.mdsimmo.pixeldungeon.Assets;
+import com.github.mdsimmo.pixeldungeon.Dungeon;
+import com.github.mdsimmo.pixeldungeon.actors.Char;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Buff;
+import com.github.mdsimmo.utils.SparseArray;
 
 public class BuffIndicator extends Component {
 

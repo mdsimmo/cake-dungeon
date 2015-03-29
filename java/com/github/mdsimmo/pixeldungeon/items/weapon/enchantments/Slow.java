@@ -15,14 +15,14 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.items.weapon.enchantments;
+package com.github.mdsimmo.pixeldungeon.items.weapon.enchantments;
 
-import com.watabou.pixeldungeon.actors.Char;
-import com.watabou.pixeldungeon.actors.buffs.Buff;
-import com.watabou.pixeldungeon.items.weapon.Weapon;
-import com.watabou.pixeldungeon.sprites.ItemSprite;
-import com.watabou.pixeldungeon.sprites.ItemSprite.Glowing;
-import com.watabou.utils.Random;
+import com.github.mdsimmo.pixeldungeon.actors.Char;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Buff;
+import com.github.mdsimmo.pixeldungeon.items.weapon.Weapon;
+import com.github.mdsimmo.pixeldungeon.sprites.ItemSprite;
+import com.github.mdsimmo.pixeldungeon.sprites.ItemSprite.Glowing;
+import com.github.mdsimmo.utils.Random;
 
 public class Slow extends Weapon.Enchantment {
 
@@ -39,7 +39,7 @@ public class Slow extends Weapon.Enchantment {
 		
 		if (Random.Int( level + 4 ) >= 3) {
 			
-			Buff.prolong( defender, com.watabou.pixeldungeon.actors.buffs.Slow.class, 
+			Buff.prolong( defender, com.github.mdsimmo.pixeldungeon.actors.buffs.Slow.class,
 				Random.Float( 1, 1.5f + level ) );
 			
 			return true;

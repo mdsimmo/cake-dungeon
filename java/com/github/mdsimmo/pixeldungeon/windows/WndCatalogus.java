@@ -15,22 +15,22 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.windows;
+package com.github.mdsimmo.pixeldungeon.windows;
 
 import java.util.ArrayList;
 
-import com.watabou.noosa.BitmapText;
-import com.watabou.noosa.ui.Component;
-import com.watabou.pixeldungeon.PixelDungeon;
-import com.watabou.pixeldungeon.items.Item;
-import com.watabou.pixeldungeon.items.potions.Potion;
-import com.watabou.pixeldungeon.items.scrolls.Scroll;
-import com.watabou.pixeldungeon.scenes.GameScene;
-import com.watabou.pixeldungeon.scenes.PixelScene;
-import com.watabou.pixeldungeon.sprites.ItemSprite;
-import com.watabou.pixeldungeon.ui.ScrollPane;
-import com.watabou.pixeldungeon.ui.Window;
-import com.watabou.pixeldungeon.utils.Utils;
+import com.github.mdsimmo.noosa.BitmapText;
+import com.github.mdsimmo.noosa.ui.Component;
+import com.github.mdsimmo.pixeldungeon.PixelDungeon;
+import com.github.mdsimmo.pixeldungeon.items.Item;
+import com.github.mdsimmo.pixeldungeon.items.potions.Potion;
+import com.github.mdsimmo.pixeldungeon.items.scrolls.Scroll;
+import com.github.mdsimmo.pixeldungeon.scenes.GameScene;
+import com.github.mdsimmo.pixeldungeon.scenes.PixelScene;
+import com.github.mdsimmo.pixeldungeon.sprites.ItemSprite;
+import com.github.mdsimmo.pixeldungeon.ui.ScrollPane;
+import com.github.mdsimmo.pixeldungeon.ui.Window;
+import com.github.mdsimmo.pixeldungeon.utils.Utils;
 
 public class WndCatalogus extends WndTabbed {
 	

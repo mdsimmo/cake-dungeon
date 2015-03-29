@@ -15,18 +15,18 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.plants;
+package com.github.mdsimmo.pixeldungeon.plants;
 
-import com.watabou.pixeldungeon.Dungeon;
-import com.watabou.pixeldungeon.actors.Char;
-import com.watabou.pixeldungeon.actors.buffs.Buff;
-import com.watabou.pixeldungeon.effects.CellEmitter;
-import com.watabou.pixeldungeon.effects.Speck;
-import com.watabou.pixeldungeon.effects.particles.ShaftParticle;
-import com.watabou.pixeldungeon.items.potions.PotionOfHealing;
-import com.watabou.pixeldungeon.sprites.ItemSpriteSheet;
-import com.watabou.pixeldungeon.ui.BuffIndicator;
-import com.watabou.utils.Bundle;
+import com.github.mdsimmo.pixeldungeon.Dungeon;
+import com.github.mdsimmo.pixeldungeon.actors.Char;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Buff;
+import com.github.mdsimmo.pixeldungeon.effects.CellEmitter;
+import com.github.mdsimmo.pixeldungeon.effects.Speck;
+import com.github.mdsimmo.pixeldungeon.effects.particles.ShaftParticle;
+import com.github.mdsimmo.pixeldungeon.items.potions.PotionOfHealing;
+import com.github.mdsimmo.pixeldungeon.sprites.ItemSpriteSheet;
+import com.github.mdsimmo.pixeldungeon.ui.BuffIndicator;
+import com.github.mdsimmo.utils.Bundle;
 
 public class Sungrass extends Plant {
 

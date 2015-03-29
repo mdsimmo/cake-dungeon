@@ -15,23 +15,23 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.scenes;
+package com.github.mdsimmo.pixeldungeon.scenes;
 
 import android.content.Intent;
 import android.net.Uri;
 
-import com.watabou.input.Touchscreen.Touch;
-import com.watabou.noosa.BitmapTextMultiline;
-import com.watabou.noosa.Camera;
-import com.watabou.noosa.Game;
-import com.watabou.noosa.Image;
-import com.watabou.noosa.TouchArea;
-import com.watabou.pixeldungeon.PixelDungeon;
-import com.watabou.pixeldungeon.effects.Flare;
-import com.watabou.pixeldungeon.ui.Archs;
-import com.watabou.pixeldungeon.ui.ExitButton;
-import com.watabou.pixeldungeon.ui.Icons;
-import com.watabou.pixeldungeon.ui.Window;
+import com.github.mdsimmo.input.Touchscreen.Touch;
+import com.github.mdsimmo.noosa.BitmapTextMultiline;
+import com.github.mdsimmo.noosa.Camera;
+import com.github.mdsimmo.noosa.Game;
+import com.github.mdsimmo.noosa.Image;
+import com.github.mdsimmo.noosa.TouchArea;
+import com.github.mdsimmo.pixeldungeon.PixelDungeon;
+import com.github.mdsimmo.pixeldungeon.effects.Flare;
+import com.github.mdsimmo.pixeldungeon.ui.Archs;
+import com.github.mdsimmo.pixeldungeon.ui.ExitButton;
+import com.github.mdsimmo.pixeldungeon.ui.Icons;
+import com.github.mdsimmo.pixeldungeon.ui.Window;
 
 public class AboutScene extends PixelScene {
 

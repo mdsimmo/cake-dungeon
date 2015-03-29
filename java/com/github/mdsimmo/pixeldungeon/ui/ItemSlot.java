@@ -15,19 +15,19 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.ui;
+package com.github.mdsimmo.pixeldungeon.ui;
 
-import com.watabou.noosa.BitmapText;
-import com.watabou.noosa.ui.Button;
-import com.watabou.pixeldungeon.Dungeon;
-import com.watabou.pixeldungeon.items.Item;
-import com.watabou.pixeldungeon.items.armor.Armor;
-import com.watabou.pixeldungeon.items.weapon.Weapon;
-import com.watabou.pixeldungeon.items.weapon.melee.MeleeWeapon;
-import com.watabou.pixeldungeon.scenes.PixelScene;
-import com.watabou.pixeldungeon.sprites.ItemSprite;
-import com.watabou.pixeldungeon.sprites.ItemSpriteSheet;
-import com.watabou.pixeldungeon.utils.Utils;
+import com.github.mdsimmo.noosa.BitmapText;
+import com.github.mdsimmo.noosa.ui.Button;
+import com.github.mdsimmo.pixeldungeon.Dungeon;
+import com.github.mdsimmo.pixeldungeon.items.Item;
+import com.github.mdsimmo.pixeldungeon.items.armor.Armor;
+import com.github.mdsimmo.pixeldungeon.items.weapon.Weapon;
+import com.github.mdsimmo.pixeldungeon.items.weapon.melee.MeleeWeapon;
+import com.github.mdsimmo.pixeldungeon.scenes.PixelScene;
+import com.github.mdsimmo.pixeldungeon.sprites.ItemSprite;
+import com.github.mdsimmo.pixeldungeon.sprites.ItemSpriteSheet;
+import com.github.mdsimmo.pixeldungeon.utils.Utils;
 
 public class ItemSlot extends Button {
 

@@ -15,19 +15,19 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.items.bags;
+package com.github.mdsimmo.pixeldungeon.items.bags;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 
-import com.watabou.pixeldungeon.Badges;
-import com.watabou.pixeldungeon.actors.Char;
-import com.watabou.pixeldungeon.actors.hero.Hero;
-import com.watabou.pixeldungeon.items.Item;
-import com.watabou.pixeldungeon.scenes.GameScene;
-import com.watabou.pixeldungeon.windows.WndBag;
-import com.watabou.utils.Bundlable;
-import com.watabou.utils.Bundle;
+import com.github.mdsimmo.pixeldungeon.Badges;
+import com.github.mdsimmo.pixeldungeon.actors.Char;
+import com.github.mdsimmo.pixeldungeon.actors.hero.Hero;
+import com.github.mdsimmo.pixeldungeon.items.Item;
+import com.github.mdsimmo.pixeldungeon.scenes.GameScene;
+import com.github.mdsimmo.pixeldungeon.windows.WndBag;
+import com.github.mdsimmo.utils.Bundlable;
+import com.github.mdsimmo.utils.Bundle;
 
 public class Bag extends Item implements Iterable<Item> {
 

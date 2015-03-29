@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon;
+package com.github.mdsimmo.pixeldungeon;
 
 import javax.microedition.khronos.opengles.GL10;
 
@@ -26,86 +26,86 @@ import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.View;
 
-import com.watabou.noosa.Game;
-import com.watabou.noosa.audio.Music;
-import com.watabou.noosa.audio.Sample;
-import com.watabou.pixeldungeon.scenes.GameScene;
-import com.watabou.pixeldungeon.scenes.PixelScene;
-import com.watabou.pixeldungeon.scenes.TitleScene;
+import com.github.mdsimmo.noosa.Game;
+import com.github.mdsimmo.noosa.audio.Music;
+import com.github.mdsimmo.noosa.audio.Sample;
+import com.github.mdsimmo.pixeldungeon.scenes.GameScene;
+import com.github.mdsimmo.pixeldungeon.scenes.PixelScene;
+import com.github.mdsimmo.pixeldungeon.scenes.TitleScene;
 
 public class PixelDungeon extends Game {
 	
 	public PixelDungeon() {
 		super( TitleScene.class );
 		
-		com.watabou.utils.Bundle.addAlias( 
-			com.watabou.pixeldungeon.items.scrolls.ScrollOfUpgrade.class, 
-			"com.watabou.pixeldungeon.items.scrolls.ScrollOfEnhancement" );
-		com.watabou.utils.Bundle.addAlias( 
-			com.watabou.pixeldungeon.actors.blobs.WaterOfHealth.class, 
-			"com.watabou.pixeldungeon.actors.blobs.Light" );
-		com.watabou.utils.Bundle.addAlias( 
-			com.watabou.pixeldungeon.items.rings.RingOfMending.class, 
-			"com.watabou.pixeldungeon.items.rings.RingOfRejuvenation" );
-		com.watabou.utils.Bundle.addAlias( 
-			com.watabou.pixeldungeon.items.wands.WandOfTelekinesis.class, 
-			"com.watabou.pixeldungeon.items.wands.WandOfTelekenesis" );
-		com.watabou.utils.Bundle.addAlias( 
-			com.watabou.pixeldungeon.actors.blobs.Foliage.class, 
-			"com.watabou.pixeldungeon.actors.blobs.Blooming" );
-		com.watabou.utils.Bundle.addAlias( 
-			com.watabou.pixeldungeon.actors.buffs.Shadows.class, 
-			"com.watabou.pixeldungeon.actors.buffs.Rejuvenation" );
-		com.watabou.utils.Bundle.addAlias( 
-			com.watabou.pixeldungeon.items.scrolls.ScrollOfPsionicBlast.class, 
-			"com.watabou.pixeldungeon.items.scrolls.ScrollOfNuclearBlast" );
-		com.watabou.utils.Bundle.addAlias( 
-			com.watabou.pixeldungeon.actors.hero.Hero.class, 
-			"com.watabou.pixeldungeon.actors.Hero" );
-		com.watabou.utils.Bundle.addAlias( 
-			com.watabou.pixeldungeon.actors.mobs.npcs.Shopkeeper.class,
-			"com.watabou.pixeldungeon.actors.mobs.Shopkeeper" );
+		com.github.mdsimmo.utils.Bundle.addAlias(
+			com.github.mdsimmo.pixeldungeon.items.scrolls.ScrollOfUpgrade.class,
+			"com.github.mdsimmo.pixeldungeon.items.scrolls.ScrollOfEnhancement" );
+		com.github.mdsimmo.utils.Bundle.addAlias(
+			com.github.mdsimmo.pixeldungeon.actors.blobs.WaterOfHealth.class,
+			"com.github.mdsimmo.pixeldungeon.actors.blobs.Light" );
+		com.github.mdsimmo.utils.Bundle.addAlias(
+			com.github.mdsimmo.pixeldungeon.items.rings.RingOfMending.class,
+			"com.github.mdsimmo.pixeldungeon.items.rings.RingOfRejuvenation" );
+		com.github.mdsimmo.utils.Bundle.addAlias(
+			com.github.mdsimmo.pixeldungeon.items.wands.WandOfTelekinesis.class,
+			"com.github.mdsimmo.pixeldungeon.items.wands.WandOfTelekenesis" );
+		com.github.mdsimmo.utils.Bundle.addAlias(
+			com.github.mdsimmo.pixeldungeon.actors.blobs.Foliage.class,
+			"com.github.mdsimmo.pixeldungeon.actors.blobs.Blooming" );
+		com.github.mdsimmo.utils.Bundle.addAlias(
+			com.github.mdsimmo.pixeldungeon.actors.buffs.Shadows.class,
+			"com.github.mdsimmo.pixeldungeon.actors.buffs.Rejuvenation" );
+		com.github.mdsimmo.utils.Bundle.addAlias(
+			com.github.mdsimmo.pixeldungeon.items.scrolls.ScrollOfPsionicBlast.class,
+			"com.github.mdsimmo.pixeldungeon.items.scrolls.ScrollOfNuclearBlast" );
+		com.github.mdsimmo.utils.Bundle.addAlias(
+			com.github.mdsimmo.pixeldungeon.actors.hero.Hero.class,
+			"com.github.mdsimmo.pixeldungeon.actors.Hero" );
+		com.github.mdsimmo.utils.Bundle.addAlias(
+			com.github.mdsimmo.pixeldungeon.actors.mobs.npcs.Shopkeeper.class,
+			"com.github.mdsimmo.pixeldungeon.actors.mobs.Shopkeeper" );
 		// 1.6.1
-		com.watabou.utils.Bundle.addAlias( 
-			com.watabou.pixeldungeon.items.quest.DriedRose.class,
-			"com.watabou.pixeldungeon.items.DriedRose" );
-		com.watabou.utils.Bundle.addAlias( 
-			com.watabou.pixeldungeon.actors.mobs.npcs.MirrorImage.class,
-			"com.watabou.pixeldungeon.items.scrolls.ScrollOfMirrorImage.MirrorImage" );
+		com.github.mdsimmo.utils.Bundle.addAlias(
+			com.github.mdsimmo.pixeldungeon.items.quest.DriedRose.class,
+			"com.github.mdsimmo.pixeldungeon.items.DriedRose" );
+		com.github.mdsimmo.utils.Bundle.addAlias(
+			com.github.mdsimmo.pixeldungeon.actors.mobs.npcs.MirrorImage.class,
+			"com.github.mdsimmo.pixeldungeon.items.scrolls.ScrollOfMirrorImage.MirrorImage" );
 		// 1.6.4
-		com.watabou.utils.Bundle.addAlias( 
-			com.watabou.pixeldungeon.items.rings.RingOfElements.class,
-			"com.watabou.pixeldungeon.items.rings.RingOfCleansing" );
-		com.watabou.utils.Bundle.addAlias( 
-			com.watabou.pixeldungeon.items.rings.RingOfElements.class,
-			"com.watabou.pixeldungeon.items.rings.RingOfResistance" );
-		com.watabou.utils.Bundle.addAlias( 
-			com.watabou.pixeldungeon.items.weapon.missiles.Boomerang.class,
-			"com.watabou.pixeldungeon.items.weapon.missiles.RangersBoomerang" );
-		com.watabou.utils.Bundle.addAlias( 
-			com.watabou.pixeldungeon.items.rings.RingOfPower.class,
-			"com.watabou.pixeldungeon.items.rings.RingOfEnergy" );
+		com.github.mdsimmo.utils.Bundle.addAlias(
+			com.github.mdsimmo.pixeldungeon.items.rings.RingOfElements.class,
+			"com.github.mdsimmo.pixeldungeon.items.rings.RingOfCleansing" );
+		com.github.mdsimmo.utils.Bundle.addAlias(
+			com.github.mdsimmo.pixeldungeon.items.rings.RingOfElements.class,
+			"com.github.mdsimmo.pixeldungeon.items.rings.RingOfResistance" );
+		com.github.mdsimmo.utils.Bundle.addAlias(
+			com.github.mdsimmo.pixeldungeon.items.weapon.missiles.Boomerang.class,
+			"com.github.mdsimmo.pixeldungeon.items.weapon.missiles.RangersBoomerang" );
+		com.github.mdsimmo.utils.Bundle.addAlias(
+			com.github.mdsimmo.pixeldungeon.items.rings.RingOfPower.class,
+			"com.github.mdsimmo.pixeldungeon.items.rings.RingOfEnergy" );
 		// 1.7.2
-		com.watabou.utils.Bundle.addAlias( 
-			com.watabou.pixeldungeon.plants.Dreamweed.class,
-			"com.watabou.pixeldungeon.plants.Blindweed" );
-		com.watabou.utils.Bundle.addAlias( 
-			com.watabou.pixeldungeon.plants.Dreamweed.Seed.class,
-			"com.watabou.pixeldungeon.plants.Blindweed$Seed" );
+		com.github.mdsimmo.utils.Bundle.addAlias(
+			com.github.mdsimmo.pixeldungeon.plants.Dreamweed.class,
+			"com.github.mdsimmo.pixeldungeon.plants.Blindweed" );
+		com.github.mdsimmo.utils.Bundle.addAlias(
+			com.github.mdsimmo.pixeldungeon.plants.Dreamweed.Seed.class,
+			"com.github.mdsimmo.pixeldungeon.plants.Blindweed$Seed" );
 		// 1.7.4
-		com.watabou.utils.Bundle.addAlias( 
-			com.watabou.pixeldungeon.items.weapon.enchantments.Shock.class,
-			"com.watabou.pixeldungeon.items.weapon.enchantments.Piercing" );
-		com.watabou.utils.Bundle.addAlias( 
-			com.watabou.pixeldungeon.items.weapon.enchantments.Shock.class,
-			"com.watabou.pixeldungeon.items.weapon.enchantments.Swing" );
-		com.watabou.utils.Bundle.addAlias( 
-			com.watabou.pixeldungeon.items.scrolls.ScrollOfEnchantment.class,
-			"com.watabou.pixeldungeon.items.scrolls.ScrollOfWeaponUpgrade" );
+		com.github.mdsimmo.utils.Bundle.addAlias(
+			com.github.mdsimmo.pixeldungeon.items.weapon.enchantments.Shock.class,
+			"com.github.mdsimmo.pixeldungeon.items.weapon.enchantments.Piercing" );
+		com.github.mdsimmo.utils.Bundle.addAlias(
+			com.github.mdsimmo.pixeldungeon.items.weapon.enchantments.Shock.class,
+			"com.github.mdsimmo.pixeldungeon.items.weapon.enchantments.Swing" );
+		com.github.mdsimmo.utils.Bundle.addAlias(
+			com.github.mdsimmo.pixeldungeon.items.scrolls.ScrollOfEnchantment.class,
+			"com.github.mdsimmo.pixeldungeon.items.scrolls.ScrollOfWeaponUpgrade" );
 		// 1.7.5
-		com.watabou.utils.Bundle.addAlias( 
-			com.watabou.pixeldungeon.items.scrolls.ScrollOfEnchantment.class,
-			"com.watabou.pixeldungeon.items.Stylus" );
+		com.github.mdsimmo.utils.Bundle.addAlias(
+			com.github.mdsimmo.pixeldungeon.items.scrolls.ScrollOfEnchantment.class,
+			"com.github.mdsimmo.pixeldungeon.items.Stylus" );
 	}
 	
 	@Override

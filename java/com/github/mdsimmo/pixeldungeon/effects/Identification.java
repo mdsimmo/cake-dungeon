@@ -15,16 +15,16 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.effects;
+package com.github.mdsimmo.pixeldungeon.effects;
 
 import javax.microedition.khronos.opengles.GL10;
 
 import android.opengl.GLES20;
 
-import com.watabou.noosa.Group;
-import com.watabou.noosa.particles.PixelParticle;
-import com.watabou.utils.PointF;
-import com.watabou.utils.Random;
+import com.github.mdsimmo.noosa.Group;
+import com.github.mdsimmo.noosa.particles.PixelParticle;
+import com.github.mdsimmo.utils.PointF;
+import com.github.mdsimmo.utils.Random;
 
 public class Identification extends Group {
 

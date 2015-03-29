@@ -15,25 +15,25 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.items.armor;
+package com.github.mdsimmo.pixeldungeon.items.armor;
 
-import com.watabou.noosa.audio.Sample;
-import com.watabou.pixeldungeon.Assets;
-import com.watabou.pixeldungeon.Dungeon;
-import com.watabou.pixeldungeon.actors.Actor;
-import com.watabou.pixeldungeon.actors.buffs.Blindness;
-import com.watabou.pixeldungeon.actors.buffs.Buff;
-import com.watabou.pixeldungeon.actors.hero.Hero;
-import com.watabou.pixeldungeon.actors.hero.HeroClass;
-import com.watabou.pixeldungeon.actors.mobs.Mob;
-import com.watabou.pixeldungeon.effects.CellEmitter;
-import com.watabou.pixeldungeon.effects.Speck;
-import com.watabou.pixeldungeon.items.wands.WandOfBlink;
-import com.watabou.pixeldungeon.levels.Level;
-import com.watabou.pixeldungeon.scenes.CellSelector;
-import com.watabou.pixeldungeon.scenes.GameScene;
-import com.watabou.pixeldungeon.sprites.ItemSpriteSheet;
-import com.watabou.pixeldungeon.utils.GLog;
+import com.github.mdsimmo.noosa.audio.Sample;
+import com.github.mdsimmo.pixeldungeon.Assets;
+import com.github.mdsimmo.pixeldungeon.Dungeon;
+import com.github.mdsimmo.pixeldungeon.actors.Actor;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Blindness;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Buff;
+import com.github.mdsimmo.pixeldungeon.actors.hero.Hero;
+import com.github.mdsimmo.pixeldungeon.actors.hero.HeroClass;
+import com.github.mdsimmo.pixeldungeon.actors.mobs.Mob;
+import com.github.mdsimmo.pixeldungeon.effects.CellEmitter;
+import com.github.mdsimmo.pixeldungeon.effects.Speck;
+import com.github.mdsimmo.pixeldungeon.items.wands.WandOfBlink;
+import com.github.mdsimmo.pixeldungeon.levels.Level;
+import com.github.mdsimmo.pixeldungeon.scenes.CellSelector;
+import com.github.mdsimmo.pixeldungeon.scenes.GameScene;
+import com.github.mdsimmo.pixeldungeon.sprites.ItemSpriteSheet;
+import com.github.mdsimmo.pixeldungeon.utils.GLog;
 
 public class RogueArmor extends ClassArmor {
 	

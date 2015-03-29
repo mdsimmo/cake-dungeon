@@ -15,19 +15,19 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.windows;
+package com.github.mdsimmo.pixeldungeon.windows;
 
 import java.util.ArrayList;
 
-import com.watabou.noosa.BitmapText;
-import com.watabou.noosa.Game;
-import com.watabou.noosa.NinePatch;
-import com.watabou.noosa.audio.Sample;
-import com.watabou.noosa.ui.Button;
-import com.watabou.pixeldungeon.Assets;
-import com.watabou.pixeldungeon.Chrome;
-import com.watabou.pixeldungeon.scenes.PixelScene;
-import com.watabou.pixeldungeon.ui.Window;
+import com.github.mdsimmo.noosa.BitmapText;
+import com.github.mdsimmo.noosa.Game;
+import com.github.mdsimmo.noosa.NinePatch;
+import com.github.mdsimmo.noosa.audio.Sample;
+import com.github.mdsimmo.noosa.ui.Button;
+import com.github.mdsimmo.pixeldungeon.Assets;
+import com.github.mdsimmo.pixeldungeon.Chrome;
+import com.github.mdsimmo.pixeldungeon.scenes.PixelScene;
+import com.github.mdsimmo.pixeldungeon.ui.Window;
 
 public class WndTabbed extends Window {
 

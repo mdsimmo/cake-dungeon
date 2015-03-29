@@ -15,15 +15,15 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.levels;
+package com.github.mdsimmo.pixeldungeon.levels;
 
 import java.util.Arrays;
 
-import com.watabou.noosa.Scene;
-import com.watabou.pixeldungeon.Assets;
-import com.watabou.pixeldungeon.items.Amulet;
-import com.watabou.pixeldungeon.levels.painters.Painter;
-import com.watabou.utils.Random;
+import com.github.mdsimmo.noosa.Scene;
+import com.github.mdsimmo.pixeldungeon.Assets;
+import com.github.mdsimmo.pixeldungeon.items.Amulet;
+import com.github.mdsimmo.pixeldungeon.levels.painters.Painter;
+import com.github.mdsimmo.utils.Random;
 
 public class LastLevel extends Level {
 

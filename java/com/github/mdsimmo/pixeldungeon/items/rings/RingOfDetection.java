@@ -15,10 +15,10 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.items.rings;
+package com.github.mdsimmo.pixeldungeon.items.rings;
 
-import com.watabou.pixeldungeon.Dungeon;
-import com.watabou.pixeldungeon.actors.hero.Hero;
+import com.github.mdsimmo.pixeldungeon.Dungeon;
+import com.github.mdsimmo.pixeldungeon.actors.hero.Hero;
 
 public class RingOfDetection extends Ring {
 

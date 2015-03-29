@@ -15,20 +15,20 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.windows;
+package com.github.mdsimmo.pixeldungeon.windows;
 
-import com.watabou.noosa.BitmapTextMultiline;
-import com.watabou.pixeldungeon.Dungeon;
-import com.watabou.pixeldungeon.actors.hero.Hero;
-import com.watabou.pixeldungeon.actors.mobs.npcs.Wandmaker;
-import com.watabou.pixeldungeon.items.Item;
-import com.watabou.pixeldungeon.items.wands.Wand;
-import com.watabou.pixeldungeon.scenes.PixelScene;
-import com.watabou.pixeldungeon.sprites.ItemSprite;
-import com.watabou.pixeldungeon.ui.RedButton;
-import com.watabou.pixeldungeon.ui.Window;
-import com.watabou.pixeldungeon.utils.GLog;
-import com.watabou.pixeldungeon.utils.Utils;
+import com.github.mdsimmo.noosa.BitmapTextMultiline;
+import com.github.mdsimmo.pixeldungeon.Dungeon;
+import com.github.mdsimmo.pixeldungeon.actors.hero.Hero;
+import com.github.mdsimmo.pixeldungeon.actors.mobs.npcs.Wandmaker;
+import com.github.mdsimmo.pixeldungeon.items.Item;
+import com.github.mdsimmo.pixeldungeon.items.wands.Wand;
+import com.github.mdsimmo.pixeldungeon.scenes.PixelScene;
+import com.github.mdsimmo.pixeldungeon.sprites.ItemSprite;
+import com.github.mdsimmo.pixeldungeon.ui.RedButton;
+import com.github.mdsimmo.pixeldungeon.ui.Window;
+import com.github.mdsimmo.pixeldungeon.utils.GLog;
+import com.github.mdsimmo.pixeldungeon.utils.Utils;
 
 public class WndWandmaker extends Window {
 	

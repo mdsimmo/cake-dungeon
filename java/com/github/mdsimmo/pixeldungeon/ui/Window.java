@@ -15,23 +15,23 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.ui;
+package com.github.mdsimmo.pixeldungeon.ui;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import com.watabou.input.Keys;
-import com.watabou.input.Keys.Key;
-import com.watabou.input.Touchscreen.Touch;
-import com.watabou.noosa.Camera;
-import com.watabou.noosa.Game;
-import com.watabou.noosa.Group;
-import com.watabou.noosa.NinePatch;
-import com.watabou.noosa.TouchArea;
-import com.watabou.pixeldungeon.Chrome;
-import com.watabou.pixeldungeon.effects.ShadowBox;
-import com.watabou.pixeldungeon.scenes.PixelScene;
-import com.watabou.utils.Signal;
+import com.github.mdsimmo.input.Keys;
+import com.github.mdsimmo.input.Keys.Key;
+import com.github.mdsimmo.input.Touchscreen.Touch;
+import com.github.mdsimmo.noosa.Camera;
+import com.github.mdsimmo.noosa.Game;
+import com.github.mdsimmo.noosa.Group;
+import com.github.mdsimmo.noosa.NinePatch;
+import com.github.mdsimmo.noosa.TouchArea;
+import com.github.mdsimmo.pixeldungeon.Chrome;
+import com.github.mdsimmo.pixeldungeon.effects.ShadowBox;
+import com.github.mdsimmo.pixeldungeon.scenes.PixelScene;
+import com.github.mdsimmo.utils.Signal;
 
 public class Window extends Group implements Signal.Listener<Key> {
 

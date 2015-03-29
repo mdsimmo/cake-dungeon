@@ -15,19 +15,19 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.windows;
+package com.github.mdsimmo.pixeldungeon.windows;
 
-import com.watabou.noosa.BitmapTextMultiline;
-import com.watabou.noosa.Game;
-import com.watabou.pixeldungeon.Rankings;
-import com.watabou.pixeldungeon.Statistics;
-import com.watabou.pixeldungeon.actors.hero.Hero;
-import com.watabou.pixeldungeon.items.Ankh;
-import com.watabou.pixeldungeon.scenes.InterlevelScene;
-import com.watabou.pixeldungeon.scenes.PixelScene;
-import com.watabou.pixeldungeon.sprites.ItemSprite;
-import com.watabou.pixeldungeon.ui.RedButton;
-import com.watabou.pixeldungeon.ui.Window;
+import com.github.mdsimmo.noosa.BitmapTextMultiline;
+import com.github.mdsimmo.noosa.Game;
+import com.github.mdsimmo.pixeldungeon.Rankings;
+import com.github.mdsimmo.pixeldungeon.Statistics;
+import com.github.mdsimmo.pixeldungeon.actors.hero.Hero;
+import com.github.mdsimmo.pixeldungeon.items.Ankh;
+import com.github.mdsimmo.pixeldungeon.scenes.InterlevelScene;
+import com.github.mdsimmo.pixeldungeon.scenes.PixelScene;
+import com.github.mdsimmo.pixeldungeon.sprites.ItemSprite;
+import com.github.mdsimmo.pixeldungeon.ui.RedButton;
+import com.github.mdsimmo.pixeldungeon.ui.Window;
 
 public class WndResurrect extends Window {
 	

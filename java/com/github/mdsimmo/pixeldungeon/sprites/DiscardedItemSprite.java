@@ -15,9 +15,9 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.sprites;
+package com.github.mdsimmo.pixeldungeon.sprites;
 
-import com.watabou.noosa.Game;
+import com.github.mdsimmo.noosa.Game;
 
 public class DiscardedItemSprite extends ItemSprite {
 	

@@ -15,13 +15,13 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.ui;
+package com.github.mdsimmo.pixeldungeon.ui;
 
-import com.watabou.gltextures.TextureCache;
-import com.watabou.noosa.Image;
-import com.watabou.noosa.ui.Component;
-import com.watabou.pixeldungeon.actors.Char;
-import com.watabou.pixeldungeon.sprites.CharSprite;
+import com.github.mdsimmo.gltextures.TextureCache;
+import com.github.mdsimmo.noosa.Image;
+import com.github.mdsimmo.noosa.ui.Component;
+import com.github.mdsimmo.pixeldungeon.actors.Char;
+import com.github.mdsimmo.pixeldungeon.sprites.CharSprite;
 
 public class HealthIndicator extends Component {
 

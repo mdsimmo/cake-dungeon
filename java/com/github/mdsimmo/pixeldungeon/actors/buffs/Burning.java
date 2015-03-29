@@ -15,30 +15,30 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.actors.buffs;
+package com.github.mdsimmo.pixeldungeon.actors.buffs;
 
-import com.watabou.pixeldungeon.Badges;
-import com.watabou.pixeldungeon.Dungeon;
-import com.watabou.pixeldungeon.ResultDescriptions;
-import com.watabou.pixeldungeon.actors.Char;
-import com.watabou.pixeldungeon.actors.blobs.Blob;
-import com.watabou.pixeldungeon.actors.blobs.Fire;
-import com.watabou.pixeldungeon.actors.hero.Hero;
-import com.watabou.pixeldungeon.actors.mobs.Thief;
-import com.watabou.pixeldungeon.effects.particles.ElmoParticle;
-import com.watabou.pixeldungeon.items.Heap;
-import com.watabou.pixeldungeon.items.Item;
-import com.watabou.pixeldungeon.items.food.ChargrilledMeat;
-import com.watabou.pixeldungeon.items.food.MysteryMeat;
-import com.watabou.pixeldungeon.items.rings.RingOfElements.Resistance;
-import com.watabou.pixeldungeon.items.scrolls.Scroll;
-import com.watabou.pixeldungeon.levels.Level;
-import com.watabou.pixeldungeon.scenes.GameScene;
-import com.watabou.pixeldungeon.ui.BuffIndicator;
-import com.watabou.pixeldungeon.utils.GLog;
-import com.watabou.pixeldungeon.utils.Utils;
-import com.watabou.utils.Bundle;
-import com.watabou.utils.Random;
+import com.github.mdsimmo.pixeldungeon.Badges;
+import com.github.mdsimmo.pixeldungeon.Dungeon;
+import com.github.mdsimmo.pixeldungeon.ResultDescriptions;
+import com.github.mdsimmo.pixeldungeon.actors.Char;
+import com.github.mdsimmo.pixeldungeon.actors.blobs.Blob;
+import com.github.mdsimmo.pixeldungeon.actors.blobs.Fire;
+import com.github.mdsimmo.pixeldungeon.actors.hero.Hero;
+import com.github.mdsimmo.pixeldungeon.actors.mobs.Thief;
+import com.github.mdsimmo.pixeldungeon.effects.particles.ElmoParticle;
+import com.github.mdsimmo.pixeldungeon.items.Heap;
+import com.github.mdsimmo.pixeldungeon.items.Item;
+import com.github.mdsimmo.pixeldungeon.items.food.ChargrilledMeat;
+import com.github.mdsimmo.pixeldungeon.items.food.MysteryMeat;
+import com.github.mdsimmo.pixeldungeon.items.rings.RingOfElements.Resistance;
+import com.github.mdsimmo.pixeldungeon.items.scrolls.Scroll;
+import com.github.mdsimmo.pixeldungeon.levels.Level;
+import com.github.mdsimmo.pixeldungeon.scenes.GameScene;
+import com.github.mdsimmo.pixeldungeon.ui.BuffIndicator;
+import com.github.mdsimmo.pixeldungeon.utils.GLog;
+import com.github.mdsimmo.pixeldungeon.utils.Utils;
+import com.github.mdsimmo.utils.Bundle;
+import com.github.mdsimmo.utils.Random;
 
 public class Burning extends Buff implements Hero.Doom {
 

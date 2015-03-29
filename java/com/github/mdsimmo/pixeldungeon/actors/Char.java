@@ -15,50 +15,50 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.actors;
+package com.github.mdsimmo.pixeldungeon.actors;
 
 import java.util.HashSet;
 
-import com.watabou.noosa.Camera;
-import com.watabou.noosa.audio.Sample;
-import com.watabou.pixeldungeon.Assets;
-import com.watabou.pixeldungeon.Dungeon;
-import com.watabou.pixeldungeon.ResultDescriptions;
-import com.watabou.pixeldungeon.actors.buffs.Amok;
-import com.watabou.pixeldungeon.actors.buffs.Bleeding;
-import com.watabou.pixeldungeon.actors.buffs.Buff;
-import com.watabou.pixeldungeon.actors.buffs.Burning;
-import com.watabou.pixeldungeon.actors.buffs.Charm;
-import com.watabou.pixeldungeon.actors.buffs.Vertigo;
-import com.watabou.pixeldungeon.actors.buffs.Cripple;
-import com.watabou.pixeldungeon.actors.buffs.Frost;
-import com.watabou.pixeldungeon.actors.buffs.Invisibility;
-import com.watabou.pixeldungeon.actors.buffs.Light;
-import com.watabou.pixeldungeon.actors.buffs.Roots;
-import com.watabou.pixeldungeon.actors.buffs.Shadows;
-import com.watabou.pixeldungeon.actors.buffs.Sleep;
-import com.watabou.pixeldungeon.actors.buffs.Speed;
-import com.watabou.pixeldungeon.actors.buffs.Levitation;
-import com.watabou.pixeldungeon.actors.buffs.MindVision;
-import com.watabou.pixeldungeon.actors.buffs.Paralysis;
-import com.watabou.pixeldungeon.actors.buffs.Poison;
-import com.watabou.pixeldungeon.actors.buffs.Slow;
-import com.watabou.pixeldungeon.actors.buffs.Terror;
-import com.watabou.pixeldungeon.actors.hero.Hero;
-import com.watabou.pixeldungeon.actors.hero.HeroSubClass;
-import com.watabou.pixeldungeon.actors.mobs.Bestiary;
-import com.watabou.pixeldungeon.effects.CellEmitter;
-import com.watabou.pixeldungeon.effects.particles.PoisonParticle;
-import com.watabou.pixeldungeon.levels.Level;
-import com.watabou.pixeldungeon.levels.Terrain;
-import com.watabou.pixeldungeon.levels.features.Door;
-import com.watabou.pixeldungeon.sprites.CharSprite;
-import com.watabou.pixeldungeon.utils.GLog;
-import com.watabou.pixeldungeon.utils.Utils;
-import com.watabou.utils.Bundlable;
-import com.watabou.utils.Bundle;
-import com.watabou.utils.GameMath;
-import com.watabou.utils.Random;
+import com.github.mdsimmo.noosa.Camera;
+import com.github.mdsimmo.noosa.audio.Sample;
+import com.github.mdsimmo.pixeldungeon.Assets;
+import com.github.mdsimmo.pixeldungeon.Dungeon;
+import com.github.mdsimmo.pixeldungeon.ResultDescriptions;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Amok;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Bleeding;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Buff;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Burning;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Charm;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Vertigo;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Cripple;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Frost;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Invisibility;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Light;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Roots;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Shadows;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Sleep;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Speed;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Levitation;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.MindVision;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Paralysis;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Poison;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Slow;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Terror;
+import com.github.mdsimmo.pixeldungeon.actors.hero.Hero;
+import com.github.mdsimmo.pixeldungeon.actors.hero.HeroSubClass;
+import com.github.mdsimmo.pixeldungeon.actors.mobs.Bestiary;
+import com.github.mdsimmo.pixeldungeon.effects.CellEmitter;
+import com.github.mdsimmo.pixeldungeon.effects.particles.PoisonParticle;
+import com.github.mdsimmo.pixeldungeon.levels.Level;
+import com.github.mdsimmo.pixeldungeon.levels.Terrain;
+import com.github.mdsimmo.pixeldungeon.levels.features.Door;
+import com.github.mdsimmo.pixeldungeon.sprites.CharSprite;
+import com.github.mdsimmo.pixeldungeon.utils.GLog;
+import com.github.mdsimmo.pixeldungeon.utils.Utils;
+import com.github.mdsimmo.utils.Bundlable;
+import com.github.mdsimmo.utils.Bundle;
+import com.github.mdsimmo.utils.GameMath;
+import com.github.mdsimmo.utils.Random;
 
 public abstract class Char extends Actor {
 

@@ -15,23 +15,23 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.items.potions;
+package com.github.mdsimmo.pixeldungeon.items.potions;
 
-import com.watabou.noosa.audio.Sample;
-import com.watabou.pixeldungeon.Assets;
-import com.watabou.pixeldungeon.Dungeon;
-import com.watabou.pixeldungeon.actors.blobs.Blob;
-import com.watabou.pixeldungeon.actors.blobs.ParalyticGas;
-import com.watabou.pixeldungeon.actors.blobs.ToxicGas;
-import com.watabou.pixeldungeon.actors.buffs.Buff;
-import com.watabou.pixeldungeon.actors.buffs.GasesImmunity;
-import com.watabou.pixeldungeon.actors.hero.Hero;
-import com.watabou.pixeldungeon.effects.CellEmitter;
-import com.watabou.pixeldungeon.effects.Speck;
-import com.watabou.pixeldungeon.levels.Level;
-import com.watabou.pixeldungeon.utils.BArray;
-import com.watabou.pixeldungeon.utils.GLog;
-import com.watabou.utils.PathFinder;
+import com.github.mdsimmo.noosa.audio.Sample;
+import com.github.mdsimmo.pixeldungeon.Assets;
+import com.github.mdsimmo.pixeldungeon.Dungeon;
+import com.github.mdsimmo.pixeldungeon.actors.blobs.Blob;
+import com.github.mdsimmo.pixeldungeon.actors.blobs.ParalyticGas;
+import com.github.mdsimmo.pixeldungeon.actors.blobs.ToxicGas;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Buff;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.GasesImmunity;
+import com.github.mdsimmo.pixeldungeon.actors.hero.Hero;
+import com.github.mdsimmo.pixeldungeon.effects.CellEmitter;
+import com.github.mdsimmo.pixeldungeon.effects.Speck;
+import com.github.mdsimmo.pixeldungeon.levels.Level;
+import com.github.mdsimmo.pixeldungeon.utils.BArray;
+import com.github.mdsimmo.pixeldungeon.utils.GLog;
+import com.github.mdsimmo.utils.PathFinder;
 
 public class PotionOfPurity extends Potion {
 

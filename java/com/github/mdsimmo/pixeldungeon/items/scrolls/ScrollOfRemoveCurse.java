@@ -15,17 +15,17 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.items.scrolls;
+package com.github.mdsimmo.pixeldungeon.items.scrolls;
 
-import com.watabou.noosa.audio.Sample;
-import com.watabou.pixeldungeon.Assets;
-import com.watabou.pixeldungeon.actors.buffs.Invisibility;
-import com.watabou.pixeldungeon.actors.buffs.Weakness;
-import com.watabou.pixeldungeon.actors.hero.Hero;
-import com.watabou.pixeldungeon.effects.Flare;
-import com.watabou.pixeldungeon.effects.particles.ShadowParticle;
-import com.watabou.pixeldungeon.items.Item;
-import com.watabou.pixeldungeon.utils.GLog;
+import com.github.mdsimmo.noosa.audio.Sample;
+import com.github.mdsimmo.pixeldungeon.Assets;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Invisibility;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Weakness;
+import com.github.mdsimmo.pixeldungeon.actors.hero.Hero;
+import com.github.mdsimmo.pixeldungeon.effects.Flare;
+import com.github.mdsimmo.pixeldungeon.effects.particles.ShadowParticle;
+import com.github.mdsimmo.pixeldungeon.items.Item;
+import com.github.mdsimmo.pixeldungeon.utils.GLog;
 
 public class ScrollOfRemoveCurse extends Scroll {
 

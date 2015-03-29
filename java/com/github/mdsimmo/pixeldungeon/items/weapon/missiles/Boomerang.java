@@ -15,14 +15,14 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.items.weapon.missiles;
+package com.github.mdsimmo.pixeldungeon.items.weapon.missiles;
 
-import com.watabou.pixeldungeon.Dungeon;
-import com.watabou.pixeldungeon.actors.Char;
-import com.watabou.pixeldungeon.actors.hero.Hero;
-import com.watabou.pixeldungeon.items.Item;
-import com.watabou.pixeldungeon.sprites.ItemSpriteSheet;
-import com.watabou.pixeldungeon.sprites.MissileSprite;
+import com.github.mdsimmo.pixeldungeon.Dungeon;
+import com.github.mdsimmo.pixeldungeon.actors.Char;
+import com.github.mdsimmo.pixeldungeon.actors.hero.Hero;
+import com.github.mdsimmo.pixeldungeon.items.Item;
+import com.github.mdsimmo.pixeldungeon.sprites.ItemSpriteSheet;
+import com.github.mdsimmo.pixeldungeon.sprites.MissileSprite;
 
 public class Boomerang extends MissileWeapon {
 

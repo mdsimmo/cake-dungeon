@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.levels;
+package com.github.mdsimmo.pixeldungeon.levels;
 
 import java.lang.reflect.Method;
 import java.util.ArrayList;
@@ -24,14 +24,14 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.HashSet;
 
-import com.watabou.pixeldungeon.PixelDungeon;
-import com.watabou.pixeldungeon.levels.painters.*;
-import com.watabou.utils.Bundlable;
-import com.watabou.utils.Bundle;
-import com.watabou.utils.Graph;
-import com.watabou.utils.Point;
-import com.watabou.utils.Random;
-import com.watabou.utils.Rect;
+import com.github.mdsimmo.pixeldungeon.PixelDungeon;
+import com.github.mdsimmo.pixeldungeon.levels.painters.*;
+import com.github.mdsimmo.utils.Bundlable;
+import com.github.mdsimmo.utils.Bundle;
+import com.github.mdsimmo.utils.Graph;
+import com.github.mdsimmo.utils.Point;
+import com.github.mdsimmo.utils.Random;
+import com.github.mdsimmo.utils.Rect;
 
 public class Room extends Rect implements Graph.Node, Bundlable {
 	

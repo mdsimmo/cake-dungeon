@@ -15,18 +15,18 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.items.scrolls;
+package com.github.mdsimmo.pixeldungeon.items.scrolls;
 
-import com.watabou.noosa.audio.Sample;
-import com.watabou.pixeldungeon.Assets;
-import com.watabou.pixeldungeon.Dungeon;
-import com.watabou.pixeldungeon.actors.buffs.Buff;
-import com.watabou.pixeldungeon.actors.buffs.Invisibility;
-import com.watabou.pixeldungeon.actors.buffs.Sleep;
-import com.watabou.pixeldungeon.actors.mobs.Mob;
-import com.watabou.pixeldungeon.effects.Speck;
-import com.watabou.pixeldungeon.levels.Level;
-import com.watabou.pixeldungeon.utils.GLog;
+import com.github.mdsimmo.noosa.audio.Sample;
+import com.github.mdsimmo.pixeldungeon.Assets;
+import com.github.mdsimmo.pixeldungeon.Dungeon;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Buff;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Invisibility;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Sleep;
+import com.github.mdsimmo.pixeldungeon.actors.mobs.Mob;
+import com.github.mdsimmo.pixeldungeon.effects.Speck;
+import com.github.mdsimmo.pixeldungeon.levels.Level;
+import com.github.mdsimmo.pixeldungeon.utils.GLog;
 
 public class ScrollOfLullaby extends Scroll {
 

@@ -15,11 +15,11 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.items.bags;
+package com.github.mdsimmo.pixeldungeon.items.bags;
 
-import com.watabou.pixeldungeon.items.Item;
-import com.watabou.pixeldungeon.items.wands.Wand;
-import com.watabou.pixeldungeon.sprites.ItemSpriteSheet;
+import com.github.mdsimmo.pixeldungeon.items.Item;
+import com.github.mdsimmo.pixeldungeon.items.wands.Wand;
+import com.github.mdsimmo.pixeldungeon.sprites.ItemSpriteSheet;
 
 public class WandHolster extends Bag {
 

@@ -15,17 +15,17 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.plants;
+package com.github.mdsimmo.pixeldungeon.plants;
 
-import com.watabou.pixeldungeon.Dungeon;
-import com.watabou.pixeldungeon.actors.Char;
-import com.watabou.pixeldungeon.actors.blobs.Blob;
-import com.watabou.pixeldungeon.actors.blobs.Fire;
-import com.watabou.pixeldungeon.effects.CellEmitter;
-import com.watabou.pixeldungeon.effects.particles.FlameParticle;
-import com.watabou.pixeldungeon.items.potions.PotionOfLiquidFlame;
-import com.watabou.pixeldungeon.scenes.GameScene;
-import com.watabou.pixeldungeon.sprites.ItemSpriteSheet;
+import com.github.mdsimmo.pixeldungeon.Dungeon;
+import com.github.mdsimmo.pixeldungeon.actors.Char;
+import com.github.mdsimmo.pixeldungeon.actors.blobs.Blob;
+import com.github.mdsimmo.pixeldungeon.actors.blobs.Fire;
+import com.github.mdsimmo.pixeldungeon.effects.CellEmitter;
+import com.github.mdsimmo.pixeldungeon.effects.particles.FlameParticle;
+import com.github.mdsimmo.pixeldungeon.items.potions.PotionOfLiquidFlame;
+import com.github.mdsimmo.pixeldungeon.scenes.GameScene;
+import com.github.mdsimmo.pixeldungeon.sprites.ItemSpriteSheet;
 
 public class Firebloom extends Plant {
 

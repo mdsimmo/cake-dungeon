@@ -15,19 +15,19 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.levels.traps;
+package com.github.mdsimmo.pixeldungeon.levels.traps;
 
 import java.util.ArrayList;
 
-import com.watabou.pixeldungeon.Dungeon;
-import com.watabou.pixeldungeon.actors.Actor;
-import com.watabou.pixeldungeon.actors.Char;
-import com.watabou.pixeldungeon.actors.mobs.Bestiary;
-import com.watabou.pixeldungeon.actors.mobs.Mob;
-import com.watabou.pixeldungeon.items.wands.WandOfBlink;
-import com.watabou.pixeldungeon.levels.Level;
-import com.watabou.pixeldungeon.scenes.GameScene;
-import com.watabou.utils.Random;
+import com.github.mdsimmo.pixeldungeon.Dungeon;
+import com.github.mdsimmo.pixeldungeon.actors.Actor;
+import com.github.mdsimmo.pixeldungeon.actors.Char;
+import com.github.mdsimmo.pixeldungeon.actors.mobs.Bestiary;
+import com.github.mdsimmo.pixeldungeon.actors.mobs.Mob;
+import com.github.mdsimmo.pixeldungeon.items.wands.WandOfBlink;
+import com.github.mdsimmo.pixeldungeon.levels.Level;
+import com.github.mdsimmo.pixeldungeon.scenes.GameScene;
+import com.github.mdsimmo.utils.Random;
 
 public class SummoningTrap {
 

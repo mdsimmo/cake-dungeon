@@ -15,27 +15,27 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.items;
+package com.github.mdsimmo.pixeldungeon.items;
 
 import java.util.HashMap;
 
-import com.watabou.pixeldungeon.Dungeon;
-import com.watabou.pixeldungeon.actors.hero.Hero;
-import com.watabou.pixeldungeon.actors.mobs.npcs.Wandmaker.Rotberry;
-import com.watabou.pixeldungeon.items.armor.*;
-import com.watabou.pixeldungeon.items.bags.Bag;
-import com.watabou.pixeldungeon.items.food.Food;
-import com.watabou.pixeldungeon.items.food.MysteryMeat;
-import com.watabou.pixeldungeon.items.food.Pasty;
-import com.watabou.pixeldungeon.items.potions.*;
-import com.watabou.pixeldungeon.items.rings.*;
-import com.watabou.pixeldungeon.items.scrolls.*;
-import com.watabou.pixeldungeon.items.wands.*;
-import com.watabou.pixeldungeon.items.weapon.*;
-import com.watabou.pixeldungeon.items.weapon.melee.*;
-import com.watabou.pixeldungeon.items.weapon.missiles.*;
-import com.watabou.pixeldungeon.plants.*;
-import com.watabou.utils.Random;
+import com.github.mdsimmo.pixeldungeon.Dungeon;
+import com.github.mdsimmo.pixeldungeon.actors.hero.Hero;
+import com.github.mdsimmo.pixeldungeon.actors.mobs.npcs.Wandmaker.Rotberry;
+import com.github.mdsimmo.pixeldungeon.items.armor.*;
+import com.github.mdsimmo.pixeldungeon.items.bags.Bag;
+import com.github.mdsimmo.pixeldungeon.items.food.Food;
+import com.github.mdsimmo.pixeldungeon.items.food.MysteryMeat;
+import com.github.mdsimmo.pixeldungeon.items.food.Pasty;
+import com.github.mdsimmo.pixeldungeon.items.potions.*;
+import com.github.mdsimmo.pixeldungeon.items.rings.*;
+import com.github.mdsimmo.pixeldungeon.items.scrolls.*;
+import com.github.mdsimmo.pixeldungeon.items.wands.*;
+import com.github.mdsimmo.pixeldungeon.items.weapon.*;
+import com.github.mdsimmo.pixeldungeon.items.weapon.melee.*;
+import com.github.mdsimmo.pixeldungeon.items.weapon.missiles.*;
+import com.github.mdsimmo.pixeldungeon.plants.*;
+import com.github.mdsimmo.utils.Random;
 
 public class Generator {
 

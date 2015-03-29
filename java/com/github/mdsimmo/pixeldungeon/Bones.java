@@ -15,18 +15,18 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon;
+package com.github.mdsimmo.pixeldungeon;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-import com.watabou.noosa.Game;
-import com.watabou.pixeldungeon.items.Gold;
-import com.watabou.pixeldungeon.items.Item;
-import com.watabou.pixeldungeon.items.rings.Ring;
-import com.watabou.utils.Bundle;
-import com.watabou.utils.Random;
+import com.github.mdsimmo.noosa.Game;
+import com.github.mdsimmo.pixeldungeon.items.Gold;
+import com.github.mdsimmo.pixeldungeon.items.Item;
+import com.github.mdsimmo.pixeldungeon.items.rings.Ring;
+import com.github.mdsimmo.utils.Bundle;
+import com.github.mdsimmo.utils.Random;
 
 public class Bones {
 

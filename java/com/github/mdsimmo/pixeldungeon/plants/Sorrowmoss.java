@@ -15,16 +15,16 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.plants;
+package com.github.mdsimmo.pixeldungeon.plants;
 
-import com.watabou.pixeldungeon.Dungeon;
-import com.watabou.pixeldungeon.actors.Char;
-import com.watabou.pixeldungeon.actors.buffs.Buff;
-import com.watabou.pixeldungeon.actors.buffs.Poison;
-import com.watabou.pixeldungeon.effects.CellEmitter;
-import com.watabou.pixeldungeon.effects.particles.PoisonParticle;
-import com.watabou.pixeldungeon.items.potions.PotionOfToxicGas;
-import com.watabou.pixeldungeon.sprites.ItemSpriteSheet;
+import com.github.mdsimmo.pixeldungeon.Dungeon;
+import com.github.mdsimmo.pixeldungeon.actors.Char;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Buff;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Poison;
+import com.github.mdsimmo.pixeldungeon.effects.CellEmitter;
+import com.github.mdsimmo.pixeldungeon.effects.particles.PoisonParticle;
+import com.github.mdsimmo.pixeldungeon.items.potions.PotionOfToxicGas;
+import com.github.mdsimmo.pixeldungeon.sprites.ItemSpriteSheet;
 
 public class Sorrowmoss extends Plant {
 

@@ -15,15 +15,15 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.actors.mobs.npcs;
+package com.github.mdsimmo.pixeldungeon.actors.mobs.npcs;
 
-import com.watabou.pixeldungeon.Dungeon;
-import com.watabou.pixeldungeon.effects.CellEmitter;
-import com.watabou.pixeldungeon.effects.Speck;
-import com.watabou.pixeldungeon.effects.particles.ElmoParticle;
-import com.watabou.pixeldungeon.items.Heap;
-import com.watabou.pixeldungeon.sprites.ImpSprite;
-import com.watabou.pixeldungeon.utils.Utils;
+import com.github.mdsimmo.pixeldungeon.Dungeon;
+import com.github.mdsimmo.pixeldungeon.effects.CellEmitter;
+import com.github.mdsimmo.pixeldungeon.effects.Speck;
+import com.github.mdsimmo.pixeldungeon.effects.particles.ElmoParticle;
+import com.github.mdsimmo.pixeldungeon.items.Heap;
+import com.github.mdsimmo.pixeldungeon.sprites.ImpSprite;
+import com.github.mdsimmo.pixeldungeon.utils.Utils;
 
 public class ImpShopkeeper extends Shopkeeper {
 

@@ -15,28 +15,28 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.items.wands;
+package com.github.mdsimmo.pixeldungeon.items.wands;
 
-import com.watabou.noosa.Camera;
-import com.watabou.noosa.audio.Sample;
-import com.watabou.pixeldungeon.Assets;
-import com.watabou.pixeldungeon.Dungeon;
-import com.watabou.pixeldungeon.ResultDescriptions;
-import com.watabou.pixeldungeon.actors.Actor;
-import com.watabou.pixeldungeon.actors.Char;
-import com.watabou.pixeldungeon.actors.buffs.Buff;
-import com.watabou.pixeldungeon.actors.buffs.Paralysis;
-import com.watabou.pixeldungeon.effects.CellEmitter;
-import com.watabou.pixeldungeon.effects.MagicMissile;
-import com.watabou.pixeldungeon.effects.Speck;
-import com.watabou.pixeldungeon.levels.Level;
-import com.watabou.pixeldungeon.mechanics.Ballistica;
-import com.watabou.pixeldungeon.utils.BArray;
-import com.watabou.pixeldungeon.utils.GLog;
-import com.watabou.pixeldungeon.utils.Utils;
-import com.watabou.utils.Callback;
-import com.watabou.utils.PathFinder;
-import com.watabou.utils.Random;
+import com.github.mdsimmo.noosa.Camera;
+import com.github.mdsimmo.noosa.audio.Sample;
+import com.github.mdsimmo.pixeldungeon.Assets;
+import com.github.mdsimmo.pixeldungeon.Dungeon;
+import com.github.mdsimmo.pixeldungeon.ResultDescriptions;
+import com.github.mdsimmo.pixeldungeon.actors.Actor;
+import com.github.mdsimmo.pixeldungeon.actors.Char;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Buff;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Paralysis;
+import com.github.mdsimmo.pixeldungeon.effects.CellEmitter;
+import com.github.mdsimmo.pixeldungeon.effects.MagicMissile;
+import com.github.mdsimmo.pixeldungeon.effects.Speck;
+import com.github.mdsimmo.pixeldungeon.levels.Level;
+import com.github.mdsimmo.pixeldungeon.mechanics.Ballistica;
+import com.github.mdsimmo.pixeldungeon.utils.BArray;
+import com.github.mdsimmo.pixeldungeon.utils.GLog;
+import com.github.mdsimmo.pixeldungeon.utils.Utils;
+import com.github.mdsimmo.utils.Callback;
+import com.github.mdsimmo.utils.PathFinder;
+import com.github.mdsimmo.utils.Random;
 
 public class WandOfAvalanche extends Wand {
 

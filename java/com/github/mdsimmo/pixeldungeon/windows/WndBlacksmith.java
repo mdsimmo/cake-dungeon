@@ -15,23 +15,23 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.windows;
+package com.github.mdsimmo.pixeldungeon.windows;
 
-import com.watabou.noosa.BitmapTextMultiline;
-import com.watabou.noosa.NinePatch;
-import com.watabou.noosa.audio.Sample;
-import com.watabou.noosa.ui.Component;
-import com.watabou.pixeldungeon.Assets;
-import com.watabou.pixeldungeon.Chrome;
-import com.watabou.pixeldungeon.actors.hero.Hero;
-import com.watabou.pixeldungeon.actors.mobs.npcs.Blacksmith;
-import com.watabou.pixeldungeon.items.Item;
-import com.watabou.pixeldungeon.scenes.GameScene;
-import com.watabou.pixeldungeon.scenes.PixelScene;
-import com.watabou.pixeldungeon.ui.ItemSlot;
-import com.watabou.pixeldungeon.ui.RedButton;
-import com.watabou.pixeldungeon.ui.Window;
-import com.watabou.pixeldungeon.utils.Utils;
+import com.github.mdsimmo.noosa.BitmapTextMultiline;
+import com.github.mdsimmo.noosa.NinePatch;
+import com.github.mdsimmo.noosa.audio.Sample;
+import com.github.mdsimmo.noosa.ui.Component;
+import com.github.mdsimmo.pixeldungeon.Assets;
+import com.github.mdsimmo.pixeldungeon.Chrome;
+import com.github.mdsimmo.pixeldungeon.actors.hero.Hero;
+import com.github.mdsimmo.pixeldungeon.actors.mobs.npcs.Blacksmith;
+import com.github.mdsimmo.pixeldungeon.items.Item;
+import com.github.mdsimmo.pixeldungeon.scenes.GameScene;
+import com.github.mdsimmo.pixeldungeon.scenes.PixelScene;
+import com.github.mdsimmo.pixeldungeon.ui.ItemSlot;
+import com.github.mdsimmo.pixeldungeon.ui.RedButton;
+import com.github.mdsimmo.pixeldungeon.ui.Window;
+import com.github.mdsimmo.pixeldungeon.utils.Utils;
 
 public class WndBlacksmith extends Window {
 

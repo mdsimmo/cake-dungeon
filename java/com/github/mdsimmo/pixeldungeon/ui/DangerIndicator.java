@@ -15,14 +15,14 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.ui;
+package com.github.mdsimmo.pixeldungeon.ui;
 
-import com.watabou.noosa.BitmapText;
-import com.watabou.noosa.Camera;
-import com.watabou.noosa.Image;
-import com.watabou.pixeldungeon.Dungeon;
-import com.watabou.pixeldungeon.actors.mobs.Mob;
-import com.watabou.pixeldungeon.scenes.PixelScene;
+import com.github.mdsimmo.noosa.BitmapText;
+import com.github.mdsimmo.noosa.Camera;
+import com.github.mdsimmo.noosa.Image;
+import com.github.mdsimmo.pixeldungeon.Dungeon;
+import com.github.mdsimmo.pixeldungeon.actors.mobs.Mob;
+import com.github.mdsimmo.pixeldungeon.scenes.PixelScene;
 
 public class DangerIndicator extends Tag {
 	

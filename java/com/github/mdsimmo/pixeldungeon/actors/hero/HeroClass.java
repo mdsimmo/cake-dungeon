@@ -15,26 +15,26 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.actors.hero;
+package com.github.mdsimmo.pixeldungeon.actors.hero;
 
-import com.watabou.pixeldungeon.Assets;
-import com.watabou.pixeldungeon.Badges;
-import com.watabou.pixeldungeon.items.TomeOfMastery;
-import com.watabou.pixeldungeon.items.armor.ClothArmor;
-import com.watabou.pixeldungeon.items.bags.Keyring;
-import com.watabou.pixeldungeon.items.food.Food;
-import com.watabou.pixeldungeon.items.potions.PotionOfStrength;
-import com.watabou.pixeldungeon.items.rings.RingOfShadows;
-import com.watabou.pixeldungeon.items.scrolls.ScrollOfIdentify;
-import com.watabou.pixeldungeon.items.scrolls.ScrollOfMagicMapping;
-import com.watabou.pixeldungeon.items.wands.WandOfMagicMissile;
-import com.watabou.pixeldungeon.items.weapon.melee.Dagger;
-import com.watabou.pixeldungeon.items.weapon.melee.Knuckles;
-import com.watabou.pixeldungeon.items.weapon.melee.ShortSword;
-import com.watabou.pixeldungeon.items.weapon.missiles.Dart;
-import com.watabou.pixeldungeon.items.weapon.missiles.Boomerang;
-import com.watabou.pixeldungeon.ui.QuickSlot;
-import com.watabou.utils.Bundle;
+import com.github.mdsimmo.pixeldungeon.Assets;
+import com.github.mdsimmo.pixeldungeon.Badges;
+import com.github.mdsimmo.pixeldungeon.items.TomeOfMastery;
+import com.github.mdsimmo.pixeldungeon.items.armor.ClothArmor;
+import com.github.mdsimmo.pixeldungeon.items.bags.Keyring;
+import com.github.mdsimmo.pixeldungeon.items.food.Food;
+import com.github.mdsimmo.pixeldungeon.items.potions.PotionOfStrength;
+import com.github.mdsimmo.pixeldungeon.items.rings.RingOfShadows;
+import com.github.mdsimmo.pixeldungeon.items.scrolls.ScrollOfIdentify;
+import com.github.mdsimmo.pixeldungeon.items.scrolls.ScrollOfMagicMapping;
+import com.github.mdsimmo.pixeldungeon.items.wands.WandOfMagicMissile;
+import com.github.mdsimmo.pixeldungeon.items.weapon.melee.Dagger;
+import com.github.mdsimmo.pixeldungeon.items.weapon.melee.Knuckles;
+import com.github.mdsimmo.pixeldungeon.items.weapon.melee.ShortSword;
+import com.github.mdsimmo.pixeldungeon.items.weapon.missiles.Dart;
+import com.github.mdsimmo.pixeldungeon.items.weapon.missiles.Boomerang;
+import com.github.mdsimmo.pixeldungeon.ui.QuickSlot;
+import com.github.mdsimmo.utils.Bundle;
 
 public enum HeroClass {
 

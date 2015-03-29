@@ -15,25 +15,25 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.actors.blobs;
+package com.github.mdsimmo.pixeldungeon.actors.blobs;
 
-import com.watabou.pixeldungeon.Journal;
-import com.watabou.pixeldungeon.Journal.Feature;
-import com.watabou.pixeldungeon.effects.BlobEmitter;
-import com.watabou.pixeldungeon.effects.Speck;
-import com.watabou.pixeldungeon.items.Generator;
-import com.watabou.pixeldungeon.items.Item;
-import com.watabou.pixeldungeon.items.Generator.Category;
-import com.watabou.pixeldungeon.items.potions.Potion;
-import com.watabou.pixeldungeon.items.potions.PotionOfMight;
-import com.watabou.pixeldungeon.items.potions.PotionOfStrength;
-import com.watabou.pixeldungeon.items.rings.Ring;
-import com.watabou.pixeldungeon.items.scrolls.Scroll;
-import com.watabou.pixeldungeon.items.scrolls.ScrollOfUpgrade;
-import com.watabou.pixeldungeon.items.scrolls.ScrollOfEnchantment;
-import com.watabou.pixeldungeon.items.wands.Wand;
-import com.watabou.pixeldungeon.items.weapon.melee.*;
-import com.watabou.pixeldungeon.plants.Plant;
+import com.github.mdsimmo.pixeldungeon.Journal;
+import com.github.mdsimmo.pixeldungeon.Journal.Feature;
+import com.github.mdsimmo.pixeldungeon.effects.BlobEmitter;
+import com.github.mdsimmo.pixeldungeon.effects.Speck;
+import com.github.mdsimmo.pixeldungeon.items.Generator;
+import com.github.mdsimmo.pixeldungeon.items.Item;
+import com.github.mdsimmo.pixeldungeon.items.Generator.Category;
+import com.github.mdsimmo.pixeldungeon.items.potions.Potion;
+import com.github.mdsimmo.pixeldungeon.items.potions.PotionOfMight;
+import com.github.mdsimmo.pixeldungeon.items.potions.PotionOfStrength;
+import com.github.mdsimmo.pixeldungeon.items.rings.Ring;
+import com.github.mdsimmo.pixeldungeon.items.scrolls.Scroll;
+import com.github.mdsimmo.pixeldungeon.items.scrolls.ScrollOfUpgrade;
+import com.github.mdsimmo.pixeldungeon.items.scrolls.ScrollOfEnchantment;
+import com.github.mdsimmo.pixeldungeon.items.wands.Wand;
+import com.github.mdsimmo.pixeldungeon.items.weapon.melee.*;
+import com.github.mdsimmo.pixeldungeon.plants.Plant;
 
 public class WaterOfTransmutation extends WellWater {
 	

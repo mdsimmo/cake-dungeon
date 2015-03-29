@@ -15,13 +15,13 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.ui;
+package com.github.mdsimmo.pixeldungeon.ui;
 
-import com.watabou.noosa.Camera;
-import com.watabou.noosa.Image;
-import com.watabou.pixeldungeon.Dungeon;
-import com.watabou.pixeldungeon.DungeonTilemap;
-import com.watabou.utils.PointF;
+import com.github.mdsimmo.noosa.Camera;
+import com.github.mdsimmo.noosa.Image;
+import com.github.mdsimmo.pixeldungeon.Dungeon;
+import com.github.mdsimmo.pixeldungeon.DungeonTilemap;
+import com.github.mdsimmo.utils.PointF;
 
 public class Compass extends Image {
 

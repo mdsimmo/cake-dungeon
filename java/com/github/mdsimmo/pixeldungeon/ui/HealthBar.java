@@ -15,10 +15,10 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.ui;
+package com.github.mdsimmo.pixeldungeon.ui;
 
-import com.watabou.noosa.ColorBlock;
-import com.watabou.noosa.ui.Component;
+import com.github.mdsimmo.noosa.ColorBlock;
+import com.github.mdsimmo.noosa.ui.Component;
 
 public class HealthBar extends Component {
 

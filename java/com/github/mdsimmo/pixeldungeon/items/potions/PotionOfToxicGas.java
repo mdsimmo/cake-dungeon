@@ -15,14 +15,14 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.items.potions;
+package com.github.mdsimmo.pixeldungeon.items.potions;
 
-import com.watabou.noosa.audio.Sample;
-import com.watabou.pixeldungeon.Assets;
-import com.watabou.pixeldungeon.Dungeon;
-import com.watabou.pixeldungeon.actors.blobs.Blob;
-import com.watabou.pixeldungeon.actors.blobs.ToxicGas;
-import com.watabou.pixeldungeon.scenes.GameScene;
+import com.github.mdsimmo.noosa.audio.Sample;
+import com.github.mdsimmo.pixeldungeon.Assets;
+import com.github.mdsimmo.pixeldungeon.Dungeon;
+import com.github.mdsimmo.pixeldungeon.actors.blobs.Blob;
+import com.github.mdsimmo.pixeldungeon.actors.blobs.ToxicGas;
+import com.github.mdsimmo.pixeldungeon.scenes.GameScene;
 
 public class PotionOfToxicGas extends Potion {
 

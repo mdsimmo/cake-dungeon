@@ -15,23 +15,23 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.actors.blobs;
+package com.github.mdsimmo.pixeldungeon.actors.blobs;
 
-import com.watabou.noosa.audio.Sample;
-import com.watabou.pixeldungeon.Assets;
-import com.watabou.pixeldungeon.Dungeon;
-import com.watabou.pixeldungeon.Journal;
-import com.watabou.pixeldungeon.Journal.Feature;
-import com.watabou.pixeldungeon.actors.buffs.Hunger;
-import com.watabou.pixeldungeon.actors.hero.Hero;
-import com.watabou.pixeldungeon.effects.BlobEmitter;
-import com.watabou.pixeldungeon.effects.CellEmitter;
-import com.watabou.pixeldungeon.effects.Speck;
-import com.watabou.pixeldungeon.effects.particles.ShaftParticle;
-import com.watabou.pixeldungeon.items.DewVial;
-import com.watabou.pixeldungeon.items.Item;
-import com.watabou.pixeldungeon.items.potions.PotionOfHealing;
-import com.watabou.pixeldungeon.utils.GLog;
+import com.github.mdsimmo.noosa.audio.Sample;
+import com.github.mdsimmo.pixeldungeon.Assets;
+import com.github.mdsimmo.pixeldungeon.Dungeon;
+import com.github.mdsimmo.pixeldungeon.Journal;
+import com.github.mdsimmo.pixeldungeon.Journal.Feature;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Hunger;
+import com.github.mdsimmo.pixeldungeon.actors.hero.Hero;
+import com.github.mdsimmo.pixeldungeon.effects.BlobEmitter;
+import com.github.mdsimmo.pixeldungeon.effects.CellEmitter;
+import com.github.mdsimmo.pixeldungeon.effects.Speck;
+import com.github.mdsimmo.pixeldungeon.effects.particles.ShaftParticle;
+import com.github.mdsimmo.pixeldungeon.items.DewVial;
+import com.github.mdsimmo.pixeldungeon.items.Item;
+import com.github.mdsimmo.pixeldungeon.items.potions.PotionOfHealing;
+import com.github.mdsimmo.pixeldungeon.utils.GLog;
 
 public class WaterOfHealth extends WellWater {
 

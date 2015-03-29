@@ -15,23 +15,23 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.scenes;
+package com.github.mdsimmo.pixeldungeon.scenes;
 
 import java.io.FileNotFoundException;
 
-import com.watabou.noosa.BitmapText;
-import com.watabou.noosa.Camera;
-import com.watabou.noosa.Game;
-import com.watabou.noosa.audio.Music;
-import com.watabou.noosa.audio.Sample;
-import com.watabou.pixeldungeon.Assets;
-import com.watabou.pixeldungeon.Dungeon;
-import com.watabou.pixeldungeon.Statistics;
-import com.watabou.pixeldungeon.actors.Actor;
-import com.watabou.pixeldungeon.items.Generator;
-import com.watabou.pixeldungeon.levels.Level;
-import com.watabou.pixeldungeon.windows.WndError;
-import com.watabou.pixeldungeon.windows.WndStory;
+import com.github.mdsimmo.noosa.BitmapText;
+import com.github.mdsimmo.noosa.Camera;
+import com.github.mdsimmo.noosa.Game;
+import com.github.mdsimmo.noosa.audio.Music;
+import com.github.mdsimmo.noosa.audio.Sample;
+import com.github.mdsimmo.pixeldungeon.Assets;
+import com.github.mdsimmo.pixeldungeon.Dungeon;
+import com.github.mdsimmo.pixeldungeon.Statistics;
+import com.github.mdsimmo.pixeldungeon.actors.Actor;
+import com.github.mdsimmo.pixeldungeon.items.Generator;
+import com.github.mdsimmo.pixeldungeon.levels.Level;
+import com.github.mdsimmo.pixeldungeon.windows.WndError;
+import com.github.mdsimmo.pixeldungeon.windows.WndStory;
 
 public class InterlevelScene extends PixelScene {
 

@@ -15,26 +15,26 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.windows;
+package com.github.mdsimmo.pixeldungeon.windows;
 
 import java.util.Locale;
 
-import com.watabou.gltextures.SmartTexture;
-import com.watabou.gltextures.TextureCache;
-import com.watabou.noosa.BitmapText;
-import com.watabou.noosa.Group;
-import com.watabou.noosa.Image;
-import com.watabou.noosa.TextureFilm;
-import com.watabou.pixeldungeon.Assets;
-import com.watabou.pixeldungeon.Dungeon;
-import com.watabou.pixeldungeon.Statistics;
-import com.watabou.pixeldungeon.actors.buffs.Buff;
-import com.watabou.pixeldungeon.actors.hero.Hero;
-import com.watabou.pixeldungeon.scenes.GameScene;
-import com.watabou.pixeldungeon.scenes.PixelScene;
-import com.watabou.pixeldungeon.ui.BuffIndicator;
-import com.watabou.pixeldungeon.ui.RedButton;
-import com.watabou.pixeldungeon.utils.Utils;
+import com.github.mdsimmo.gltextures.SmartTexture;
+import com.github.mdsimmo.gltextures.TextureCache;
+import com.github.mdsimmo.noosa.BitmapText;
+import com.github.mdsimmo.noosa.Group;
+import com.github.mdsimmo.noosa.Image;
+import com.github.mdsimmo.noosa.TextureFilm;
+import com.github.mdsimmo.pixeldungeon.Assets;
+import com.github.mdsimmo.pixeldungeon.Dungeon;
+import com.github.mdsimmo.pixeldungeon.Statistics;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Buff;
+import com.github.mdsimmo.pixeldungeon.actors.hero.Hero;
+import com.github.mdsimmo.pixeldungeon.scenes.GameScene;
+import com.github.mdsimmo.pixeldungeon.scenes.PixelScene;
+import com.github.mdsimmo.pixeldungeon.ui.BuffIndicator;
+import com.github.mdsimmo.pixeldungeon.ui.RedButton;
+import com.github.mdsimmo.pixeldungeon.utils.Utils;
 
 public class WndHero extends WndTabbed {
 	

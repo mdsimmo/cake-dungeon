@@ -15,12 +15,12 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.items.keys;
+package com.github.mdsimmo.pixeldungeon.items.keys;
 
-import com.watabou.pixeldungeon.Dungeon;
-import com.watabou.pixeldungeon.items.bags.Bag;
-import com.watabou.pixeldungeon.sprites.ItemSpriteSheet;
-import com.watabou.pixeldungeon.utils.Utils;
+import com.github.mdsimmo.pixeldungeon.Dungeon;
+import com.github.mdsimmo.pixeldungeon.items.bags.Bag;
+import com.github.mdsimmo.pixeldungeon.sprites.ItemSpriteSheet;
+import com.github.mdsimmo.pixeldungeon.utils.Utils;
 
 public class IronKey extends Key {
 

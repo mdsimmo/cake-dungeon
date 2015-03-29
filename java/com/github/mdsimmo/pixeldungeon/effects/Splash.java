@@ -15,14 +15,14 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.effects;
+package com.github.mdsimmo.pixeldungeon.effects;
 
-import com.watabou.noosa.particles.Emitter;
-import com.watabou.noosa.particles.PixelParticle;
-import com.watabou.pixeldungeon.DungeonTilemap;
-import com.watabou.pixeldungeon.scenes.GameScene;
-import com.watabou.utils.PointF;
-import com.watabou.utils.Random;
+import com.github.mdsimmo.noosa.particles.Emitter;
+import com.github.mdsimmo.noosa.particles.PixelParticle;
+import com.github.mdsimmo.pixeldungeon.DungeonTilemap;
+import com.github.mdsimmo.pixeldungeon.scenes.GameScene;
+import com.github.mdsimmo.utils.PointF;
+import com.github.mdsimmo.utils.Random;
 
 public class Splash {
 	

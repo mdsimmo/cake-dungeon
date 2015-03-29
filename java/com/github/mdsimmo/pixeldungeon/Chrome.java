@@ -15,9 +15,9 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon;
+package com.github.mdsimmo.pixeldungeon;
 
-import com.watabou.noosa.NinePatch;
+import com.github.mdsimmo.noosa.NinePatch;
 
 public class Chrome {
 

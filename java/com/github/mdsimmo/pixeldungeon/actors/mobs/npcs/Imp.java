@@ -15,28 +15,28 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.actors.mobs.npcs;
+package com.github.mdsimmo.pixeldungeon.actors.mobs.npcs;
 
-import com.watabou.pixeldungeon.Dungeon;
-import com.watabou.pixeldungeon.Journal;
-import com.watabou.pixeldungeon.actors.Actor;
-import com.watabou.pixeldungeon.actors.Char;
-import com.watabou.pixeldungeon.actors.buffs.Buff;
-import com.watabou.pixeldungeon.actors.mobs.Golem;
-import com.watabou.pixeldungeon.actors.mobs.Mob;
-import com.watabou.pixeldungeon.actors.mobs.Monk;
-import com.watabou.pixeldungeon.items.Generator;
-import com.watabou.pixeldungeon.items.quest.DwarfToken;
-import com.watabou.pixeldungeon.items.rings.Ring;
-import com.watabou.pixeldungeon.levels.CityLevel;
-import com.watabou.pixeldungeon.levels.Room;
-import com.watabou.pixeldungeon.scenes.GameScene;
-import com.watabou.pixeldungeon.sprites.ImpSprite;
-import com.watabou.pixeldungeon.utils.Utils;
-import com.watabou.pixeldungeon.windows.WndImp;
-import com.watabou.pixeldungeon.windows.WndQuest;
-import com.watabou.utils.Bundle;
-import com.watabou.utils.Random;
+import com.github.mdsimmo.pixeldungeon.Dungeon;
+import com.github.mdsimmo.pixeldungeon.Journal;
+import com.github.mdsimmo.pixeldungeon.actors.Actor;
+import com.github.mdsimmo.pixeldungeon.actors.Char;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Buff;
+import com.github.mdsimmo.pixeldungeon.actors.mobs.Golem;
+import com.github.mdsimmo.pixeldungeon.actors.mobs.Mob;
+import com.github.mdsimmo.pixeldungeon.actors.mobs.Monk;
+import com.github.mdsimmo.pixeldungeon.items.Generator;
+import com.github.mdsimmo.pixeldungeon.items.quest.DwarfToken;
+import com.github.mdsimmo.pixeldungeon.items.rings.Ring;
+import com.github.mdsimmo.pixeldungeon.levels.CityLevel;
+import com.github.mdsimmo.pixeldungeon.levels.Room;
+import com.github.mdsimmo.pixeldungeon.scenes.GameScene;
+import com.github.mdsimmo.pixeldungeon.sprites.ImpSprite;
+import com.github.mdsimmo.pixeldungeon.utils.Utils;
+import com.github.mdsimmo.pixeldungeon.windows.WndImp;
+import com.github.mdsimmo.pixeldungeon.windows.WndQuest;
+import com.github.mdsimmo.utils.Bundle;
+import com.github.mdsimmo.utils.Random;
 
 public class Imp extends NPC {
 

@@ -15,12 +15,12 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.actors.mobs;
+package com.github.mdsimmo.pixeldungeon.actors.mobs;
 
-import com.watabou.pixeldungeon.Badges;
-import com.watabou.pixeldungeon.actors.Char;
-import com.watabou.pixeldungeon.sprites.AcidicSprite;
-import com.watabou.utils.Random;
+import com.github.mdsimmo.pixeldungeon.Badges;
+import com.github.mdsimmo.pixeldungeon.actors.Char;
+import com.github.mdsimmo.pixeldungeon.sprites.AcidicSprite;
+import com.github.mdsimmo.utils.Random;
 
 public class Acidic extends Scorpio {
 

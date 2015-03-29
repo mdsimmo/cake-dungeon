@@ -15,33 +15,33 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.actors.mobs;
+package com.github.mdsimmo.pixeldungeon.actors.mobs;
 
 import java.util.HashSet;
 
-import com.watabou.noosa.audio.Sample;
-import com.watabou.pixeldungeon.Assets;
-import com.watabou.pixeldungeon.Badges;
-import com.watabou.pixeldungeon.Statistics;
-import com.watabou.pixeldungeon.Badges.Badge;
-import com.watabou.pixeldungeon.Dungeon;
-import com.watabou.pixeldungeon.actors.Actor;
-import com.watabou.pixeldungeon.actors.Char;
-import com.watabou.pixeldungeon.actors.blobs.ToxicGas;
-import com.watabou.pixeldungeon.actors.buffs.Poison;
-import com.watabou.pixeldungeon.effects.CellEmitter;
-import com.watabou.pixeldungeon.effects.Speck;
-import com.watabou.pixeldungeon.items.TomeOfMastery;
-import com.watabou.pixeldungeon.items.keys.SkeletonKey;
-import com.watabou.pixeldungeon.items.scrolls.ScrollOfMagicMapping;
-import com.watabou.pixeldungeon.items.scrolls.ScrollOfPsionicBlast;
-import com.watabou.pixeldungeon.items.weapon.enchantments.Death;
-import com.watabou.pixeldungeon.levels.Level;
-import com.watabou.pixeldungeon.levels.Terrain;
-import com.watabou.pixeldungeon.mechanics.Ballistica;
-import com.watabou.pixeldungeon.scenes.GameScene;
-import com.watabou.pixeldungeon.sprites.TenguSprite;
-import com.watabou.utils.Random;
+import com.github.mdsimmo.noosa.audio.Sample;
+import com.github.mdsimmo.pixeldungeon.Assets;
+import com.github.mdsimmo.pixeldungeon.Badges;
+import com.github.mdsimmo.pixeldungeon.Statistics;
+import com.github.mdsimmo.pixeldungeon.Badges.Badge;
+import com.github.mdsimmo.pixeldungeon.Dungeon;
+import com.github.mdsimmo.pixeldungeon.actors.Actor;
+import com.github.mdsimmo.pixeldungeon.actors.Char;
+import com.github.mdsimmo.pixeldungeon.actors.blobs.ToxicGas;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Poison;
+import com.github.mdsimmo.pixeldungeon.effects.CellEmitter;
+import com.github.mdsimmo.pixeldungeon.effects.Speck;
+import com.github.mdsimmo.pixeldungeon.items.TomeOfMastery;
+import com.github.mdsimmo.pixeldungeon.items.keys.SkeletonKey;
+import com.github.mdsimmo.pixeldungeon.items.scrolls.ScrollOfMagicMapping;
+import com.github.mdsimmo.pixeldungeon.items.scrolls.ScrollOfPsionicBlast;
+import com.github.mdsimmo.pixeldungeon.items.weapon.enchantments.Death;
+import com.github.mdsimmo.pixeldungeon.levels.Level;
+import com.github.mdsimmo.pixeldungeon.levels.Terrain;
+import com.github.mdsimmo.pixeldungeon.mechanics.Ballistica;
+import com.github.mdsimmo.pixeldungeon.scenes.GameScene;
+import com.github.mdsimmo.pixeldungeon.sprites.TenguSprite;
+import com.github.mdsimmo.utils.Random;
 
 public class Tengu extends Mob {
 

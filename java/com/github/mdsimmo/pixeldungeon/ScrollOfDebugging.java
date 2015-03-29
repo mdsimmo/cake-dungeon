@@ -1,10 +1,10 @@
-package com.watabou.pixeldungeon;
+package com.github.mdsimmo.pixeldungeon;
 
 import java.util.ArrayList;
 
-import com.watabou.pixeldungeon.actors.hero.Hero;
-import com.watabou.pixeldungeon.items.Item; 
-import com.watabou.pixeldungeon.items.scrolls.ScrollOfEnchantment;
+import com.github.mdsimmo.pixeldungeon.actors.hero.Hero;
+import com.github.mdsimmo.pixeldungeon.items.Item;
+import com.github.mdsimmo.pixeldungeon.items.scrolls.ScrollOfEnchantment;
 
 public class ScrollOfDebugging extends Item {
 

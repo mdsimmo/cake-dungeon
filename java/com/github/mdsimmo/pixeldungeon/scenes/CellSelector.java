@@ -15,14 +15,14 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.scenes;
+package com.github.mdsimmo.pixeldungeon.scenes;
 
-import com.watabou.input.Touchscreen.Touch;
-import com.watabou.noosa.TouchArea;
-import com.watabou.pixeldungeon.DungeonTilemap;
-import com.watabou.pixeldungeon.PixelDungeon;
-import com.watabou.utils.GameMath;
-import com.watabou.utils.PointF;
+import com.github.mdsimmo.input.Touchscreen.Touch;
+import com.github.mdsimmo.noosa.TouchArea;
+import com.github.mdsimmo.pixeldungeon.DungeonTilemap;
+import com.github.mdsimmo.pixeldungeon.PixelDungeon;
+import com.github.mdsimmo.utils.GameMath;
+import com.github.mdsimmo.utils.PointF;
 
 public class CellSelector extends TouchArea {
 

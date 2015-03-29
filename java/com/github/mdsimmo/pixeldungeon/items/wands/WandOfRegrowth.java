@@ -15,20 +15,20 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.items.wands;
+package com.github.mdsimmo.pixeldungeon.items.wands;
 
-import com.watabou.noosa.audio.Sample;
-import com.watabou.pixeldungeon.Assets;
-import com.watabou.pixeldungeon.Dungeon;
-import com.watabou.pixeldungeon.actors.blobs.Blob;
-import com.watabou.pixeldungeon.actors.blobs.Regrowth;
-import com.watabou.pixeldungeon.effects.MagicMissile;
-import com.watabou.pixeldungeon.levels.Level;
-import com.watabou.pixeldungeon.levels.Terrain;
-import com.watabou.pixeldungeon.mechanics.Ballistica;
-import com.watabou.pixeldungeon.scenes.GameScene;
-import com.watabou.pixeldungeon.utils.GLog;
-import com.watabou.utils.Callback;
+import com.github.mdsimmo.noosa.audio.Sample;
+import com.github.mdsimmo.pixeldungeon.Assets;
+import com.github.mdsimmo.pixeldungeon.Dungeon;
+import com.github.mdsimmo.pixeldungeon.actors.blobs.Blob;
+import com.github.mdsimmo.pixeldungeon.actors.blobs.Regrowth;
+import com.github.mdsimmo.pixeldungeon.effects.MagicMissile;
+import com.github.mdsimmo.pixeldungeon.levels.Level;
+import com.github.mdsimmo.pixeldungeon.levels.Terrain;
+import com.github.mdsimmo.pixeldungeon.mechanics.Ballistica;
+import com.github.mdsimmo.pixeldungeon.scenes.GameScene;
+import com.github.mdsimmo.pixeldungeon.utils.GLog;
+import com.github.mdsimmo.utils.Callback;
 
 public class WandOfRegrowth extends Wand {
 

@@ -15,15 +15,15 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.ui;
+package com.github.mdsimmo.pixeldungeon.ui;
 
-import com.watabou.noosa.Game;
-import com.watabou.noosa.Image;
-import com.watabou.noosa.audio.Sample;
-import com.watabou.noosa.ui.Button;
-import com.watabou.pixeldungeon.Assets;
-import com.watabou.pixeldungeon.PixelDungeon;
-import com.watabou.pixeldungeon.scenes.TitleScene;
+import com.github.mdsimmo.noosa.Game;
+import com.github.mdsimmo.noosa.Image;
+import com.github.mdsimmo.noosa.audio.Sample;
+import com.github.mdsimmo.noosa.ui.Button;
+import com.github.mdsimmo.pixeldungeon.Assets;
+import com.github.mdsimmo.pixeldungeon.PixelDungeon;
+import com.github.mdsimmo.pixeldungeon.scenes.TitleScene;
 
 public class ExitButton extends Button {
 	

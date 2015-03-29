@@ -15,18 +15,18 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.actors.blobs;
+package com.github.mdsimmo.pixeldungeon.actors.blobs;
 
-import com.watabou.pixeldungeon.Dungeon;
-import com.watabou.pixeldungeon.Journal;
-import com.watabou.pixeldungeon.actors.buffs.Buff;
-import com.watabou.pixeldungeon.actors.buffs.Shadows;
-import com.watabou.pixeldungeon.actors.hero.Hero;
-import com.watabou.pixeldungeon.effects.BlobEmitter;
-import com.watabou.pixeldungeon.effects.particles.ShaftParticle;
-import com.watabou.pixeldungeon.levels.Level;
-import com.watabou.pixeldungeon.levels.Terrain;
-import com.watabou.pixeldungeon.scenes.GameScene;
+import com.github.mdsimmo.pixeldungeon.Dungeon;
+import com.github.mdsimmo.pixeldungeon.Journal;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Buff;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Shadows;
+import com.github.mdsimmo.pixeldungeon.actors.hero.Hero;
+import com.github.mdsimmo.pixeldungeon.effects.BlobEmitter;
+import com.github.mdsimmo.pixeldungeon.effects.particles.ShaftParticle;
+import com.github.mdsimmo.pixeldungeon.levels.Level;
+import com.github.mdsimmo.pixeldungeon.levels.Terrain;
+import com.github.mdsimmo.pixeldungeon.scenes.GameScene;
 
 public class Foliage extends Blob {
 	

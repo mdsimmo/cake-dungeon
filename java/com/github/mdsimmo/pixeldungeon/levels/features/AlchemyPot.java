@@ -15,12 +15,12 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.levels.features;
+package com.github.mdsimmo.pixeldungeon.levels.features;
 
-import com.watabou.pixeldungeon.actors.hero.Hero;
-import com.watabou.pixeldungeon.items.Item;
-import com.watabou.pixeldungeon.scenes.GameScene;
-import com.watabou.pixeldungeon.windows.WndBag;
+import com.github.mdsimmo.pixeldungeon.actors.hero.Hero;
+import com.github.mdsimmo.pixeldungeon.items.Item;
+import com.github.mdsimmo.pixeldungeon.scenes.GameScene;
+import com.github.mdsimmo.pixeldungeon.windows.WndBag;
 
 public class AlchemyPot {
 

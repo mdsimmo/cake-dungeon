@@ -15,16 +15,16 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.windows;
+package com.github.mdsimmo.pixeldungeon.windows;
 
-import com.watabou.noosa.BitmapText;
-import com.watabou.noosa.BitmapTextMultiline;
-import com.watabou.noosa.Group;
-import com.watabou.pixeldungeon.Badges;
-import com.watabou.pixeldungeon.actors.hero.HeroClass;
-import com.watabou.pixeldungeon.actors.hero.HeroSubClass;
-import com.watabou.pixeldungeon.scenes.PixelScene;
-import com.watabou.pixeldungeon.utils.Utils;
+import com.github.mdsimmo.noosa.BitmapText;
+import com.github.mdsimmo.noosa.BitmapTextMultiline;
+import com.github.mdsimmo.noosa.Group;
+import com.github.mdsimmo.pixeldungeon.Badges;
+import com.github.mdsimmo.pixeldungeon.actors.hero.HeroClass;
+import com.github.mdsimmo.pixeldungeon.actors.hero.HeroSubClass;
+import com.github.mdsimmo.pixeldungeon.scenes.PixelScene;
+import com.github.mdsimmo.pixeldungeon.utils.Utils;
 
 public class WndClass extends WndTabbed {
 	

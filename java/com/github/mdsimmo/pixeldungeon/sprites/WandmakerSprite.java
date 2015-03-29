@@ -15,19 +15,19 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.sprites;
+package com.github.mdsimmo.pixeldungeon.sprites;
 
 import javax.microedition.khronos.opengles.GL10;
 
 import android.opengl.GLES20;
 
-import com.watabou.noosa.Game;
-import com.watabou.noosa.TextureFilm;
-import com.watabou.pixeldungeon.Assets;
-import com.watabou.pixeldungeon.actors.Char;
-import com.watabou.pixeldungeon.effects.Halo;
-import com.watabou.pixeldungeon.effects.particles.ElmoParticle;
-import com.watabou.utils.PointF;
+import com.github.mdsimmo.noosa.Game;
+import com.github.mdsimmo.noosa.TextureFilm;
+import com.github.mdsimmo.pixeldungeon.Assets;
+import com.github.mdsimmo.pixeldungeon.actors.Char;
+import com.github.mdsimmo.pixeldungeon.effects.Halo;
+import com.github.mdsimmo.pixeldungeon.effects.particles.ElmoParticle;
+import com.github.mdsimmo.utils.PointF;
 
 public class WandmakerSprite extends MobSprite {
 	

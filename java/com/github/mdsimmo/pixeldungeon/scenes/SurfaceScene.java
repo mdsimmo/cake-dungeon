@@ -15,34 +15,34 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.scenes;
+package com.github.mdsimmo.pixeldungeon.scenes;
 
 import java.nio.FloatBuffer;
 
-import com.watabou.gltextures.Gradient;
-import com.watabou.gltextures.SmartTexture;
-import com.watabou.glwrap.Matrix;
-import com.watabou.glwrap.Quad;
-import com.watabou.input.Touchscreen.Touch;
-import com.watabou.noosa.Camera;
-import com.watabou.noosa.ColorBlock;
-import com.watabou.noosa.Game;
-import com.watabou.noosa.Group;
-import com.watabou.noosa.Image;
-import com.watabou.noosa.MovieClip;
-import com.watabou.noosa.NoosaScript;
-import com.watabou.noosa.TextureFilm;
-import com.watabou.noosa.TouchArea;
-import com.watabou.noosa.Visual;
-import com.watabou.noosa.audio.Music;
-import com.watabou.pixeldungeon.Assets;
-import com.watabou.pixeldungeon.Badges;
-import com.watabou.pixeldungeon.Dungeon;
-import com.watabou.pixeldungeon.actors.hero.HeroClass;
-import com.watabou.pixeldungeon.ui.Archs;
-import com.watabou.pixeldungeon.ui.RedButton;
-import com.watabou.utils.Point;
-import com.watabou.utils.Random;
+import com.github.mdsimmo.gltextures.Gradient;
+import com.github.mdsimmo.gltextures.SmartTexture;
+import com.github.mdsimmo.glwrap.Matrix;
+import com.github.mdsimmo.glwrap.Quad;
+import com.github.mdsimmo.input.Touchscreen.Touch;
+import com.github.mdsimmo.noosa.Camera;
+import com.github.mdsimmo.noosa.ColorBlock;
+import com.github.mdsimmo.noosa.Game;
+import com.github.mdsimmo.noosa.Group;
+import com.github.mdsimmo.noosa.Image;
+import com.github.mdsimmo.noosa.MovieClip;
+import com.github.mdsimmo.noosa.NoosaScript;
+import com.github.mdsimmo.noosa.TextureFilm;
+import com.github.mdsimmo.noosa.TouchArea;
+import com.github.mdsimmo.noosa.Visual;
+import com.github.mdsimmo.noosa.audio.Music;
+import com.github.mdsimmo.pixeldungeon.Assets;
+import com.github.mdsimmo.pixeldungeon.Badges;
+import com.github.mdsimmo.pixeldungeon.Dungeon;
+import com.github.mdsimmo.pixeldungeon.actors.hero.HeroClass;
+import com.github.mdsimmo.pixeldungeon.ui.Archs;
+import com.github.mdsimmo.pixeldungeon.ui.RedButton;
+import com.github.mdsimmo.utils.Point;
+import com.github.mdsimmo.utils.Random;
 
 public class SurfaceScene extends PixelScene {
 	

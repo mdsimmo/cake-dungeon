@@ -15,13 +15,13 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.effects;
+package com.github.mdsimmo.pixeldungeon.effects;
 
-import com.watabou.noosa.Game;
-import com.watabou.noosa.Gizmo;
-import com.watabou.noosa.audio.Sample;
-import com.watabou.pixeldungeon.Assets;
-import com.watabou.pixeldungeon.sprites.CharSprite;
+import com.github.mdsimmo.noosa.Game;
+import com.github.mdsimmo.noosa.Gizmo;
+import com.github.mdsimmo.noosa.audio.Sample;
+import com.github.mdsimmo.pixeldungeon.Assets;
+import com.github.mdsimmo.pixeldungeon.sprites.CharSprite;
 
 public class IceBlock extends Gizmo {
 	

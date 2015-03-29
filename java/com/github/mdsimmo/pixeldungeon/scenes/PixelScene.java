@@ -15,26 +15,26 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.scenes;
+package com.github.mdsimmo.pixeldungeon.scenes;
 
 import javax.microedition.khronos.opengles.GL10;
 
 import android.opengl.GLES20;
 
-import com.watabou.input.Touchscreen;
-import com.watabou.noosa.BitmapText;
-import com.watabou.noosa.BitmapText.Font;
-import com.watabou.noosa.BitmapTextMultiline;
-import com.watabou.noosa.Camera;
-import com.watabou.noosa.ColorBlock;
-import com.watabou.noosa.Game;
-import com.watabou.noosa.Scene;
-import com.watabou.noosa.Visual;
-import com.watabou.pixeldungeon.Assets;
-import com.watabou.pixeldungeon.Badges;
-import com.watabou.pixeldungeon.PixelDungeon;
-import com.watabou.pixeldungeon.effects.BadgeBanner;
-import com.watabou.utils.BitmapCache;
+import com.github.mdsimmo.input.Touchscreen;
+import com.github.mdsimmo.noosa.BitmapText;
+import com.github.mdsimmo.noosa.BitmapText.Font;
+import com.github.mdsimmo.noosa.BitmapTextMultiline;
+import com.github.mdsimmo.noosa.Camera;
+import com.github.mdsimmo.noosa.ColorBlock;
+import com.github.mdsimmo.noosa.Game;
+import com.github.mdsimmo.noosa.Scene;
+import com.github.mdsimmo.noosa.Visual;
+import com.github.mdsimmo.pixeldungeon.Assets;
+import com.github.mdsimmo.pixeldungeon.Badges;
+import com.github.mdsimmo.pixeldungeon.PixelDungeon;
+import com.github.mdsimmo.pixeldungeon.effects.BadgeBanner;
+import com.github.mdsimmo.utils.BitmapCache;
 
 public class PixelScene extends Scene {
 	

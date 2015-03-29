@@ -15,23 +15,23 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.actors.mobs;
+package com.github.mdsimmo.pixeldungeon.actors.mobs;
 
 import java.util.HashSet;
 
-import com.watabou.pixeldungeon.Dungeon;
-import com.watabou.pixeldungeon.actors.Char;
-import com.watabou.pixeldungeon.actors.buffs.Buff;
-import com.watabou.pixeldungeon.actors.buffs.Cripple;
-import com.watabou.pixeldungeon.actors.buffs.Light;
-import com.watabou.pixeldungeon.actors.buffs.Poison;
-import com.watabou.pixeldungeon.items.food.MysteryMeat;
-import com.watabou.pixeldungeon.items.potions.PotionOfHealing;
-import com.watabou.pixeldungeon.items.weapon.enchantments.Leech;
-import com.watabou.pixeldungeon.levels.Level;
-import com.watabou.pixeldungeon.mechanics.Ballistica;
-import com.watabou.pixeldungeon.sprites.ScorpioSprite;
-import com.watabou.utils.Random;
+import com.github.mdsimmo.pixeldungeon.Dungeon;
+import com.github.mdsimmo.pixeldungeon.actors.Char;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Buff;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Cripple;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Light;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Poison;
+import com.github.mdsimmo.pixeldungeon.items.food.MysteryMeat;
+import com.github.mdsimmo.pixeldungeon.items.potions.PotionOfHealing;
+import com.github.mdsimmo.pixeldungeon.items.weapon.enchantments.Leech;
+import com.github.mdsimmo.pixeldungeon.levels.Level;
+import com.github.mdsimmo.pixeldungeon.mechanics.Ballistica;
+import com.github.mdsimmo.pixeldungeon.sprites.ScorpioSprite;
+import com.github.mdsimmo.utils.Random;
 
 public class Scorpio extends Mob {
 	

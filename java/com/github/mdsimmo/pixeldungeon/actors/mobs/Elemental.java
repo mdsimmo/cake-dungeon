@@ -15,21 +15,21 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.actors.mobs;
+package com.github.mdsimmo.pixeldungeon.actors.mobs;
 
 import java.util.HashSet;
 
-import com.watabou.pixeldungeon.actors.Char;
-import com.watabou.pixeldungeon.actors.buffs.Buff;
-import com.watabou.pixeldungeon.actors.buffs.Burning;
-import com.watabou.pixeldungeon.actors.buffs.Frost;
-import com.watabou.pixeldungeon.effects.Speck;
-import com.watabou.pixeldungeon.items.potions.PotionOfLiquidFlame;
-import com.watabou.pixeldungeon.items.scrolls.ScrollOfPsionicBlast;
-import com.watabou.pixeldungeon.items.wands.WandOfFirebolt;
-import com.watabou.pixeldungeon.items.weapon.enchantments.Fire;
-import com.watabou.pixeldungeon.sprites.ElementalSprite;
-import com.watabou.utils.Random;
+import com.github.mdsimmo.pixeldungeon.actors.Char;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Buff;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Burning;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Frost;
+import com.github.mdsimmo.pixeldungeon.effects.Speck;
+import com.github.mdsimmo.pixeldungeon.items.potions.PotionOfLiquidFlame;
+import com.github.mdsimmo.pixeldungeon.items.scrolls.ScrollOfPsionicBlast;
+import com.github.mdsimmo.pixeldungeon.items.wands.WandOfFirebolt;
+import com.github.mdsimmo.pixeldungeon.items.weapon.enchantments.Fire;
+import com.github.mdsimmo.pixeldungeon.sprites.ElementalSprite;
+import com.github.mdsimmo.utils.Random;
 
 public class Elemental extends Mob {
 

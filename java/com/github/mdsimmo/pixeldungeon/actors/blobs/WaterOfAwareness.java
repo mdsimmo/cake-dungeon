@@ -15,26 +15,26 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.actors.blobs;
+package com.github.mdsimmo.pixeldungeon.actors.blobs;
 
-import com.watabou.noosa.audio.Sample;
-import com.watabou.pixeldungeon.Assets;
-import com.watabou.pixeldungeon.Badges;
-import com.watabou.pixeldungeon.Dungeon;
-import com.watabou.pixeldungeon.DungeonTilemap;
-import com.watabou.pixeldungeon.Journal;
-import com.watabou.pixeldungeon.Journal.Feature;
-import com.watabou.pixeldungeon.actors.buffs.Awareness;
-import com.watabou.pixeldungeon.actors.buffs.Buff;
-import com.watabou.pixeldungeon.actors.hero.Hero;
-import com.watabou.pixeldungeon.effects.BlobEmitter;
-import com.watabou.pixeldungeon.effects.Identification;
-import com.watabou.pixeldungeon.effects.Speck;
-import com.watabou.pixeldungeon.items.Item;
-import com.watabou.pixeldungeon.levels.Level;
-import com.watabou.pixeldungeon.levels.Terrain;
-import com.watabou.pixeldungeon.scenes.GameScene;
-import com.watabou.pixeldungeon.utils.GLog;
+import com.github.mdsimmo.noosa.audio.Sample;
+import com.github.mdsimmo.pixeldungeon.Assets;
+import com.github.mdsimmo.pixeldungeon.Badges;
+import com.github.mdsimmo.pixeldungeon.Dungeon;
+import com.github.mdsimmo.pixeldungeon.DungeonTilemap;
+import com.github.mdsimmo.pixeldungeon.Journal;
+import com.github.mdsimmo.pixeldungeon.Journal.Feature;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Awareness;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Buff;
+import com.github.mdsimmo.pixeldungeon.actors.hero.Hero;
+import com.github.mdsimmo.pixeldungeon.effects.BlobEmitter;
+import com.github.mdsimmo.pixeldungeon.effects.Identification;
+import com.github.mdsimmo.pixeldungeon.effects.Speck;
+import com.github.mdsimmo.pixeldungeon.items.Item;
+import com.github.mdsimmo.pixeldungeon.levels.Level;
+import com.github.mdsimmo.pixeldungeon.levels.Terrain;
+import com.github.mdsimmo.pixeldungeon.scenes.GameScene;
+import com.github.mdsimmo.pixeldungeon.utils.GLog;
 
 public class WaterOfAwareness extends WellWater {
 

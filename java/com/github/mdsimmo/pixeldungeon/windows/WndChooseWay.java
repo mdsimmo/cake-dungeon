@@ -15,16 +15,16 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.windows;
+package com.github.mdsimmo.pixeldungeon.windows;
 
-import com.watabou.noosa.BitmapTextMultiline;
-import com.watabou.pixeldungeon.actors.hero.HeroSubClass;
-import com.watabou.pixeldungeon.items.TomeOfMastery;
-import com.watabou.pixeldungeon.scenes.PixelScene;
-import com.watabou.pixeldungeon.sprites.ItemSprite;
-import com.watabou.pixeldungeon.ui.RedButton;
-import com.watabou.pixeldungeon.ui.Window;
-import com.watabou.pixeldungeon.utils.Utils;
+import com.github.mdsimmo.noosa.BitmapTextMultiline;
+import com.github.mdsimmo.pixeldungeon.actors.hero.HeroSubClass;
+import com.github.mdsimmo.pixeldungeon.items.TomeOfMastery;
+import com.github.mdsimmo.pixeldungeon.scenes.PixelScene;
+import com.github.mdsimmo.pixeldungeon.sprites.ItemSprite;
+import com.github.mdsimmo.pixeldungeon.ui.RedButton;
+import com.github.mdsimmo.pixeldungeon.ui.Window;
+import com.github.mdsimmo.pixeldungeon.utils.Utils;
 
 public class WndChooseWay extends Window {
 	

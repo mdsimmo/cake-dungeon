@@ -15,11 +15,11 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.effects;
+package com.github.mdsimmo.pixeldungeon.effects;
 
-import com.watabou.gltextures.SmartTexture;
-import com.watabou.noosa.NinePatch;
-import com.watabou.pixeldungeon.Assets;
+import com.github.mdsimmo.gltextures.SmartTexture;
+import com.github.mdsimmo.noosa.NinePatch;
+import com.github.mdsimmo.pixeldungeon.Assets;
 
 public class ShadowBox extends NinePatch {
 

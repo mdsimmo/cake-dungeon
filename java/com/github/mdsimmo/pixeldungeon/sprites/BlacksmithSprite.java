@@ -15,16 +15,16 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.sprites;
+package com.github.mdsimmo.pixeldungeon.sprites;
 
-import com.watabou.noosa.TextureFilm;
-import com.watabou.noosa.audio.Sample;
-import com.watabou.noosa.particles.Emitter;
-import com.watabou.pixeldungeon.Assets;
-import com.watabou.pixeldungeon.Dungeon;
-import com.watabou.pixeldungeon.actors.Char;
-import com.watabou.pixeldungeon.effects.Speck;
-import com.watabou.pixeldungeon.levels.Level;
+import com.github.mdsimmo.noosa.TextureFilm;
+import com.github.mdsimmo.noosa.audio.Sample;
+import com.github.mdsimmo.noosa.particles.Emitter;
+import com.github.mdsimmo.pixeldungeon.Assets;
+import com.github.mdsimmo.pixeldungeon.Dungeon;
+import com.github.mdsimmo.pixeldungeon.actors.Char;
+import com.github.mdsimmo.pixeldungeon.effects.Speck;
+import com.github.mdsimmo.pixeldungeon.levels.Level;
 
 public class BlacksmithSprite extends MobSprite {
 	

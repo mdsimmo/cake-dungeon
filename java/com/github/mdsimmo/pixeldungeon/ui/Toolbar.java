@@ -15,34 +15,34 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.ui;
+package com.github.mdsimmo.pixeldungeon.ui;
 
-import com.watabou.noosa.Game;
-import com.watabou.noosa.Gizmo;
-import com.watabou.noosa.Image;
-import com.watabou.noosa.ui.Button;
-import com.watabou.noosa.ui.Component;
-import com.watabou.pixeldungeon.Assets;
-import com.watabou.pixeldungeon.Dungeon;
-import com.watabou.pixeldungeon.DungeonTilemap;
-import com.watabou.pixeldungeon.actors.Actor;
-import com.watabou.pixeldungeon.actors.mobs.Mob;
-import com.watabou.pixeldungeon.items.Heap;
-import com.watabou.pixeldungeon.items.Item;
-import com.watabou.pixeldungeon.levels.Level;
-import com.watabou.pixeldungeon.plants.Plant;
-import com.watabou.pixeldungeon.scenes.CellSelector;
-import com.watabou.pixeldungeon.scenes.GameScene;
-import com.watabou.pixeldungeon.sprites.ItemSprite;
-import com.watabou.pixeldungeon.windows.WndCatalogus;
-import com.watabou.pixeldungeon.windows.WndHero;
-import com.watabou.pixeldungeon.windows.WndInfoCell;
-import com.watabou.pixeldungeon.windows.WndInfoItem;
-import com.watabou.pixeldungeon.windows.WndInfoMob;
-import com.watabou.pixeldungeon.windows.WndInfoPlant;
-import com.watabou.pixeldungeon.windows.WndBag;
-import com.watabou.pixeldungeon.windows.WndMessage;
-import com.watabou.pixeldungeon.windows.WndTradeItem;
+import com.github.mdsimmo.noosa.Game;
+import com.github.mdsimmo.noosa.Gizmo;
+import com.github.mdsimmo.noosa.Image;
+import com.github.mdsimmo.noosa.ui.Button;
+import com.github.mdsimmo.noosa.ui.Component;
+import com.github.mdsimmo.pixeldungeon.Assets;
+import com.github.mdsimmo.pixeldungeon.Dungeon;
+import com.github.mdsimmo.pixeldungeon.DungeonTilemap;
+import com.github.mdsimmo.pixeldungeon.actors.Actor;
+import com.github.mdsimmo.pixeldungeon.actors.mobs.Mob;
+import com.github.mdsimmo.pixeldungeon.items.Heap;
+import com.github.mdsimmo.pixeldungeon.items.Item;
+import com.github.mdsimmo.pixeldungeon.levels.Level;
+import com.github.mdsimmo.pixeldungeon.plants.Plant;
+import com.github.mdsimmo.pixeldungeon.scenes.CellSelector;
+import com.github.mdsimmo.pixeldungeon.scenes.GameScene;
+import com.github.mdsimmo.pixeldungeon.sprites.ItemSprite;
+import com.github.mdsimmo.pixeldungeon.windows.WndCatalogus;
+import com.github.mdsimmo.pixeldungeon.windows.WndHero;
+import com.github.mdsimmo.pixeldungeon.windows.WndInfoCell;
+import com.github.mdsimmo.pixeldungeon.windows.WndInfoItem;
+import com.github.mdsimmo.pixeldungeon.windows.WndInfoMob;
+import com.github.mdsimmo.pixeldungeon.windows.WndInfoPlant;
+import com.github.mdsimmo.pixeldungeon.windows.WndBag;
+import com.github.mdsimmo.pixeldungeon.windows.WndMessage;
+import com.github.mdsimmo.pixeldungeon.windows.WndTradeItem;
 
 public class Toolbar extends Component {
 

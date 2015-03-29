@@ -15,19 +15,19 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.scenes;
+package com.github.mdsimmo.pixeldungeon.scenes;
 
-import com.watabou.noosa.BitmapTextMultiline;
-import com.watabou.noosa.Camera;
-import com.watabou.noosa.Game;
-import com.watabou.noosa.Image;
-import com.watabou.pixeldungeon.Assets;
-import com.watabou.pixeldungeon.Dungeon;
-import com.watabou.pixeldungeon.ResultDescriptions;
-import com.watabou.pixeldungeon.effects.Flare;
-import com.watabou.pixeldungeon.effects.Speck;
-import com.watabou.pixeldungeon.ui.RedButton;
-import com.watabou.utils.Random;
+import com.github.mdsimmo.noosa.BitmapTextMultiline;
+import com.github.mdsimmo.noosa.Camera;
+import com.github.mdsimmo.noosa.Game;
+import com.github.mdsimmo.noosa.Image;
+import com.github.mdsimmo.pixeldungeon.Assets;
+import com.github.mdsimmo.pixeldungeon.Dungeon;
+import com.github.mdsimmo.pixeldungeon.ResultDescriptions;
+import com.github.mdsimmo.pixeldungeon.effects.Flare;
+import com.github.mdsimmo.pixeldungeon.effects.Speck;
+import com.github.mdsimmo.pixeldungeon.ui.RedButton;
+import com.github.mdsimmo.utils.Random;
 
 public class AmuletScene extends PixelScene {
 

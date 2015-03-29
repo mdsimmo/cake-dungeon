@@ -15,16 +15,16 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.windows;
+package com.github.mdsimmo.pixeldungeon.windows;
 
 import java.util.ArrayList;
 
-import com.watabou.noosa.BitmapText;
-import com.watabou.pixeldungeon.Challenges;
-import com.watabou.pixeldungeon.PixelDungeon;
-import com.watabou.pixeldungeon.scenes.PixelScene;
-import com.watabou.pixeldungeon.ui.CheckBox;
-import com.watabou.pixeldungeon.ui.Window;
+import com.github.mdsimmo.noosa.BitmapText;
+import com.github.mdsimmo.pixeldungeon.Challenges;
+import com.github.mdsimmo.pixeldungeon.PixelDungeon;
+import com.github.mdsimmo.pixeldungeon.scenes.PixelScene;
+import com.github.mdsimmo.pixeldungeon.ui.CheckBox;
+import com.github.mdsimmo.pixeldungeon.ui.Window;
 
 public class WndChallenges extends Window {
 

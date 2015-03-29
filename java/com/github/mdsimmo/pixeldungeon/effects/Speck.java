@@ -15,19 +15,19 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.effects;
+package com.github.mdsimmo.pixeldungeon.effects;
 
 import android.annotation.SuppressLint;
 import android.util.FloatMath;
 import android.util.SparseArray;
 
-import com.watabou.noosa.Game;
-import com.watabou.noosa.Image;
-import com.watabou.noosa.TextureFilm;
-import com.watabou.noosa.particles.Emitter;
-import com.watabou.pixeldungeon.Assets;
-import com.watabou.utils.PointF;
-import com.watabou.utils.Random;
+import com.github.mdsimmo.noosa.Game;
+import com.github.mdsimmo.noosa.Image;
+import com.github.mdsimmo.noosa.TextureFilm;
+import com.github.mdsimmo.noosa.particles.Emitter;
+import com.github.mdsimmo.pixeldungeon.Assets;
+import com.github.mdsimmo.utils.PointF;
+import com.github.mdsimmo.utils.Random;
 
 public class Speck extends Image {
 

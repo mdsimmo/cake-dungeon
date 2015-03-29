@@ -15,11 +15,11 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.actors.buffs;
+package com.github.mdsimmo.pixeldungeon.actors.buffs;
 
-import com.watabou.pixeldungeon.actors.Char;
-import com.watabou.pixeldungeon.ui.BuffIndicator;
-import com.watabou.utils.Bundle;
+import com.github.mdsimmo.pixeldungeon.actors.Char;
+import com.github.mdsimmo.pixeldungeon.ui.BuffIndicator;
+import com.github.mdsimmo.utils.Bundle;
 
 public class Terror extends FlavourBuff {
 

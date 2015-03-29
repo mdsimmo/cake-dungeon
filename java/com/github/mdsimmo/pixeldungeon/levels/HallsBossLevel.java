@@ -15,24 +15,24 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.levels;
+package com.github.mdsimmo.pixeldungeon.levels;
 
-import com.watabou.noosa.Scene;
-import com.watabou.pixeldungeon.Assets;
-import com.watabou.pixeldungeon.Bones;
-import com.watabou.pixeldungeon.Dungeon;
-import com.watabou.pixeldungeon.actors.Actor;
-import com.watabou.pixeldungeon.actors.Char;
-import com.watabou.pixeldungeon.actors.mobs.Yog;
-import com.watabou.pixeldungeon.effects.CellEmitter;
-import com.watabou.pixeldungeon.effects.particles.FlameParticle;
-import com.watabou.pixeldungeon.items.Heap;
-import com.watabou.pixeldungeon.items.Item;
-import com.watabou.pixeldungeon.items.keys.SkeletonKey;
-import com.watabou.pixeldungeon.levels.painters.Painter;
-import com.watabou.pixeldungeon.scenes.GameScene;
-import com.watabou.utils.Bundle;
-import com.watabou.utils.Random;
+import com.github.mdsimmo.noosa.Scene;
+import com.github.mdsimmo.pixeldungeon.Assets;
+import com.github.mdsimmo.pixeldungeon.Bones;
+import com.github.mdsimmo.pixeldungeon.Dungeon;
+import com.github.mdsimmo.pixeldungeon.actors.Actor;
+import com.github.mdsimmo.pixeldungeon.actors.Char;
+import com.github.mdsimmo.pixeldungeon.actors.mobs.Yog;
+import com.github.mdsimmo.pixeldungeon.effects.CellEmitter;
+import com.github.mdsimmo.pixeldungeon.effects.particles.FlameParticle;
+import com.github.mdsimmo.pixeldungeon.items.Heap;
+import com.github.mdsimmo.pixeldungeon.items.Item;
+import com.github.mdsimmo.pixeldungeon.items.keys.SkeletonKey;
+import com.github.mdsimmo.pixeldungeon.levels.painters.Painter;
+import com.github.mdsimmo.pixeldungeon.scenes.GameScene;
+import com.github.mdsimmo.utils.Bundle;
+import com.github.mdsimmo.utils.Random;
 
 public class HallsBossLevel extends Level {
 	

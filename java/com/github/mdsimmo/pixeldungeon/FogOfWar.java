@@ -15,17 +15,17 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon;
+package com.github.mdsimmo.pixeldungeon;
 
 import java.util.Arrays;
 
 import android.graphics.Bitmap;
 
-import com.watabou.gltextures.SmartTexture;
-import com.watabou.gltextures.TextureCache;
-import com.watabou.glwrap.Texture;
-import com.watabou.noosa.Image;
-import com.watabou.pixeldungeon.scenes.GameScene;
+import com.github.mdsimmo.gltextures.SmartTexture;
+import com.github.mdsimmo.gltextures.TextureCache;
+import com.github.mdsimmo.glwrap.Texture;
+import com.github.mdsimmo.noosa.Image;
+import com.github.mdsimmo.pixeldungeon.scenes.GameScene;
 
 public class FogOfWar extends Image {
 

@@ -15,39 +15,39 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.items;
+package com.github.mdsimmo.pixeldungeon.items;
 
 import java.util.Collection;
 import java.util.LinkedList;
 
-import com.watabou.noosa.audio.Sample;
-import com.watabou.pixeldungeon.Assets;
-import com.watabou.pixeldungeon.Badges;
-import com.watabou.pixeldungeon.Dungeon;
-import com.watabou.pixeldungeon.Statistics;
-import com.watabou.pixeldungeon.actors.buffs.Buff;
-import com.watabou.pixeldungeon.actors.buffs.Burning;
-import com.watabou.pixeldungeon.actors.buffs.Frost;
-import com.watabou.pixeldungeon.actors.hero.Hero;
-import com.watabou.pixeldungeon.actors.mobs.Mimic;
-import com.watabou.pixeldungeon.actors.mobs.Wraith;
-import com.watabou.pixeldungeon.effects.CellEmitter;
-import com.watabou.pixeldungeon.effects.Speck;
-import com.watabou.pixeldungeon.effects.Splash;
-import com.watabou.pixeldungeon.effects.particles.ElmoParticle;
-import com.watabou.pixeldungeon.effects.particles.FlameParticle;
-import com.watabou.pixeldungeon.effects.particles.ShadowParticle;
-import com.watabou.pixeldungeon.items.food.ChargrilledMeat;
-import com.watabou.pixeldungeon.items.food.FrozenCarpaccio;
-import com.watabou.pixeldungeon.items.food.MysteryMeat;
-import com.watabou.pixeldungeon.items.scrolls.Scroll;
-import com.watabou.pixeldungeon.plants.Plant.Seed;
-import com.watabou.pixeldungeon.sprites.ItemSprite;
-import com.watabou.pixeldungeon.sprites.ItemSpriteSheet;
-import com.watabou.pixeldungeon.utils.GLog;
-import com.watabou.utils.Bundlable;
-import com.watabou.utils.Bundle;
-import com.watabou.utils.Random;
+import com.github.mdsimmo.noosa.audio.Sample;
+import com.github.mdsimmo.pixeldungeon.Assets;
+import com.github.mdsimmo.pixeldungeon.Badges;
+import com.github.mdsimmo.pixeldungeon.Dungeon;
+import com.github.mdsimmo.pixeldungeon.Statistics;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Buff;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Burning;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Frost;
+import com.github.mdsimmo.pixeldungeon.actors.hero.Hero;
+import com.github.mdsimmo.pixeldungeon.actors.mobs.Mimic;
+import com.github.mdsimmo.pixeldungeon.actors.mobs.Wraith;
+import com.github.mdsimmo.pixeldungeon.effects.CellEmitter;
+import com.github.mdsimmo.pixeldungeon.effects.Speck;
+import com.github.mdsimmo.pixeldungeon.effects.Splash;
+import com.github.mdsimmo.pixeldungeon.effects.particles.ElmoParticle;
+import com.github.mdsimmo.pixeldungeon.effects.particles.FlameParticle;
+import com.github.mdsimmo.pixeldungeon.effects.particles.ShadowParticle;
+import com.github.mdsimmo.pixeldungeon.items.food.ChargrilledMeat;
+import com.github.mdsimmo.pixeldungeon.items.food.FrozenCarpaccio;
+import com.github.mdsimmo.pixeldungeon.items.food.MysteryMeat;
+import com.github.mdsimmo.pixeldungeon.items.scrolls.Scroll;
+import com.github.mdsimmo.pixeldungeon.plants.Plant.Seed;
+import com.github.mdsimmo.pixeldungeon.sprites.ItemSprite;
+import com.github.mdsimmo.pixeldungeon.sprites.ItemSpriteSheet;
+import com.github.mdsimmo.pixeldungeon.utils.GLog;
+import com.github.mdsimmo.utils.Bundlable;
+import com.github.mdsimmo.utils.Bundle;
+import com.github.mdsimmo.utils.Random;
 
 public class Heap implements Bundlable {
 

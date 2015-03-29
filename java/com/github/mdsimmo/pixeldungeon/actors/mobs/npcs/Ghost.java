@@ -15,41 +15,41 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.actors.mobs.npcs;
+package com.github.mdsimmo.pixeldungeon.actors.mobs.npcs;
 
 import java.util.HashSet;
 
-import com.watabou.noosa.audio.Sample;
-import com.watabou.pixeldungeon.Assets;
-import com.watabou.pixeldungeon.Challenges;
-import com.watabou.pixeldungeon.Dungeon;
-import com.watabou.pixeldungeon.Journal;
-import com.watabou.pixeldungeon.actors.Actor;
-import com.watabou.pixeldungeon.actors.Char;
-import com.watabou.pixeldungeon.actors.blobs.Blob;
-import com.watabou.pixeldungeon.actors.blobs.ParalyticGas;
-import com.watabou.pixeldungeon.actors.buffs.Buff;
-import com.watabou.pixeldungeon.actors.buffs.Paralysis;
-import com.watabou.pixeldungeon.actors.buffs.Roots;
-import com.watabou.pixeldungeon.actors.mobs.Mob;
-import com.watabou.pixeldungeon.effects.CellEmitter;
-import com.watabou.pixeldungeon.effects.Speck;
-import com.watabou.pixeldungeon.items.Generator;
-import com.watabou.pixeldungeon.items.Item;
-import com.watabou.pixeldungeon.items.armor.Armor;
-import com.watabou.pixeldungeon.items.armor.ClothArmor;
-import com.watabou.pixeldungeon.items.quest.DriedRose;
-import com.watabou.pixeldungeon.items.quest.RatSkull;
-import com.watabou.pixeldungeon.items.weapon.Weapon;
-import com.watabou.pixeldungeon.items.weapon.missiles.MissileWeapon;
-import com.watabou.pixeldungeon.levels.SewerLevel;
-import com.watabou.pixeldungeon.scenes.GameScene;
-import com.watabou.pixeldungeon.sprites.FetidRatSprite;
-import com.watabou.pixeldungeon.sprites.GhostSprite;
-import com.watabou.pixeldungeon.windows.WndQuest;
-import com.watabou.pixeldungeon.windows.WndSadGhost;
-import com.watabou.utils.Bundle;
-import com.watabou.utils.Random;
+import com.github.mdsimmo.noosa.audio.Sample;
+import com.github.mdsimmo.pixeldungeon.Assets;
+import com.github.mdsimmo.pixeldungeon.Challenges;
+import com.github.mdsimmo.pixeldungeon.Dungeon;
+import com.github.mdsimmo.pixeldungeon.Journal;
+import com.github.mdsimmo.pixeldungeon.actors.Actor;
+import com.github.mdsimmo.pixeldungeon.actors.Char;
+import com.github.mdsimmo.pixeldungeon.actors.blobs.Blob;
+import com.github.mdsimmo.pixeldungeon.actors.blobs.ParalyticGas;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Buff;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Paralysis;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Roots;
+import com.github.mdsimmo.pixeldungeon.actors.mobs.Mob;
+import com.github.mdsimmo.pixeldungeon.effects.CellEmitter;
+import com.github.mdsimmo.pixeldungeon.effects.Speck;
+import com.github.mdsimmo.pixeldungeon.items.Generator;
+import com.github.mdsimmo.pixeldungeon.items.Item;
+import com.github.mdsimmo.pixeldungeon.items.armor.Armor;
+import com.github.mdsimmo.pixeldungeon.items.armor.ClothArmor;
+import com.github.mdsimmo.pixeldungeon.items.quest.DriedRose;
+import com.github.mdsimmo.pixeldungeon.items.quest.RatSkull;
+import com.github.mdsimmo.pixeldungeon.items.weapon.Weapon;
+import com.github.mdsimmo.pixeldungeon.items.weapon.missiles.MissileWeapon;
+import com.github.mdsimmo.pixeldungeon.levels.SewerLevel;
+import com.github.mdsimmo.pixeldungeon.scenes.GameScene;
+import com.github.mdsimmo.pixeldungeon.sprites.FetidRatSprite;
+import com.github.mdsimmo.pixeldungeon.sprites.GhostSprite;
+import com.github.mdsimmo.pixeldungeon.windows.WndQuest;
+import com.github.mdsimmo.pixeldungeon.windows.WndSadGhost;
+import com.github.mdsimmo.utils.Bundle;
+import com.github.mdsimmo.utils.Random;
 
 public class Ghost extends NPC {
 

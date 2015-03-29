@@ -15,52 +15,52 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.actors.mobs.npcs;
+package com.github.mdsimmo.pixeldungeon.actors.mobs.npcs;
 
 import java.util.ArrayList;
 
-import com.watabou.noosa.audio.Sample;
-import com.watabou.pixeldungeon.Assets;
-import com.watabou.pixeldungeon.Dungeon;
-import com.watabou.pixeldungeon.Journal;
-import com.watabou.pixeldungeon.actors.Actor;
-import com.watabou.pixeldungeon.actors.Char;
-import com.watabou.pixeldungeon.actors.blobs.Blob;
-import com.watabou.pixeldungeon.actors.blobs.ToxicGas;
-import com.watabou.pixeldungeon.actors.buffs.Buff;
-import com.watabou.pixeldungeon.actors.buffs.Roots;
-import com.watabou.pixeldungeon.actors.mobs.Mob;
-import com.watabou.pixeldungeon.effects.CellEmitter;
-import com.watabou.pixeldungeon.effects.Speck;
-import com.watabou.pixeldungeon.items.Heap;
-import com.watabou.pixeldungeon.items.Item;
-import com.watabou.pixeldungeon.items.bags.Bag;
-import com.watabou.pixeldungeon.items.potions.PotionOfStrength;
-import com.watabou.pixeldungeon.items.quest.CorpseDust;
-import com.watabou.pixeldungeon.items.wands.Wand;
-import com.watabou.pixeldungeon.items.wands.WandOfAmok;
-import com.watabou.pixeldungeon.items.wands.WandOfAvalanche;
-import com.watabou.pixeldungeon.items.wands.WandOfBlink;
-import com.watabou.pixeldungeon.items.wands.WandOfDisintegration;
-import com.watabou.pixeldungeon.items.wands.WandOfFirebolt;
-import com.watabou.pixeldungeon.items.wands.WandOfLightning;
-import com.watabou.pixeldungeon.items.wands.WandOfPoison;
-import com.watabou.pixeldungeon.items.wands.WandOfRegrowth;
-import com.watabou.pixeldungeon.items.wands.WandOfSlowness;
-import com.watabou.pixeldungeon.items.wands.WandOfTelekinesis;
-import com.watabou.pixeldungeon.levels.PrisonLevel;
-import com.watabou.pixeldungeon.levels.Room;
-import com.watabou.pixeldungeon.levels.Terrain;
-import com.watabou.pixeldungeon.plants.Plant;
-import com.watabou.pixeldungeon.scenes.GameScene;
-import com.watabou.pixeldungeon.sprites.ItemSpriteSheet;
-import com.watabou.pixeldungeon.sprites.WandmakerSprite;
-import com.watabou.pixeldungeon.utils.GLog;
-import com.watabou.pixeldungeon.utils.Utils;
-import com.watabou.pixeldungeon.windows.WndQuest;
-import com.watabou.pixeldungeon.windows.WndWandmaker;
-import com.watabou.utils.Bundle;
-import com.watabou.utils.Random;
+import com.github.mdsimmo.noosa.audio.Sample;
+import com.github.mdsimmo.pixeldungeon.Assets;
+import com.github.mdsimmo.pixeldungeon.Dungeon;
+import com.github.mdsimmo.pixeldungeon.Journal;
+import com.github.mdsimmo.pixeldungeon.actors.Actor;
+import com.github.mdsimmo.pixeldungeon.actors.Char;
+import com.github.mdsimmo.pixeldungeon.actors.blobs.Blob;
+import com.github.mdsimmo.pixeldungeon.actors.blobs.ToxicGas;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Buff;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Roots;
+import com.github.mdsimmo.pixeldungeon.actors.mobs.Mob;
+import com.github.mdsimmo.pixeldungeon.effects.CellEmitter;
+import com.github.mdsimmo.pixeldungeon.effects.Speck;
+import com.github.mdsimmo.pixeldungeon.items.Heap;
+import com.github.mdsimmo.pixeldungeon.items.Item;
+import com.github.mdsimmo.pixeldungeon.items.bags.Bag;
+import com.github.mdsimmo.pixeldungeon.items.potions.PotionOfStrength;
+import com.github.mdsimmo.pixeldungeon.items.quest.CorpseDust;
+import com.github.mdsimmo.pixeldungeon.items.wands.Wand;
+import com.github.mdsimmo.pixeldungeon.items.wands.WandOfAmok;
+import com.github.mdsimmo.pixeldungeon.items.wands.WandOfAvalanche;
+import com.github.mdsimmo.pixeldungeon.items.wands.WandOfBlink;
+import com.github.mdsimmo.pixeldungeon.items.wands.WandOfDisintegration;
+import com.github.mdsimmo.pixeldungeon.items.wands.WandOfFirebolt;
+import com.github.mdsimmo.pixeldungeon.items.wands.WandOfLightning;
+import com.github.mdsimmo.pixeldungeon.items.wands.WandOfPoison;
+import com.github.mdsimmo.pixeldungeon.items.wands.WandOfRegrowth;
+import com.github.mdsimmo.pixeldungeon.items.wands.WandOfSlowness;
+import com.github.mdsimmo.pixeldungeon.items.wands.WandOfTelekinesis;
+import com.github.mdsimmo.pixeldungeon.levels.PrisonLevel;
+import com.github.mdsimmo.pixeldungeon.levels.Room;
+import com.github.mdsimmo.pixeldungeon.levels.Terrain;
+import com.github.mdsimmo.pixeldungeon.plants.Plant;
+import com.github.mdsimmo.pixeldungeon.scenes.GameScene;
+import com.github.mdsimmo.pixeldungeon.sprites.ItemSpriteSheet;
+import com.github.mdsimmo.pixeldungeon.sprites.WandmakerSprite;
+import com.github.mdsimmo.pixeldungeon.utils.GLog;
+import com.github.mdsimmo.pixeldungeon.utils.Utils;
+import com.github.mdsimmo.pixeldungeon.windows.WndQuest;
+import com.github.mdsimmo.pixeldungeon.windows.WndWandmaker;
+import com.github.mdsimmo.utils.Bundle;
+import com.github.mdsimmo.utils.Random;
 
 public class Wandmaker extends NPC {
 

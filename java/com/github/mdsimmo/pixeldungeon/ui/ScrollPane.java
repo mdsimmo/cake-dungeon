@@ -15,15 +15,15 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.ui;
+package com.github.mdsimmo.pixeldungeon.ui;
 
-import com.watabou.input.Touchscreen.Touch;
-import com.watabou.noosa.Camera;
-import com.watabou.noosa.TouchArea;
-import com.watabou.noosa.ui.Component;
-import com.watabou.pixeldungeon.scenes.PixelScene;
-import com.watabou.utils.Point;
-import com.watabou.utils.PointF;
+import com.github.mdsimmo.input.Touchscreen.Touch;
+import com.github.mdsimmo.noosa.Camera;
+import com.github.mdsimmo.noosa.TouchArea;
+import com.github.mdsimmo.noosa.ui.Component;
+import com.github.mdsimmo.pixeldungeon.scenes.PixelScene;
+import com.github.mdsimmo.utils.Point;
+import com.github.mdsimmo.utils.PointF;
 
 public class ScrollPane extends Component {
 			

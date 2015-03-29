@@ -15,15 +15,15 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.items.scrolls;
+package com.github.mdsimmo.pixeldungeon.items.scrolls;
 
-import com.watabou.pixeldungeon.Dungeon;
-import com.watabou.pixeldungeon.effects.Speck;
-import com.watabou.pixeldungeon.items.Item;
-import com.watabou.pixeldungeon.items.armor.Armor;
-import com.watabou.pixeldungeon.items.weapon.Weapon;
-import com.watabou.pixeldungeon.utils.GLog;
-import com.watabou.pixeldungeon.windows.WndBag;
+import com.github.mdsimmo.pixeldungeon.Dungeon;
+import com.github.mdsimmo.pixeldungeon.effects.Speck;
+import com.github.mdsimmo.pixeldungeon.items.Item;
+import com.github.mdsimmo.pixeldungeon.items.armor.Armor;
+import com.github.mdsimmo.pixeldungeon.items.weapon.Weapon;
+import com.github.mdsimmo.pixeldungeon.utils.GLog;
+import com.github.mdsimmo.pixeldungeon.windows.WndBag;
 
 public class ScrollOfEnchantment extends InventoryScroll {
 

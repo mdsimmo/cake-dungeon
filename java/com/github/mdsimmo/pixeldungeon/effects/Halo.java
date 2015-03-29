@@ -15,15 +15,15 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.effects;
+package com.github.mdsimmo.pixeldungeon.effects;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Paint;
 
-import com.watabou.gltextures.SmartTexture;
-import com.watabou.gltextures.TextureCache;
-import com.watabou.noosa.Image;
+import com.github.mdsimmo.gltextures.SmartTexture;
+import com.github.mdsimmo.gltextures.TextureCache;
+import com.github.mdsimmo.noosa.Image;
 
 public class Halo extends Image {
 	

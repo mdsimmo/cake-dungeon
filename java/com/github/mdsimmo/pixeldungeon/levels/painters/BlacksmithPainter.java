@@ -15,15 +15,15 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.levels.painters;
+package com.github.mdsimmo.pixeldungeon.levels.painters;
 
-import com.watabou.pixeldungeon.actors.Actor;
-import com.watabou.pixeldungeon.actors.mobs.npcs.Blacksmith;
-import com.watabou.pixeldungeon.items.Generator;
-import com.watabou.pixeldungeon.levels.Level;
-import com.watabou.pixeldungeon.levels.Room;
-import com.watabou.pixeldungeon.levels.Terrain;
-import com.watabou.utils.Random;
+import com.github.mdsimmo.pixeldungeon.actors.Actor;
+import com.github.mdsimmo.pixeldungeon.actors.mobs.npcs.Blacksmith;
+import com.github.mdsimmo.pixeldungeon.items.Generator;
+import com.github.mdsimmo.pixeldungeon.levels.Level;
+import com.github.mdsimmo.pixeldungeon.levels.Room;
+import com.github.mdsimmo.pixeldungeon.levels.Terrain;
+import com.github.mdsimmo.utils.Random;
 
 public class BlacksmithPainter extends Painter {
 

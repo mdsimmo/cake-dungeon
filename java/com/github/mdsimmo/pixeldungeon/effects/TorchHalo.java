@@ -15,14 +15,14 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.effects;
+package com.github.mdsimmo.pixeldungeon.effects;
 
 import javax.microedition.khronos.opengles.GL10;
 
 import android.opengl.GLES20;
 
-import com.watabou.noosa.Game;
-import com.watabou.pixeldungeon.sprites.CharSprite;
+import com.github.mdsimmo.noosa.Game;
+import com.github.mdsimmo.pixeldungeon.sprites.CharSprite;
 
 public class TorchHalo extends Halo {
 

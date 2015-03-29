@@ -15,21 +15,21 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.items.armor.glyphs;
+package com.github.mdsimmo.pixeldungeon.items.armor.glyphs;
 
-import com.watabou.pixeldungeon.actors.Char;
-import com.watabou.pixeldungeon.actors.buffs.Buff;
-import com.watabou.pixeldungeon.actors.buffs.Burning;
-import com.watabou.pixeldungeon.actors.buffs.Frost;
-import com.watabou.pixeldungeon.effects.CellEmitter;
-import com.watabou.pixeldungeon.effects.particles.FlameParticle;
-import com.watabou.pixeldungeon.effects.particles.SnowParticle;
-import com.watabou.pixeldungeon.items.armor.Armor;
-import com.watabou.pixeldungeon.items.armor.Armor.Glyph;
-import com.watabou.pixeldungeon.levels.Level;
-import com.watabou.pixeldungeon.sprites.ItemSprite;
-import com.watabou.pixeldungeon.sprites.ItemSprite.Glowing;
-import com.watabou.utils.Random;
+import com.github.mdsimmo.pixeldungeon.actors.Char;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Buff;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Burning;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Frost;
+import com.github.mdsimmo.pixeldungeon.effects.CellEmitter;
+import com.github.mdsimmo.pixeldungeon.effects.particles.FlameParticle;
+import com.github.mdsimmo.pixeldungeon.effects.particles.SnowParticle;
+import com.github.mdsimmo.pixeldungeon.items.armor.Armor;
+import com.github.mdsimmo.pixeldungeon.items.armor.Armor.Glyph;
+import com.github.mdsimmo.pixeldungeon.levels.Level;
+import com.github.mdsimmo.pixeldungeon.sprites.ItemSprite;
+import com.github.mdsimmo.pixeldungeon.sprites.ItemSprite.Glowing;
+import com.github.mdsimmo.utils.Random;
 
 public class AntiEntropy extends Glyph {
 

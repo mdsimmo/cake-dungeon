@@ -15,37 +15,37 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.actors.mobs;
+package com.github.mdsimmo.pixeldungeon.actors.mobs;
 
 import java.util.HashSet;
 
-import com.watabou.noosa.audio.Sample;
-import com.watabou.pixeldungeon.Assets;
-import com.watabou.pixeldungeon.Badges;
-import com.watabou.pixeldungeon.Dungeon;
-import com.watabou.pixeldungeon.Statistics;
-import com.watabou.pixeldungeon.actors.Actor;
-import com.watabou.pixeldungeon.actors.Char;
-import com.watabou.pixeldungeon.actors.blobs.ToxicGas;
-import com.watabou.pixeldungeon.actors.buffs.Buff;
-import com.watabou.pixeldungeon.actors.buffs.Paralysis;
-import com.watabou.pixeldungeon.actors.buffs.Vertigo;
-import com.watabou.pixeldungeon.effects.Flare;
-import com.watabou.pixeldungeon.effects.Speck;
-import com.watabou.pixeldungeon.items.ArmorKit;
-import com.watabou.pixeldungeon.items.keys.SkeletonKey;
-import com.watabou.pixeldungeon.items.scrolls.ScrollOfPsionicBlast;
-import com.watabou.pixeldungeon.items.wands.WandOfBlink;
-import com.watabou.pixeldungeon.items.wands.WandOfDisintegration;
-import com.watabou.pixeldungeon.items.weapon.enchantments.Death;
-import com.watabou.pixeldungeon.levels.CityBossLevel;
-import com.watabou.pixeldungeon.levels.Level;
-import com.watabou.pixeldungeon.scenes.GameScene;
-import com.watabou.pixeldungeon.sprites.KingSprite;
-import com.watabou.pixeldungeon.sprites.UndeadSprite;
-import com.watabou.utils.Bundle;
-import com.watabou.utils.PathFinder;
-import com.watabou.utils.Random;
+import com.github.mdsimmo.noosa.audio.Sample;
+import com.github.mdsimmo.pixeldungeon.Assets;
+import com.github.mdsimmo.pixeldungeon.Badges;
+import com.github.mdsimmo.pixeldungeon.Dungeon;
+import com.github.mdsimmo.pixeldungeon.Statistics;
+import com.github.mdsimmo.pixeldungeon.actors.Actor;
+import com.github.mdsimmo.pixeldungeon.actors.Char;
+import com.github.mdsimmo.pixeldungeon.actors.blobs.ToxicGas;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Buff;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Paralysis;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Vertigo;
+import com.github.mdsimmo.pixeldungeon.effects.Flare;
+import com.github.mdsimmo.pixeldungeon.effects.Speck;
+import com.github.mdsimmo.pixeldungeon.items.ArmorKit;
+import com.github.mdsimmo.pixeldungeon.items.keys.SkeletonKey;
+import com.github.mdsimmo.pixeldungeon.items.scrolls.ScrollOfPsionicBlast;
+import com.github.mdsimmo.pixeldungeon.items.wands.WandOfBlink;
+import com.github.mdsimmo.pixeldungeon.items.wands.WandOfDisintegration;
+import com.github.mdsimmo.pixeldungeon.items.weapon.enchantments.Death;
+import com.github.mdsimmo.pixeldungeon.levels.CityBossLevel;
+import com.github.mdsimmo.pixeldungeon.levels.Level;
+import com.github.mdsimmo.pixeldungeon.scenes.GameScene;
+import com.github.mdsimmo.pixeldungeon.sprites.KingSprite;
+import com.github.mdsimmo.pixeldungeon.sprites.UndeadSprite;
+import com.github.mdsimmo.utils.Bundle;
+import com.github.mdsimmo.utils.PathFinder;
+import com.github.mdsimmo.utils.Random;
 
 public class King extends Mob {
 	

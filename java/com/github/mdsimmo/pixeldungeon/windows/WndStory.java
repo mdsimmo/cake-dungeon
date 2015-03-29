@@ -15,17 +15,17 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.windows;
+package com.github.mdsimmo.pixeldungeon.windows;
 
-import com.watabou.input.Touchscreen.Touch;
-import com.watabou.noosa.BitmapTextMultiline;
-import com.watabou.noosa.Game;
-import com.watabou.noosa.TouchArea;
-import com.watabou.pixeldungeon.Chrome;
-import com.watabou.pixeldungeon.Dungeon;
-import com.watabou.pixeldungeon.scenes.PixelScene;
-import com.watabou.pixeldungeon.ui.Window;
-import com.watabou.utils.SparseArray;
+import com.github.mdsimmo.input.Touchscreen.Touch;
+import com.github.mdsimmo.noosa.BitmapTextMultiline;
+import com.github.mdsimmo.noosa.Game;
+import com.github.mdsimmo.noosa.TouchArea;
+import com.github.mdsimmo.pixeldungeon.Chrome;
+import com.github.mdsimmo.pixeldungeon.Dungeon;
+import com.github.mdsimmo.pixeldungeon.scenes.PixelScene;
+import com.github.mdsimmo.pixeldungeon.ui.Window;
+import com.github.mdsimmo.utils.SparseArray;
 
 public class WndStory extends Window {
 

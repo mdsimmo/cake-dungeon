@@ -15,7 +15,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon;
+package com.github.mdsimmo.pixeldungeon;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -26,27 +26,27 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
 
-import com.watabou.noosa.Game;
-import com.watabou.pixeldungeon.actors.mobs.Acidic;
-import com.watabou.pixeldungeon.actors.mobs.Albino;
-import com.watabou.pixeldungeon.actors.mobs.Bandit;
-import com.watabou.pixeldungeon.actors.mobs.Mob;
-import com.watabou.pixeldungeon.actors.mobs.Senior;
-import com.watabou.pixeldungeon.actors.mobs.Shielded;
-import com.watabou.pixeldungeon.items.Item;
-import com.watabou.pixeldungeon.items.bags.ScrollHolder;
-import com.watabou.pixeldungeon.items.bags.SeedPouch;
-import com.watabou.pixeldungeon.items.bags.WandHolster;
-import com.watabou.pixeldungeon.items.potions.Potion;
-import com.watabou.pixeldungeon.items.rings.Ring;
-import com.watabou.pixeldungeon.items.rings.RingOfHaggler;
-import com.watabou.pixeldungeon.items.rings.RingOfThorns;
-import com.watabou.pixeldungeon.items.scrolls.Scroll;
-import com.watabou.pixeldungeon.items.wands.Wand;
-import com.watabou.pixeldungeon.scenes.PixelScene;
-import com.watabou.pixeldungeon.utils.GLog;
-import com.watabou.utils.Bundle;
-import com.watabou.utils.Callback;
+import com.github.mdsimmo.noosa.Game;
+import com.github.mdsimmo.pixeldungeon.actors.mobs.Acidic;
+import com.github.mdsimmo.pixeldungeon.actors.mobs.Albino;
+import com.github.mdsimmo.pixeldungeon.actors.mobs.Bandit;
+import com.github.mdsimmo.pixeldungeon.actors.mobs.Mob;
+import com.github.mdsimmo.pixeldungeon.actors.mobs.Senior;
+import com.github.mdsimmo.pixeldungeon.actors.mobs.Shielded;
+import com.github.mdsimmo.pixeldungeon.items.Item;
+import com.github.mdsimmo.pixeldungeon.items.bags.ScrollHolder;
+import com.github.mdsimmo.pixeldungeon.items.bags.SeedPouch;
+import com.github.mdsimmo.pixeldungeon.items.bags.WandHolster;
+import com.github.mdsimmo.pixeldungeon.items.potions.Potion;
+import com.github.mdsimmo.pixeldungeon.items.rings.Ring;
+import com.github.mdsimmo.pixeldungeon.items.rings.RingOfHaggler;
+import com.github.mdsimmo.pixeldungeon.items.rings.RingOfThorns;
+import com.github.mdsimmo.pixeldungeon.items.scrolls.Scroll;
+import com.github.mdsimmo.pixeldungeon.items.wands.Wand;
+import com.github.mdsimmo.pixeldungeon.scenes.PixelScene;
+import com.github.mdsimmo.pixeldungeon.utils.GLog;
+import com.github.mdsimmo.utils.Bundle;
+import com.github.mdsimmo.utils.Callback;
 
 public class Badges {
 	

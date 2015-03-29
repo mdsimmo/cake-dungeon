@@ -15,40 +15,40 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.windows;
+package com.github.mdsimmo.pixeldungeon.windows;
 
 import android.graphics.RectF;
 
-import com.watabou.gltextures.TextureCache;
-import com.watabou.noosa.BitmapText;
-import com.watabou.noosa.ColorBlock;
-import com.watabou.noosa.Image;
-import com.watabou.noosa.audio.Sample;
-import com.watabou.pixeldungeon.Assets;
-import com.watabou.pixeldungeon.Dungeon;
-import com.watabou.pixeldungeon.PixelDungeon;
-import com.watabou.pixeldungeon.actors.hero.Belongings;
-import com.watabou.pixeldungeon.actors.hero.Hero;
-import com.watabou.pixeldungeon.items.Gold;
-import com.watabou.pixeldungeon.items.Item;
-import com.watabou.pixeldungeon.items.armor.Armor;
-import com.watabou.pixeldungeon.items.bags.Bag;
-import com.watabou.pixeldungeon.items.bags.Keyring;
-import com.watabou.pixeldungeon.items.bags.ScrollHolder;
-import com.watabou.pixeldungeon.items.bags.SeedPouch;
-import com.watabou.pixeldungeon.items.bags.WandHolster;
-import com.watabou.pixeldungeon.items.wands.Wand;
-import com.watabou.pixeldungeon.items.weapon.melee.MeleeWeapon;
-import com.watabou.pixeldungeon.items.weapon.missiles.Boomerang;
-import com.watabou.pixeldungeon.plants.Plant.Seed;
-import com.watabou.pixeldungeon.scenes.GameScene;
-import com.watabou.pixeldungeon.scenes.PixelScene;
-import com.watabou.pixeldungeon.sprites.ItemSpriteSheet;
-import com.watabou.pixeldungeon.ui.Icons;
-import com.watabou.pixeldungeon.ui.ItemSlot;
-import com.watabou.pixeldungeon.ui.QuickSlot;
-import com.watabou.pixeldungeon.utils.Utils;
-import com.watabou.utils.GameMath;
+import com.github.mdsimmo.gltextures.TextureCache;
+import com.github.mdsimmo.noosa.BitmapText;
+import com.github.mdsimmo.noosa.ColorBlock;
+import com.github.mdsimmo.noosa.Image;
+import com.github.mdsimmo.noosa.audio.Sample;
+import com.github.mdsimmo.pixeldungeon.Assets;
+import com.github.mdsimmo.pixeldungeon.Dungeon;
+import com.github.mdsimmo.pixeldungeon.PixelDungeon;
+import com.github.mdsimmo.pixeldungeon.actors.hero.Belongings;
+import com.github.mdsimmo.pixeldungeon.actors.hero.Hero;
+import com.github.mdsimmo.pixeldungeon.items.Gold;
+import com.github.mdsimmo.pixeldungeon.items.Item;
+import com.github.mdsimmo.pixeldungeon.items.armor.Armor;
+import com.github.mdsimmo.pixeldungeon.items.bags.Bag;
+import com.github.mdsimmo.pixeldungeon.items.bags.Keyring;
+import com.github.mdsimmo.pixeldungeon.items.bags.ScrollHolder;
+import com.github.mdsimmo.pixeldungeon.items.bags.SeedPouch;
+import com.github.mdsimmo.pixeldungeon.items.bags.WandHolster;
+import com.github.mdsimmo.pixeldungeon.items.wands.Wand;
+import com.github.mdsimmo.pixeldungeon.items.weapon.melee.MeleeWeapon;
+import com.github.mdsimmo.pixeldungeon.items.weapon.missiles.Boomerang;
+import com.github.mdsimmo.pixeldungeon.plants.Plant.Seed;
+import com.github.mdsimmo.pixeldungeon.scenes.GameScene;
+import com.github.mdsimmo.pixeldungeon.scenes.PixelScene;
+import com.github.mdsimmo.pixeldungeon.sprites.ItemSpriteSheet;
+import com.github.mdsimmo.pixeldungeon.ui.Icons;
+import com.github.mdsimmo.pixeldungeon.ui.ItemSlot;
+import com.github.mdsimmo.pixeldungeon.ui.QuickSlot;
+import com.github.mdsimmo.pixeldungeon.utils.Utils;
+import com.github.mdsimmo.utils.GameMath;
 
 public class WndBag extends WndTabbed {
 	

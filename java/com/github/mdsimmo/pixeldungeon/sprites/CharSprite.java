@@ -15,32 +15,32 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.sprites;
+package com.github.mdsimmo.pixeldungeon.sprites;
 
-import com.watabou.noosa.Game;
-import com.watabou.noosa.MovieClip;
-import com.watabou.noosa.Visual;
-import com.watabou.noosa.audio.Sample;
-import com.watabou.noosa.particles.Emitter;
-import com.watabou.noosa.tweeners.PosTweener;
-import com.watabou.noosa.tweeners.Tweener;
-import com.watabou.pixeldungeon.Assets;
-import com.watabou.pixeldungeon.DungeonTilemap;
-import com.watabou.pixeldungeon.actors.Char;
-import com.watabou.pixeldungeon.effects.EmoIcon;
-import com.watabou.pixeldungeon.effects.FloatingText;
-import com.watabou.pixeldungeon.effects.IceBlock;
-import com.watabou.pixeldungeon.effects.Speck;
-import com.watabou.pixeldungeon.effects.Splash;
-import com.watabou.pixeldungeon.effects.TorchHalo;
-import com.watabou.pixeldungeon.effects.particles.FlameParticle;
-import com.watabou.pixeldungeon.items.potions.PotionOfInvisibility;
-import com.watabou.pixeldungeon.levels.Level;
-import com.watabou.pixeldungeon.scenes.GameScene;
-import com.watabou.pixeldungeon.utils.Utils;
-import com.watabou.utils.Callback;
-import com.watabou.utils.PointF;
-import com.watabou.utils.Random;
+import com.github.mdsimmo.noosa.Game;
+import com.github.mdsimmo.noosa.MovieClip;
+import com.github.mdsimmo.noosa.Visual;
+import com.github.mdsimmo.noosa.audio.Sample;
+import com.github.mdsimmo.noosa.particles.Emitter;
+import com.github.mdsimmo.noosa.tweeners.PosTweener;
+import com.github.mdsimmo.noosa.tweeners.Tweener;
+import com.github.mdsimmo.pixeldungeon.Assets;
+import com.github.mdsimmo.pixeldungeon.DungeonTilemap;
+import com.github.mdsimmo.pixeldungeon.actors.Char;
+import com.github.mdsimmo.pixeldungeon.effects.EmoIcon;
+import com.github.mdsimmo.pixeldungeon.effects.FloatingText;
+import com.github.mdsimmo.pixeldungeon.effects.IceBlock;
+import com.github.mdsimmo.pixeldungeon.effects.Speck;
+import com.github.mdsimmo.pixeldungeon.effects.Splash;
+import com.github.mdsimmo.pixeldungeon.effects.TorchHalo;
+import com.github.mdsimmo.pixeldungeon.effects.particles.FlameParticle;
+import com.github.mdsimmo.pixeldungeon.items.potions.PotionOfInvisibility;
+import com.github.mdsimmo.pixeldungeon.levels.Level;
+import com.github.mdsimmo.pixeldungeon.scenes.GameScene;
+import com.github.mdsimmo.pixeldungeon.utils.Utils;
+import com.github.mdsimmo.utils.Callback;
+import com.github.mdsimmo.utils.PointF;
+import com.github.mdsimmo.utils.Random;
 
 public class CharSprite extends MovieClip implements Tweener.Listener, MovieClip.Listener {
 	

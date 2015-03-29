@@ -15,17 +15,17 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.levels.painters;
+package com.github.mdsimmo.pixeldungeon.levels.painters;
 
-import com.watabou.pixeldungeon.items.Bomb;
-import com.watabou.pixeldungeon.items.Generator;
-import com.watabou.pixeldungeon.items.Item;
-import com.watabou.pixeldungeon.items.keys.IronKey;
-import com.watabou.pixeldungeon.levels.Level;
-import com.watabou.pixeldungeon.levels.Room;
-import com.watabou.pixeldungeon.levels.Terrain;
-import com.watabou.utils.Point;
-import com.watabou.utils.Random;
+import com.github.mdsimmo.pixeldungeon.items.Bomb;
+import com.github.mdsimmo.pixeldungeon.items.Generator;
+import com.github.mdsimmo.pixeldungeon.items.Item;
+import com.github.mdsimmo.pixeldungeon.items.keys.IronKey;
+import com.github.mdsimmo.pixeldungeon.levels.Level;
+import com.github.mdsimmo.pixeldungeon.levels.Room;
+import com.github.mdsimmo.pixeldungeon.levels.Terrain;
+import com.github.mdsimmo.utils.Point;
+import com.github.mdsimmo.utils.Random;
 
 public class ArmoryPainter extends Painter {
 

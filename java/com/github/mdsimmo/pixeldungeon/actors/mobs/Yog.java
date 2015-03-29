@@ -15,44 +15,44 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.actors.mobs;
+package com.github.mdsimmo.pixeldungeon.actors.mobs;
 
 import java.util.ArrayList;
 import java.util.HashSet;
 
-import com.watabou.pixeldungeon.Dungeon;
-import com.watabou.pixeldungeon.ResultDescriptions;
-import com.watabou.pixeldungeon.Statistics;
-import com.watabou.pixeldungeon.actors.Actor;
-import com.watabou.pixeldungeon.actors.Char;
-import com.watabou.pixeldungeon.actors.blobs.Blob;
-import com.watabou.pixeldungeon.actors.blobs.Fire;
-import com.watabou.pixeldungeon.actors.blobs.ToxicGas;
-import com.watabou.pixeldungeon.actors.buffs.Amok;
-import com.watabou.pixeldungeon.actors.buffs.Buff;
-import com.watabou.pixeldungeon.actors.buffs.Burning;
-import com.watabou.pixeldungeon.actors.buffs.Charm;
-import com.watabou.pixeldungeon.actors.buffs.Ooze;
-import com.watabou.pixeldungeon.actors.buffs.Poison;
-import com.watabou.pixeldungeon.actors.buffs.Sleep;
-import com.watabou.pixeldungeon.actors.buffs.Terror;
-import com.watabou.pixeldungeon.actors.buffs.Vertigo;
-import com.watabou.pixeldungeon.effects.Pushing;
-import com.watabou.pixeldungeon.effects.particles.ShadowParticle;
-import com.watabou.pixeldungeon.items.keys.SkeletonKey;
-import com.watabou.pixeldungeon.items.scrolls.ScrollOfPsionicBlast;
-import com.watabou.pixeldungeon.items.weapon.enchantments.Death;
-import com.watabou.pixeldungeon.levels.Level;
-import com.watabou.pixeldungeon.mechanics.Ballistica;
-import com.watabou.pixeldungeon.scenes.GameScene;
-import com.watabou.pixeldungeon.sprites.BurningFistSprite;
-import com.watabou.pixeldungeon.sprites.CharSprite;
-import com.watabou.pixeldungeon.sprites.LarvaSprite;
-import com.watabou.pixeldungeon.sprites.RottingFistSprite;
-import com.watabou.pixeldungeon.sprites.YogSprite;
-import com.watabou.pixeldungeon.utils.GLog;
-import com.watabou.pixeldungeon.utils.Utils;
-import com.watabou.utils.Random;
+import com.github.mdsimmo.pixeldungeon.Dungeon;
+import com.github.mdsimmo.pixeldungeon.ResultDescriptions;
+import com.github.mdsimmo.pixeldungeon.Statistics;
+import com.github.mdsimmo.pixeldungeon.actors.Actor;
+import com.github.mdsimmo.pixeldungeon.actors.Char;
+import com.github.mdsimmo.pixeldungeon.actors.blobs.Blob;
+import com.github.mdsimmo.pixeldungeon.actors.blobs.Fire;
+import com.github.mdsimmo.pixeldungeon.actors.blobs.ToxicGas;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Amok;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Buff;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Burning;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Charm;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Ooze;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Poison;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Sleep;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Terror;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Vertigo;
+import com.github.mdsimmo.pixeldungeon.effects.Pushing;
+import com.github.mdsimmo.pixeldungeon.effects.particles.ShadowParticle;
+import com.github.mdsimmo.pixeldungeon.items.keys.SkeletonKey;
+import com.github.mdsimmo.pixeldungeon.items.scrolls.ScrollOfPsionicBlast;
+import com.github.mdsimmo.pixeldungeon.items.weapon.enchantments.Death;
+import com.github.mdsimmo.pixeldungeon.levels.Level;
+import com.github.mdsimmo.pixeldungeon.mechanics.Ballistica;
+import com.github.mdsimmo.pixeldungeon.scenes.GameScene;
+import com.github.mdsimmo.pixeldungeon.sprites.BurningFistSprite;
+import com.github.mdsimmo.pixeldungeon.sprites.CharSprite;
+import com.github.mdsimmo.pixeldungeon.sprites.LarvaSprite;
+import com.github.mdsimmo.pixeldungeon.sprites.RottingFistSprite;
+import com.github.mdsimmo.pixeldungeon.sprites.YogSprite;
+import com.github.mdsimmo.pixeldungeon.utils.GLog;
+import com.github.mdsimmo.pixeldungeon.utils.Utils;
+import com.github.mdsimmo.utils.Random;
 
 public class Yog extends Mob {
 	

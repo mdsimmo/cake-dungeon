@@ -15,23 +15,23 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.scenes;
+package com.github.mdsimmo.pixeldungeon.scenes;
 
-import com.watabou.noosa.BitmapText;
-import com.watabou.noosa.Camera;
-import com.watabou.noosa.Game;
-import com.watabou.noosa.NinePatch;
-import com.watabou.noosa.audio.Music;
-import com.watabou.pixeldungeon.Assets;
-import com.watabou.pixeldungeon.Badges;
-import com.watabou.pixeldungeon.Chrome;
-import com.watabou.pixeldungeon.PixelDungeon;
-import com.watabou.pixeldungeon.ui.Archs;
-import com.watabou.pixeldungeon.ui.BadgesList;
-import com.watabou.pixeldungeon.ui.ExitButton;
-import com.watabou.pixeldungeon.ui.ScrollPane;
-import com.watabou.pixeldungeon.ui.Window;
-import com.watabou.utils.Callback;
+import com.github.mdsimmo.noosa.BitmapText;
+import com.github.mdsimmo.noosa.Camera;
+import com.github.mdsimmo.noosa.Game;
+import com.github.mdsimmo.noosa.NinePatch;
+import com.github.mdsimmo.noosa.audio.Music;
+import com.github.mdsimmo.pixeldungeon.Assets;
+import com.github.mdsimmo.pixeldungeon.Badges;
+import com.github.mdsimmo.pixeldungeon.Chrome;
+import com.github.mdsimmo.pixeldungeon.PixelDungeon;
+import com.github.mdsimmo.pixeldungeon.ui.Archs;
+import com.github.mdsimmo.pixeldungeon.ui.BadgesList;
+import com.github.mdsimmo.pixeldungeon.ui.ExitButton;
+import com.github.mdsimmo.pixeldungeon.ui.ScrollPane;
+import com.github.mdsimmo.pixeldungeon.ui.Window;
+import com.github.mdsimmo.utils.Callback;
 
 public class BadgesScene extends PixelScene {
 	

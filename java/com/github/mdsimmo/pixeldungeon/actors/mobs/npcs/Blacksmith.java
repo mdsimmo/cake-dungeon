@@ -15,32 +15,32 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.actors.mobs.npcs;
+package com.github.mdsimmo.pixeldungeon.actors.mobs.npcs;
 
 import java.util.Collection;
 
-import com.watabou.noosa.audio.Sample;
-import com.watabou.pixeldungeon.Assets;
-import com.watabou.pixeldungeon.Badges;
-import com.watabou.pixeldungeon.Dungeon;
-import com.watabou.pixeldungeon.Journal;
-import com.watabou.pixeldungeon.actors.Char;
-import com.watabou.pixeldungeon.actors.buffs.Buff;
-import com.watabou.pixeldungeon.actors.hero.Hero;
-import com.watabou.pixeldungeon.items.EquipableItem;
-import com.watabou.pixeldungeon.items.Item;
-import com.watabou.pixeldungeon.items.quest.DarkGold;
-import com.watabou.pixeldungeon.items.quest.Pickaxe;
-import com.watabou.pixeldungeon.items.scrolls.ScrollOfUpgrade;
-import com.watabou.pixeldungeon.levels.Room;
-import com.watabou.pixeldungeon.levels.Room.Type;
-import com.watabou.pixeldungeon.scenes.GameScene;
-import com.watabou.pixeldungeon.sprites.BlacksmithSprite;
-import com.watabou.pixeldungeon.utils.GLog;
-import com.watabou.pixeldungeon.windows.WndBlacksmith;
-import com.watabou.pixeldungeon.windows.WndQuest;
-import com.watabou.utils.Bundle;
-import com.watabou.utils.Random;
+import com.github.mdsimmo.noosa.audio.Sample;
+import com.github.mdsimmo.pixeldungeon.Assets;
+import com.github.mdsimmo.pixeldungeon.Badges;
+import com.github.mdsimmo.pixeldungeon.Dungeon;
+import com.github.mdsimmo.pixeldungeon.Journal;
+import com.github.mdsimmo.pixeldungeon.actors.Char;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Buff;
+import com.github.mdsimmo.pixeldungeon.actors.hero.Hero;
+import com.github.mdsimmo.pixeldungeon.items.EquipableItem;
+import com.github.mdsimmo.pixeldungeon.items.Item;
+import com.github.mdsimmo.pixeldungeon.items.quest.DarkGold;
+import com.github.mdsimmo.pixeldungeon.items.quest.Pickaxe;
+import com.github.mdsimmo.pixeldungeon.items.scrolls.ScrollOfUpgrade;
+import com.github.mdsimmo.pixeldungeon.levels.Room;
+import com.github.mdsimmo.pixeldungeon.levels.Room.Type;
+import com.github.mdsimmo.pixeldungeon.scenes.GameScene;
+import com.github.mdsimmo.pixeldungeon.sprites.BlacksmithSprite;
+import com.github.mdsimmo.pixeldungeon.utils.GLog;
+import com.github.mdsimmo.pixeldungeon.windows.WndBlacksmith;
+import com.github.mdsimmo.pixeldungeon.windows.WndQuest;
+import com.github.mdsimmo.utils.Bundle;
+import com.github.mdsimmo.utils.Random;
 
 public class Blacksmith extends NPC {
 

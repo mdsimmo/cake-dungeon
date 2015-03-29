@@ -15,19 +15,19 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.items.armor.glyphs;
+package com.github.mdsimmo.pixeldungeon.items.armor.glyphs;
 
-import com.watabou.noosa.Camera;
-import com.watabou.pixeldungeon.Dungeon;
-import com.watabou.pixeldungeon.actors.Char;
-import com.watabou.pixeldungeon.effects.Lightning;
-import com.watabou.pixeldungeon.items.armor.Armor;
-import com.watabou.pixeldungeon.items.armor.Armor.Glyph;
-import com.watabou.pixeldungeon.levels.Level;
-import com.watabou.pixeldungeon.levels.traps.LightningTrap;
-import com.watabou.pixeldungeon.sprites.ItemSprite;
-import com.watabou.pixeldungeon.sprites.ItemSprite.Glowing;
-import com.watabou.utils.Random;
+import com.github.mdsimmo.noosa.Camera;
+import com.github.mdsimmo.pixeldungeon.Dungeon;
+import com.github.mdsimmo.pixeldungeon.actors.Char;
+import com.github.mdsimmo.pixeldungeon.effects.Lightning;
+import com.github.mdsimmo.pixeldungeon.items.armor.Armor;
+import com.github.mdsimmo.pixeldungeon.items.armor.Armor.Glyph;
+import com.github.mdsimmo.pixeldungeon.levels.Level;
+import com.github.mdsimmo.pixeldungeon.levels.traps.LightningTrap;
+import com.github.mdsimmo.pixeldungeon.sprites.ItemSprite;
+import com.github.mdsimmo.pixeldungeon.sprites.ItemSprite.Glowing;
+import com.github.mdsimmo.utils.Random;
 
 public class Potential extends Glyph {
 

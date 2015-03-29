@@ -15,26 +15,26 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>
  */
-package com.watabou.pixeldungeon.scenes;
+package com.github.mdsimmo.pixeldungeon.scenes;
 
-import com.watabou.noosa.BitmapText;
-import com.watabou.noosa.BitmapTextMultiline;
-import com.watabou.noosa.Camera;
-import com.watabou.noosa.Image;
-import com.watabou.noosa.audio.Music;
-import com.watabou.noosa.ui.Button;
-import com.watabou.pixeldungeon.Assets;
-import com.watabou.pixeldungeon.PixelDungeon;
-import com.watabou.pixeldungeon.Rankings;
-import com.watabou.pixeldungeon.effects.Flare;
-import com.watabou.pixeldungeon.sprites.ItemSprite;
-import com.watabou.pixeldungeon.sprites.ItemSpriteSheet;
-import com.watabou.pixeldungeon.ui.Archs;
-import com.watabou.pixeldungeon.ui.ExitButton;
-import com.watabou.pixeldungeon.ui.Icons;
-import com.watabou.pixeldungeon.ui.Window;
-import com.watabou.pixeldungeon.windows.WndError;
-import com.watabou.pixeldungeon.windows.WndRanking;
+import com.github.mdsimmo.noosa.BitmapText;
+import com.github.mdsimmo.noosa.BitmapTextMultiline;
+import com.github.mdsimmo.noosa.Camera;
+import com.github.mdsimmo.noosa.Image;
+import com.github.mdsimmo.noosa.audio.Music;
+import com.github.mdsimmo.noosa.ui.Button;
+import com.github.mdsimmo.pixeldungeon.Assets;
+import com.github.mdsimmo.pixeldungeon.PixelDungeon;
+import com.github.mdsimmo.pixeldungeon.Rankings;
+import com.github.mdsimmo.pixeldungeon.effects.Flare;
+import com.github.mdsimmo.pixeldungeon.sprites.ItemSprite;
+import com.github.mdsimmo.pixeldungeon.sprites.ItemSpriteSheet;
+import com.github.mdsimmo.pixeldungeon.ui.Archs;
+import com.github.mdsimmo.pixeldungeon.ui.ExitButton;
+import com.github.mdsimmo.pixeldungeon.ui.Icons;
+import com.github.mdsimmo.pixeldungeon.ui.Window;
+import com.github.mdsimmo.pixeldungeon.windows.WndError;
+import com.github.mdsimmo.pixeldungeon.windows.WndRanking;
 
 public class RankingsScene extends PixelScene {
 	

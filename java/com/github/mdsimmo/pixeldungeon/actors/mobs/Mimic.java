@@ -17,11 +17,6 @@
  */
 package com.github.mdsimmo.pixeldungeon.actors.mobs;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashSet;
-import java.util.List;
-
 import com.github.mdsimmo.noosa.audio.Sample;
 import com.github.mdsimmo.pixeldungeon.Assets;
 import com.github.mdsimmo.pixeldungeon.Dungeon;
@@ -38,6 +33,11 @@ import com.github.mdsimmo.pixeldungeon.scenes.GameScene;
 import com.github.mdsimmo.pixeldungeon.sprites.MimicSprite;
 import com.github.mdsimmo.utils.Bundle;
 import com.github.mdsimmo.utils.Random;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.List;
 
 public class Mimic extends Mob {
 	
@@ -64,7 +64,7 @@ public class Mimic extends Mob {
 	@Override
 	public void restoreFromBundle( Bundle bundle ) {
 		super.restoreFromBundle( bundle );
-		items = new ArrayList<Item>( (Collection<? extends Item>) bundle.getCollection( ITEMS ) ); 
+		items = new ArrayList<Item>( (Collection<? extends Item>) (Object)bundle.getCollection( ITEMS ) );
 		adjustStats( bundle.getInt( LEVEL ) );
 	}
 	

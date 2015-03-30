@@ -17,11 +17,6 @@
  */
 package com.github.mdsimmo.pixeldungeon.levels;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashSet;
-import java.util.List;
-
 import com.github.mdsimmo.pixeldungeon.Bones;
 import com.github.mdsimmo.pixeldungeon.Dungeon;
 import com.github.mdsimmo.pixeldungeon.actors.Actor;
@@ -32,11 +27,16 @@ import com.github.mdsimmo.pixeldungeon.items.Heap;
 import com.github.mdsimmo.pixeldungeon.items.Item;
 import com.github.mdsimmo.pixeldungeon.items.scrolls.ScrollOfUpgrade;
 import com.github.mdsimmo.pixeldungeon.levels.Room.Type;
-import com.github.mdsimmo.pixeldungeon.levels.painters.*;
+import com.github.mdsimmo.pixeldungeon.levels.painters.Painter;
 import com.github.mdsimmo.utils.Bundle;
 import com.github.mdsimmo.utils.Graph;
 import com.github.mdsimmo.utils.Random;
 import com.github.mdsimmo.utils.Rect;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.List;
 
 public abstract class RegularLevel extends Level {
 
@@ -682,7 +682,7 @@ public abstract class RegularLevel extends Level {
 	public void restoreFromBundle( Bundle bundle ) {
 		super.restoreFromBundle( bundle );
 		
-		rooms = new HashSet<Room>( (Collection<? extends Room>) bundle.getCollection( "rooms" ) );
+		rooms = new HashSet<Room>( (Collection<? extends Room>)(Object) bundle.getCollection( "rooms" ) );
 		for (Room r : rooms) {
 			if (r.type == Type.WEAK_FLOOR) {
 				weakFloorCreated = true;

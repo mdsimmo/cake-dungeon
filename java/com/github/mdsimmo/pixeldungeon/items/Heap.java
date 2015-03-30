@@ -17,9 +17,6 @@
  */
 package com.github.mdsimmo.pixeldungeon.items;
 
-import java.util.Collection;
-import java.util.LinkedList;
-
 import com.github.mdsimmo.noosa.audio.Sample;
 import com.github.mdsimmo.pixeldungeon.Assets;
 import com.github.mdsimmo.pixeldungeon.Badges;
@@ -48,6 +45,9 @@ import com.github.mdsimmo.pixeldungeon.utils.GLog;
 import com.github.mdsimmo.utils.Bundlable;
 import com.github.mdsimmo.utils.Bundle;
 import com.github.mdsimmo.utils.Random;
+
+import java.util.Collection;
+import java.util.LinkedList;
 
 public class Heap implements Bundlable {
 
@@ -360,7 +360,7 @@ public class Heap implements Bundlable {
 	public void restoreFromBundle( Bundle bundle ) {
 		pos = bundle.getInt( POS );
 		type = Type.valueOf( bundle.getString( TYPE ) );
-		items = new LinkedList<Item>( (Collection<? extends Item>) bundle.getCollection( ITEMS ) ); 
+		items = new LinkedList<Item>( (Collection<? extends Item>)(Object) bundle.getCollection( ITEMS ) );
 	}
 
 	@Override

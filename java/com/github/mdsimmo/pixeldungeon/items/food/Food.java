@@ -9,15 +9,13 @@
  *
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>
+ * along with this program. If not, see <http://www.gnu.org/licenses/>
  */
 package com.github.mdsimmo.pixeldungeon.items.food;
-
-import java.util.ArrayList;
 
 import com.github.mdsimmo.noosa.audio.Sample;
 import com.github.mdsimmo.pixeldungeon.Assets;
@@ -29,92 +27,81 @@ import com.github.mdsimmo.pixeldungeon.effects.Speck;
 import com.github.mdsimmo.pixeldungeon.effects.SpellSprite;
 import com.github.mdsimmo.pixeldungeon.items.Item;
 import com.github.mdsimmo.pixeldungeon.items.scrolls.ScrollOfRecharging;
-import com.github.mdsimmo.pixeldungeon.sprites.ItemSpriteSheet;
 import com.github.mdsimmo.pixeldungeon.utils.GLog;
 
-public class Food extends Item {
+import java.util.ArrayList;
 
-	private static final float TIME_TO_EAT	= 3f;
-	
-	public static final String AC_EAT	= "EAT";
-	
-	public float energy = Hunger.HUNGRY;
-	public String message = "That food tasted delicious!";
-	
-	{
-		stackable = true;
-		name = "ration of food";
-		image = ItemSpriteSheet.RATION;
-	}
-	
-	@Override
-	public ArrayList<String> actions( Hero hero ) {
-		ArrayList<String> actions = super.actions( hero );
-		actions.add( AC_EAT );
-		return actions;
-	}
-	
-	@Override
-	public void execute( Hero hero, String action ) {
-		if (action.equals( AC_EAT )) {
-			
-			detach( hero.belongings.backpack );
-			
-			((Hunger)hero.buff( Hunger.class )).satisfy( energy );
-			GLog.i( message );
-			
-			switch (hero.heroClass) {
-			case WARRIOR:
-				if (hero.HP < hero.HT) {
-					hero.HP = Math.min( hero.HP + 5, hero.HT );
-					hero.sprite.emitter().burst( Speck.factory( Speck.HEALING ), 1 );
-				}
-				break;
-			case MAGE:
-				hero.belongings.charge( false );
-				ScrollOfRecharging.charge( hero );
-				break;
-			case ROGUE:
-			case HUNTRESS:
-				break;
-			}
-			
-			hero.sprite.operate( hero.pos );
-			hero.busy();
-			SpellSprite.show( hero, SpellSprite.FOOD );
-			Sample.INSTANCE.play( Assets.SND_EAT );
-			
-			hero.spend( TIME_TO_EAT );
-			
-			Statistics.foodEaten++;
-			Badges.validateFoodEaten();
-			
-		} else {
-		
-			super.execute( hero, action );
-			
-		}
-	}
-	
-	@Override
-	public String info() {
-		return 
-			"Nothing fancy here: dried meat, " +
-			"some biscuits - things like that.";
-	}
-	
-	@Override
-	public boolean isUpgradable() {
-		return false;
-	}
-	
-	@Override
-	public boolean isIdentified() {
-		return true;
-	}
-	
-	@Override
-	public int price() {
-		return 10 * quantity;
-	}
+public abstract class Food extends Item {
+
+    private static final float TIME_TO_EAT	= 3f;
+
+    public static final String AC_EAT	= "EAT";
+
+    {
+        stackable = true;
+    }
+
+    @Override
+    public ArrayList<String> actions( Hero hero ) {
+        ArrayList<String> actions = super.actions( hero );
+        actions.add( AC_EAT );
+        return actions;
+    }
+
+    @Override
+    public void execute( Hero hero, String action ) {
+        if (action.equals( AC_EAT )) {
+
+            detach( hero.belongings.backpack );
+
+            hero.buff( Hunger.class ).satisfy( getEnergy() );
+            GLog.i( getMessage() );
+
+            switch (hero.heroClass) {
+                case WARRIOR:
+                    if (hero.HP < hero.HT) {
+                        hero.HP = Math.min( hero.HP + 5, hero.HT );
+                        hero.sprite.emitter().burst( Speck.factory( Speck.HEALING ), 1 );
+                    }
+                    break;
+                case MAGE:
+                    hero.belongings.charge( false );
+                    ScrollOfRecharging.charge( hero );
+                    break;
+                case ROGUE:
+                case HUNTRESS:
+                    break;
+            }
+
+            hero.sprite.operate( hero.pos );
+            hero.busy();
+            SpellSprite.show( hero, SpellSprite.FOOD );
+            Sample.INSTANCE.play( Assets.SND_EAT );
+
+            hero.spend( TIME_TO_EAT );
+
+            Statistics.foodEaten++;
+            Badges.validateFoodEaten();
+
+        } else {
+
+            super.execute( hero, action );
+
+        }
+    }
+
+    @Override
+    public boolean isUpgradable() {
+        return false;
+    }
+
+    @Override
+    public boolean isIdentified() {
+        return true;
+    }
+
+    public abstract float getEnergy();
+
+    public abstract String getMessage();
+
 }

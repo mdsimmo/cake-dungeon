@@ -31,11 +31,12 @@ import com.github.mdsimmo.utils.Random;
 
 public class MysteryMeat extends Food {
 
+    public static final float ENERGY = Hunger.STARVING - Hunger.HUNGRY;
+    public static final String MESSAGE = "That food tasted... strange.";
+
 	{
 		name = "mystery meat";
 		image = ItemSpriteSheet.MEAT;
-		energy = Hunger.STARVING - Hunger.HUNGRY;
-		message = "That food tasted... strange.";
 	}
 	
 	@Override
@@ -74,4 +75,14 @@ public class MysteryMeat extends Food {
 	public int price() {
 		return 5 * quantity;
 	};
+
+    @Override
+    public float getEnergy() {
+        return ENERGY;
+    }
+
+    @Override
+    public String getMessage() {
+        return MESSAGE;
+    }
 }

@@ -17,16 +17,15 @@
  */
 package com.github.mdsimmo.pixeldungeon.items.food;
 
-import com.github.mdsimmo.pixeldungeon.actors.buffs.Hunger;
 import com.github.mdsimmo.pixeldungeon.sprites.ItemSpriteSheet;
 
 public class OverpricedRation extends Food {
 
-	{
+	public static final String MESSAGE = "That food tasted ok.";
+
+    {
 		name = "overpriced food ration";
 		image = ItemSpriteSheet.OVERPRICED;
-		energy = Hunger.STARVING - Hunger.HUNGRY;
-		message = "That food tasted ok.";
 	}
 	
 	@Override
@@ -38,4 +37,14 @@ public class OverpricedRation extends Food {
 	public int price() {
 		return 20 * quantity;
 	}
+
+    @Override
+    public float getEnergy() {
+        return MysteryMeat.ENERGY;
+    }
+
+    @Override
+    public String getMessage() {
+        return MESSAGE;
+    }
 }

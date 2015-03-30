@@ -26,7 +26,7 @@ import com.github.mdsimmo.pixeldungeon.actors.buffs.Terror;
 import com.github.mdsimmo.pixeldungeon.actors.hero.Hero;
 import com.github.mdsimmo.pixeldungeon.actors.mobs.npcs.Imp;
 import com.github.mdsimmo.pixeldungeon.items.KindOfWeapon;
-import com.github.mdsimmo.pixeldungeon.items.food.Food;
+import com.github.mdsimmo.pixeldungeon.items.food.FoodRation;
 import com.github.mdsimmo.pixeldungeon.items.weapon.melee.Knuckles;
 import com.github.mdsimmo.pixeldungeon.sprites.MonkSprite;
 import com.github.mdsimmo.pixeldungeon.utils.GLog;
@@ -46,7 +46,7 @@ public class Monk extends Mob {
 		EXP = 11;
 		maxLvl = 21;
 		
-		loot = new Food();
+		loot = new FoodRation();
 		lootChance = 0.083f;
 	}
 	

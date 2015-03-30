@@ -17,7 +17,6 @@
  */
 package com.github.mdsimmo.pixeldungeon.items.food;
 
-import com.github.mdsimmo.pixeldungeon.actors.buffs.Hunger;
 import com.github.mdsimmo.pixeldungeon.sprites.ItemSpriteSheet;
 
 public class ChargrilledMeat extends Food {
@@ -25,7 +24,6 @@ public class ChargrilledMeat extends Food {
 	{
 		name = "chargrilled meat";
 		image = ItemSpriteSheet.STEAK;
-		energy = Hunger.STARVING - Hunger.HUNGRY;
 	}
 	
 	@Override
@@ -43,4 +41,14 @@ public class ChargrilledMeat extends Food {
 		result.quantity = ingredient.quantity();
 		return result;
 	}
+
+    @Override
+    public float getEnergy() {
+        return MysteryMeat.ENERGY;
+    }
+
+    @Override
+    public String getMessage() {
+        return FoodRation.MESSAGE;
+    }
 }

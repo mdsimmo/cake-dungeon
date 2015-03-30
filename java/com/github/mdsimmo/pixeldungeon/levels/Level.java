@@ -17,12 +17,6 @@
  */
 package com.github.mdsimmo.pixeldungeon.levels;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.HashSet;
-
 import com.github.mdsimmo.noosa.Scene;
 import com.github.mdsimmo.noosa.audio.Sample;
 import com.github.mdsimmo.pixeldungeon.Assets;
@@ -62,7 +56,14 @@ import com.github.mdsimmo.pixeldungeon.levels.features.Chasm;
 import com.github.mdsimmo.pixeldungeon.levels.features.Door;
 import com.github.mdsimmo.pixeldungeon.levels.features.HighGrass;
 import com.github.mdsimmo.pixeldungeon.levels.painters.Painter;
-import com.github.mdsimmo.pixeldungeon.levels.traps.*;
+import com.github.mdsimmo.pixeldungeon.levels.traps.AlarmTrap;
+import com.github.mdsimmo.pixeldungeon.levels.traps.FireTrap;
+import com.github.mdsimmo.pixeldungeon.levels.traps.GrippingTrap;
+import com.github.mdsimmo.pixeldungeon.levels.traps.LightningTrap;
+import com.github.mdsimmo.pixeldungeon.levels.traps.ParalyticTrap;
+import com.github.mdsimmo.pixeldungeon.levels.traps.PoisonTrap;
+import com.github.mdsimmo.pixeldungeon.levels.traps.SummoningTrap;
+import com.github.mdsimmo.pixeldungeon.levels.traps.ToxicTrap;
 import com.github.mdsimmo.pixeldungeon.mechanics.ShadowCaster;
 import com.github.mdsimmo.pixeldungeon.plants.Plant;
 import com.github.mdsimmo.pixeldungeon.scenes.GameScene;
@@ -71,6 +72,12 @@ import com.github.mdsimmo.utils.Bundlable;
 import com.github.mdsimmo.utils.Bundle;
 import com.github.mdsimmo.utils.Random;
 import com.github.mdsimmo.utils.SparseArray;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.HashMap;
+import java.util.HashSet;
 
 public abstract class Level implements Bundlable {
 	
@@ -513,7 +520,7 @@ public abstract class Level implements Bundlable {
 	
 	public Heap drop( Item item, int cell ) {
 		
-		if (Dungeon.isChallenged( Challenges.NO_FOOD ) && item instanceof Food) {
+		if (Dungeon.isChallenged( Challenges.NO_FOOD ) && item instanceof Food ) {
 			item = new Gold( item.price() );
 		} else
 		if (Dungeon.isChallenged( Challenges.NO_ARMOR ) && item instanceof Armor) {

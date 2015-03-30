@@ -21,7 +21,6 @@ import com.github.mdsimmo.pixeldungeon.actors.buffs.Barkskin;
 import com.github.mdsimmo.pixeldungeon.actors.buffs.Bleeding;
 import com.github.mdsimmo.pixeldungeon.actors.buffs.Buff;
 import com.github.mdsimmo.pixeldungeon.actors.buffs.Cripple;
-import com.github.mdsimmo.pixeldungeon.actors.buffs.Hunger;
 import com.github.mdsimmo.pixeldungeon.actors.buffs.Invisibility;
 import com.github.mdsimmo.pixeldungeon.actors.buffs.Poison;
 import com.github.mdsimmo.pixeldungeon.actors.buffs.Weakness;
@@ -36,7 +35,6 @@ public class FrozenCarpaccio extends Food {
 	{
 		name = "frozen carpaccio";
 		image = ItemSpriteSheet.CARPACCIO;
-		energy = Hunger.STARVING - Hunger.HUNGRY;
 	}
 	
 	@Override
@@ -77,7 +75,7 @@ public class FrozenCarpaccio extends Food {
 	public String info() {
 		return 
 			"It's a piece of frozen raw meat. The only way to eat it is " +
-			"by cutting thin slices of it. And this way it's suprisingly good.";
+			"by cutting thin slices of it. And this way it's surprisingly good.";
 	}
 	
 	public int price() {
@@ -89,4 +87,14 @@ public class FrozenCarpaccio extends Food {
 		result.quantity = ingredient.quantity();
 		return result;
 	}
+
+    @Override
+    public float getEnergy() {
+        return MysteryMeat.ENERGY;
+    }
+
+    @Override
+    public String getMessage() {
+        return FoodRation.MESSAGE;
+    }
 }

@@ -17,25 +17,102 @@
  */
 package com.github.mdsimmo.pixeldungeon.items;
 
-import java.util.HashMap;
-
 import com.github.mdsimmo.pixeldungeon.Dungeon;
 import com.github.mdsimmo.pixeldungeon.actors.hero.Hero;
 import com.github.mdsimmo.pixeldungeon.actors.mobs.npcs.Wandmaker.Rotberry;
-import com.github.mdsimmo.pixeldungeon.items.armor.*;
+import com.github.mdsimmo.pixeldungeon.items.armor.Armor;
+import com.github.mdsimmo.pixeldungeon.items.armor.ClothArmor;
+import com.github.mdsimmo.pixeldungeon.items.armor.LeatherArmor;
+import com.github.mdsimmo.pixeldungeon.items.armor.MailArmor;
+import com.github.mdsimmo.pixeldungeon.items.armor.PlateArmor;
+import com.github.mdsimmo.pixeldungeon.items.armor.ScaleArmor;
 import com.github.mdsimmo.pixeldungeon.items.bags.Bag;
-import com.github.mdsimmo.pixeldungeon.items.food.Food;
+import com.github.mdsimmo.pixeldungeon.items.food.FoodRation;
 import com.github.mdsimmo.pixeldungeon.items.food.MysteryMeat;
 import com.github.mdsimmo.pixeldungeon.items.food.Pasty;
-import com.github.mdsimmo.pixeldungeon.items.potions.*;
-import com.github.mdsimmo.pixeldungeon.items.rings.*;
-import com.github.mdsimmo.pixeldungeon.items.scrolls.*;
-import com.github.mdsimmo.pixeldungeon.items.wands.*;
-import com.github.mdsimmo.pixeldungeon.items.weapon.*;
-import com.github.mdsimmo.pixeldungeon.items.weapon.melee.*;
-import com.github.mdsimmo.pixeldungeon.items.weapon.missiles.*;
-import com.github.mdsimmo.pixeldungeon.plants.*;
+import com.github.mdsimmo.pixeldungeon.items.potions.Potion;
+import com.github.mdsimmo.pixeldungeon.items.potions.PotionOfExperience;
+import com.github.mdsimmo.pixeldungeon.items.potions.PotionOfFrost;
+import com.github.mdsimmo.pixeldungeon.items.potions.PotionOfHealing;
+import com.github.mdsimmo.pixeldungeon.items.potions.PotionOfInvisibility;
+import com.github.mdsimmo.pixeldungeon.items.potions.PotionOfLevitation;
+import com.github.mdsimmo.pixeldungeon.items.potions.PotionOfLiquidFlame;
+import com.github.mdsimmo.pixeldungeon.items.potions.PotionOfMight;
+import com.github.mdsimmo.pixeldungeon.items.potions.PotionOfMindVision;
+import com.github.mdsimmo.pixeldungeon.items.potions.PotionOfParalyticGas;
+import com.github.mdsimmo.pixeldungeon.items.potions.PotionOfPurity;
+import com.github.mdsimmo.pixeldungeon.items.potions.PotionOfStrength;
+import com.github.mdsimmo.pixeldungeon.items.potions.PotionOfToxicGas;
+import com.github.mdsimmo.pixeldungeon.items.rings.Ring;
+import com.github.mdsimmo.pixeldungeon.items.rings.RingOfAccuracy;
+import com.github.mdsimmo.pixeldungeon.items.rings.RingOfDetection;
+import com.github.mdsimmo.pixeldungeon.items.rings.RingOfElements;
+import com.github.mdsimmo.pixeldungeon.items.rings.RingOfEvasion;
+import com.github.mdsimmo.pixeldungeon.items.rings.RingOfHaggler;
+import com.github.mdsimmo.pixeldungeon.items.rings.RingOfHaste;
+import com.github.mdsimmo.pixeldungeon.items.rings.RingOfHerbalism;
+import com.github.mdsimmo.pixeldungeon.items.rings.RingOfMending;
+import com.github.mdsimmo.pixeldungeon.items.rings.RingOfPower;
+import com.github.mdsimmo.pixeldungeon.items.rings.RingOfSatiety;
+import com.github.mdsimmo.pixeldungeon.items.rings.RingOfShadows;
+import com.github.mdsimmo.pixeldungeon.items.rings.RingOfThorns;
+import com.github.mdsimmo.pixeldungeon.items.scrolls.Scroll;
+import com.github.mdsimmo.pixeldungeon.items.scrolls.ScrollOfChallenge;
+import com.github.mdsimmo.pixeldungeon.items.scrolls.ScrollOfEnchantment;
+import com.github.mdsimmo.pixeldungeon.items.scrolls.ScrollOfIdentify;
+import com.github.mdsimmo.pixeldungeon.items.scrolls.ScrollOfLullaby;
+import com.github.mdsimmo.pixeldungeon.items.scrolls.ScrollOfMagicMapping;
+import com.github.mdsimmo.pixeldungeon.items.scrolls.ScrollOfMirrorImage;
+import com.github.mdsimmo.pixeldungeon.items.scrolls.ScrollOfPsionicBlast;
+import com.github.mdsimmo.pixeldungeon.items.scrolls.ScrollOfRecharging;
+import com.github.mdsimmo.pixeldungeon.items.scrolls.ScrollOfRemoveCurse;
+import com.github.mdsimmo.pixeldungeon.items.scrolls.ScrollOfTeleportation;
+import com.github.mdsimmo.pixeldungeon.items.scrolls.ScrollOfTerror;
+import com.github.mdsimmo.pixeldungeon.items.scrolls.ScrollOfUpgrade;
+import com.github.mdsimmo.pixeldungeon.items.wands.Wand;
+import com.github.mdsimmo.pixeldungeon.items.wands.WandOfAmok;
+import com.github.mdsimmo.pixeldungeon.items.wands.WandOfAvalanche;
+import com.github.mdsimmo.pixeldungeon.items.wands.WandOfBlink;
+import com.github.mdsimmo.pixeldungeon.items.wands.WandOfDisintegration;
+import com.github.mdsimmo.pixeldungeon.items.wands.WandOfFirebolt;
+import com.github.mdsimmo.pixeldungeon.items.wands.WandOfFlock;
+import com.github.mdsimmo.pixeldungeon.items.wands.WandOfLightning;
+import com.github.mdsimmo.pixeldungeon.items.wands.WandOfMagicMissile;
+import com.github.mdsimmo.pixeldungeon.items.wands.WandOfPoison;
+import com.github.mdsimmo.pixeldungeon.items.wands.WandOfRegrowth;
+import com.github.mdsimmo.pixeldungeon.items.wands.WandOfSlowness;
+import com.github.mdsimmo.pixeldungeon.items.wands.WandOfTelekinesis;
+import com.github.mdsimmo.pixeldungeon.items.wands.WandOfTeleportation;
+import com.github.mdsimmo.pixeldungeon.items.weapon.Weapon;
+import com.github.mdsimmo.pixeldungeon.items.weapon.melee.BattleAxe;
+import com.github.mdsimmo.pixeldungeon.items.weapon.melee.Dagger;
+import com.github.mdsimmo.pixeldungeon.items.weapon.melee.Glaive;
+import com.github.mdsimmo.pixeldungeon.items.weapon.melee.Knuckles;
+import com.github.mdsimmo.pixeldungeon.items.weapon.melee.Longsword;
+import com.github.mdsimmo.pixeldungeon.items.weapon.melee.Mace;
+import com.github.mdsimmo.pixeldungeon.items.weapon.melee.Quarterstaff;
+import com.github.mdsimmo.pixeldungeon.items.weapon.melee.ShortSword;
+import com.github.mdsimmo.pixeldungeon.items.weapon.melee.Spear;
+import com.github.mdsimmo.pixeldungeon.items.weapon.melee.Sword;
+import com.github.mdsimmo.pixeldungeon.items.weapon.melee.WarHammer;
+import com.github.mdsimmo.pixeldungeon.items.weapon.missiles.Boomerang;
+import com.github.mdsimmo.pixeldungeon.items.weapon.missiles.CurareDart;
+import com.github.mdsimmo.pixeldungeon.items.weapon.missiles.Dart;
+import com.github.mdsimmo.pixeldungeon.items.weapon.missiles.IncendiaryDart;
+import com.github.mdsimmo.pixeldungeon.items.weapon.missiles.Javelin;
+import com.github.mdsimmo.pixeldungeon.items.weapon.missiles.Shuriken;
+import com.github.mdsimmo.pixeldungeon.items.weapon.missiles.Tamahawk;
+import com.github.mdsimmo.pixeldungeon.plants.Dreamweed;
+import com.github.mdsimmo.pixeldungeon.plants.Earthroot;
+import com.github.mdsimmo.pixeldungeon.plants.Fadeleaf;
+import com.github.mdsimmo.pixeldungeon.plants.Firebloom;
+import com.github.mdsimmo.pixeldungeon.plants.Icecap;
+import com.github.mdsimmo.pixeldungeon.plants.Plant;
+import com.github.mdsimmo.pixeldungeon.plants.Sorrowmoss;
+import com.github.mdsimmo.pixeldungeon.plants.Sungrass;
 import com.github.mdsimmo.utils.Random;
+
+import java.util.HashMap;
 
 public class Generator {
 
@@ -47,7 +124,7 @@ public class Generator {
 		WAND	( 4,	Wand.class ),
 		RING	( 2,	Ring.class ),
 		SEED	( 5,	Plant.Seed.class ),
-		FOOD	( 0,	Food.class ),
+		FOOD	( 0,	FoodRation.class ),
 		GOLD	( 50,	Gold.class ),
 		MISC	( 5,	Item.class );
 		
@@ -157,7 +234,7 @@ public class Generator {
 		Category.ARMOR.probs = new float[]{ 1, 1, 1, 1, 1 };
 		
 		Category.FOOD.classes = new Class<?>[]{ 
-			Food.class, 
+			FoodRation.class,
 			Pasty.class,
 			MysteryMeat.class };
 		Category.FOOD.probs = new float[]{ 4, 1, 0 };

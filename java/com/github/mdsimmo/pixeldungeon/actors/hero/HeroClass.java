@@ -22,7 +22,7 @@ import com.github.mdsimmo.pixeldungeon.Badges;
 import com.github.mdsimmo.pixeldungeon.items.TomeOfMastery;
 import com.github.mdsimmo.pixeldungeon.items.armor.ClothArmor;
 import com.github.mdsimmo.pixeldungeon.items.bags.Keyring;
-import com.github.mdsimmo.pixeldungeon.items.food.Food;
+import com.github.mdsimmo.pixeldungeon.items.food.FoodRation;
 import com.github.mdsimmo.pixeldungeon.items.potions.PotionOfStrength;
 import com.github.mdsimmo.pixeldungeon.items.rings.RingOfShadows;
 import com.github.mdsimmo.pixeldungeon.items.scrolls.ScrollOfIdentify;
@@ -112,7 +112,7 @@ public enum HeroClass {
 	
 	private static void initCommon( Hero hero ) {
 		(hero.belongings.armor = new ClothArmor()).identify();
-		new Food().identify().collect();
+		new FoodRation().identify().collect();
 		new Keyring().collect();
 	}
 	

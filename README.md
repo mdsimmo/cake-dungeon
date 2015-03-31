@@ -1,16 +1,8 @@
-Pixel Dungeon
+Cake Dungeon
 =============
 
-Traditional roguelike game with pixel-art graphics and simple interface.
+Cake dungeon is built on top of Watabou's Pixel Dungeon. It is esentially the same game, but with more foods, recipes, and, most importantly, cake!
 
-Pixel Dungeon on GooglePlay: 
-https://play.google.com/store/apps/details?id=com.watabou.pixeldungeon
+To build the source, you will also need to include Watabou's game libraybut with the packages renamed from "com.watabou" to "com.github.mdsimmo"
 
-Official web-site: 
-http://pixeldungeon.watabou.ru/
-
-Developer's blog: 
-http://pixeldungeon.tumblr.com/
-
-To build the game you will need my unnamed game library:
 https://github.com/watabou/PD-classes

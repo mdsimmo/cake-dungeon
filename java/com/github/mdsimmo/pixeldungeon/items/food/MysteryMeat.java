@@ -70,8 +70,6 @@ public class MysteryMeat extends Food {
         return 5 * quantity;
     }
 
-    ;
-
     @Override
     public float getEnergy() {
         return Food.HALF_VALUE;

@@ -25,6 +25,7 @@ import com.github.mdsimmo.pixeldungeon.actors.buffs.Hunger;
 import com.github.mdsimmo.pixeldungeon.actors.hero.Hero;
 import com.github.mdsimmo.pixeldungeon.effects.Speck;
 import com.github.mdsimmo.pixeldungeon.effects.SpellSprite;
+import com.github.mdsimmo.pixeldungeon.items.Heap;
 import com.github.mdsimmo.pixeldungeon.items.Item;
 import com.github.mdsimmo.pixeldungeon.items.scrolls.ScrollOfRecharging;
 import com.github.mdsimmo.pixeldungeon.utils.GLog;
@@ -33,9 +34,14 @@ import java.util.ArrayList;
 
 public abstract class Food extends Item {
 
-    private static final float TIME_TO_EAT	= 3f;
+    public static final float FULL_FILL = Hunger.HUNGRY;
+    public static final float NORMAL = Hunger.HUNGRY;
+    public static final float HALF_VALUE = Hunger.STARVING - Hunger.HUNGRY;
+    public static final float JUNK_FOOD = HALF_VALUE / 2;
 
-    public static final String AC_EAT	= "EAT";
+    private static final float TIME_TO_EAT = 3f;
+
+    private static final String AC_EAT = "EAT";
 
     {
         stackable = true;
@@ -50,44 +56,46 @@ public abstract class Food extends Item {
 
     @Override
     public void execute( Hero hero, String action ) {
-        if (action.equals( AC_EAT )) {
-
-            detach( hero.belongings.backpack );
-
-            hero.buff( Hunger.class ).satisfy( getEnergy() );
-            GLog.i( getMessage() );
-
-            switch (hero.heroClass) {
-                case WARRIOR:
-                    if (hero.HP < hero.HT) {
-                        hero.HP = Math.min( hero.HP + 5, hero.HT );
-                        hero.sprite.emitter().burst( Speck.factory( Speck.HEALING ), 1 );
-                    }
-                    break;
-                case MAGE:
-                    hero.belongings.charge( false );
-                    ScrollOfRecharging.charge( hero );
-                    break;
-                case ROGUE:
-                case HUNTRESS:
-                    break;
-            }
-
-            hero.sprite.operate( hero.pos );
-            hero.busy();
-            SpellSprite.show( hero, SpellSprite.FOOD );
-            Sample.INSTANCE.play( Assets.SND_EAT );
-
-            hero.spend( TIME_TO_EAT );
-
-            Statistics.foodEaten++;
-            Badges.validateFoodEaten();
-
+        if ( action.equals( AC_EAT ) ) {
+            eat( hero );
         } else {
 
             super.execute( hero, action );
 
         }
+    }
+
+    public void eat( Hero hero ) {
+        detach( hero.belongings.backpack );
+
+        hero.buff( Hunger.class ).satisfy( getEnergy() );
+        GLog.i( getMessage() );
+
+        switch ( hero.heroClass ) {
+            case WARRIOR:
+                if ( hero.HP < hero.HT ) {
+                    hero.HP = Math.min( hero.HP + 5, hero.HT );
+                    hero.sprite.emitter().burst( Speck.factory( Speck.HEALING ), 1 );
+                }
+                break;
+            case MAGE:
+                hero.belongings.charge( false );
+                ScrollOfRecharging.charge( hero );
+                break;
+            case ROGUE:
+            case HUNTRESS:
+                break;
+        }
+
+        hero.sprite.operate( hero.pos );
+        hero.busy();
+        SpellSprite.show( hero, SpellSprite.FOOD );
+        Sample.INSTANCE.play( Assets.SND_EAT );
+
+        hero.spend( TIME_TO_EAT );
+
+        Statistics.foodEaten++;
+        Badges.validateFoodEaten();
     }
 
     @Override
@@ -103,5 +111,13 @@ public abstract class Food extends Item {
     public abstract float getEnergy();
 
     public abstract String getMessage();
+
+    public boolean onFreeze( Heap heap ) {
+        return false;
+    }
+
+    public boolean onCook( Heap heap ) {
+        return false;
+    }
 
 }

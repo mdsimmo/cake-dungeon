@@ -17,34 +17,32 @@
  */
 package com.github.mdsimmo.pixeldungeon.items.food;
 
-import com.github.mdsimmo.pixeldungeon.actors.buffs.Hunger;
 import com.github.mdsimmo.pixeldungeon.sprites.ItemSpriteSheet;
 
 public class FoodRation extends Food {
 
-	public static final float ENERGY = Hunger.HUNGRY;
-	public static final String MESSAGE = "That food tasted delicious!";
-	
-	{
-		name = "ration of food";
-		image = ItemSpriteSheet.RATION;
-	}
+    public static final String MESSAGE = "That food tasted delicious!";
 
-	@Override
-	public String info() {
-		return
-			"Nothing fancy here: dried meat, " +
-			"some biscuits - things like that.";
-	}
+    {
+        name = "ration of food";
+        image = ItemSpriteSheet.RATION;
+    }
 
-	@Override
-	public int price() {
-		return 10 * quantity;
-	}
+    @Override
+    public String info() {
+        return
+                "Nothing fancy here: dried meat, " +
+                        "some biscuits - things like that.";
+    }
+
+    @Override
+    public int price() {
+        return 10 * quantity;
+    }
 
     @Override
     public float getEnergy() {
-        return ENERGY;
+        return Food.NORMAL;
     }
 
     @Override

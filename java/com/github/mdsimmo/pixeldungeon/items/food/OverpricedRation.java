@@ -21,26 +21,26 @@ import com.github.mdsimmo.pixeldungeon.sprites.ItemSpriteSheet;
 
 public class OverpricedRation extends Food {
 
-	public static final String MESSAGE = "That food tasted ok.";
+    public static final String MESSAGE = "That food tasted ok.";
 
     {
-		name = "overpriced food ration";
-		image = ItemSpriteSheet.OVERPRICED;
-	}
-	
-	@Override
-	public String info() {
-		return "It looks exactly like a standard ration of food but smaller.";
-	}
-	
-	@Override
-	public int price() {
-		return 20 * quantity;
-	}
+        name = "overpriced food ration";
+        image = ItemSpriteSheet.OVERPRICED;
+    }
+
+    @Override
+    public String info() {
+        return "It looks exactly like a standard ration of food but smaller.";
+    }
+
+    @Override
+    public int price() {
+        return 20 * quantity;
+    }
 
     @Override
     public float getEnergy() {
-        return MysteryMeat.ENERGY;
+        return Food.HALF_VALUE;
     }
 
     @Override

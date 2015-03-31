@@ -17,31 +17,28 @@
  */
 package com.github.mdsimmo.pixeldungeon.items.food;
 
-import com.github.mdsimmo.pixeldungeon.actors.buffs.Hunger;
 import com.github.mdsimmo.pixeldungeon.sprites.ItemSpriteSheet;
 
 public class Pasty extends Food {
 
-    public static final float ENERGY = Hunger.STARVING;
+    {
+        name = "pasty";
+        image = ItemSpriteSheet.PASTY;
+    }
 
-	{
-		name = "pasty";
-		image = ItemSpriteSheet.PASTY;
-	}
-	
-	@Override
-	public String info() {
-		return "This is authentic Cornish pasty with traditional filling of beef and potato.";
-	}
-	
-	@Override
-	public int price() {
-		return 20 * quantity;
-	}
+    @Override
+    public String info() {
+        return "This is authentic Cornish pasty with traditional filling of beef and potato.";
+    }
+
+    @Override
+    public int price() {
+        return 20 * quantity;
+    }
 
     @Override
     public float getEnergy() {
-        return ENERGY;
+        return Food.FULL_FILL;
     }
 
     @Override

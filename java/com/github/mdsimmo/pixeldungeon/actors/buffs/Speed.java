@@ -18,7 +18,11 @@
 package com.github.mdsimmo.pixeldungeon.actors.buffs;
 
 public class Speed extends FlavourBuff {
-	
-	public static final float DURATION = 10f;
-	
+
+    public static final float DURATION = 10f;
+    public float factor = 2;
+
+    public float factor() {
+        return factor;
+    }
 }

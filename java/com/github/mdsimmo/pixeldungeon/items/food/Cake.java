@@ -9,46 +9,42 @@
  *
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>
+ * along with this program. If not, see <http://www.gnu.org/licenses/>
  */
 package com.github.mdsimmo.pixeldungeon.items.food;
 
 import com.github.mdsimmo.pixeldungeon.sprites.ItemSpriteSheet;
 
-public class ChargrilledMeat extends Food {
+public class Cake extends Food {
+
+    public static final String MESSAGE = "Yum!";
 
     {
-        name = "chargrilled meat";
-        image = ItemSpriteSheet.STEAK;
+        name = "cake";
+        image = ItemSpriteSheet.CAKE;
     }
 
     @Override
     public String info() {
-        return "It looks like a decent steak.";
+        return "A very delicious cake. I wish I could eat it right now...";
     }
 
     @Override
     public int price() {
-        return 5 * quantity;
-    }
-
-    public static Food cook( MysteryMeat ingredient ) {
-        ChargrilledMeat result = new ChargrilledMeat();
-        result.quantity = ingredient.quantity();
-        return result;
+        return 30 * quantity;
     }
 
     @Override
     public float getEnergy() {
-        return Food.HALF_VALUE;
+        return Food.JUNK_FOOD;
     }
 
     @Override
     public String getMessage() {
-        return FoodRation.MESSAGE;
+        return MESSAGE;
     }
 }

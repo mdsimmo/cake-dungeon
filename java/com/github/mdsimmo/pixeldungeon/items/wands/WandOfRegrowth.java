@@ -32,49 +32,49 @@ import com.github.mdsimmo.utils.Callback;
 
 public class WandOfRegrowth extends Wand {
 
-	{
-		name = "Wand of Regrowth";
-	}
-	
-	@Override
-	protected void onZap( int cell ) {
-		
-		for (int i=1; i < Ballistica.distance-1; i++) {
-			int p = Ballistica.trace[i];
-			int c = Dungeon.level.map[p];
-			if (c == Terrain.EMPTY || 
-				c == Terrain.EMBERS || 
-				c == Terrain.EMPTY_DECO) {
-				
-				Level.set( p, Terrain.GRASS );
-				
-			}
-		}
-		
-		int c = Dungeon.level.map[cell];
-		if (c == Terrain.EMPTY || 
-			c == Terrain.EMBERS || 
-			c == Terrain.EMPTY_DECO || 
-			c == Terrain.GRASS ||
-			c == Terrain.HIGH_GRASS) {
-			
-			GameScene.add( Blob.seed( cell, (level() + 2) * 20, Regrowth.class ) );
-			
-		} else {
-			
-			GLog.i( "nothing happened" );
-			
-		}
-	}
-	
-	protected void fx( int cell, Callback callback ) {
-		MagicMissile.foliage( curUser.sprite.parent, curUser.pos, cell, callback );
-		Sample.INSTANCE.play( Assets.SND_ZAP );
-	}
-	
-	@Override
-	public String desc() {
-		return
-			"\"When life ceases new life always begins to grow... The eternal cycle always remains!\"";
-	}
+    {
+        name = "Wand of Regrowth";
+    }
+
+    @Override
+    protected void onZap( int cell ) {
+
+        for ( int i = 1; i < Ballistica.distance - 1; i++ ) {
+            int p = Ballistica.trace[i];
+            int c = Dungeon.level.map[p];
+            if ( c == Terrain.EMPTY ||
+                    c == Terrain.EMBERS ||
+                    c == Terrain.EMPTY_DECO ) {
+
+                Level.set( p, Terrain.GRASS );
+
+            }
+        }
+
+        int c = Dungeon.level.map[cell];
+        if ( c == Terrain.EMPTY ||
+                c == Terrain.EMBERS ||
+                c == Terrain.EMPTY_DECO ||
+                c == Terrain.GRASS ||
+                c == Terrain.HIGH_GRASS ) {
+
+            GameScene.add( Blob.seed( cell, (level() + 2) * 20, Regrowth.class ) );
+
+        } else {
+
+            GLog.i( "nothing happened" );
+
+        }
+    }
+
+    protected void fx( int cell, Callback callback ) {
+        MagicMissile.foliage( curUser.sprite.parent, curUser.pos, cell, callback );
+        Sample.INSTANCE.play( Assets.SND_ZAP );
+    }
+
+    @Override
+    public String desc() {
+        return
+                "\"When life ceases new life always begins to grow... The eternal cycle always remains!\"";
+    }
 }

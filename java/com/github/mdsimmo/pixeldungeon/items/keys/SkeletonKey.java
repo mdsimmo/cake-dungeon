@@ -20,16 +20,16 @@ package com.github.mdsimmo.pixeldungeon.items.keys;
 import com.github.mdsimmo.pixeldungeon.sprites.ItemSpriteSheet;
 
 public class SkeletonKey extends Key {
-	
-	{
-		name = "skeleton key";
-		image = ItemSpriteSheet.SKELETON_KEY;
-	}
-	
-	@Override
-	public String info() {
-		return 
-			"This key looks serious: its head is shaped like a skull. " +
-			"Probably it can open some serious door.";
-	}
+
+    {
+        name = "skeleton key";
+        image = ItemSpriteSheet.SKELETON_KEY;
+    }
+
+    @Override
+    public String info() {
+        return
+                "This key looks serious: its head is shaped like a skull. " +
+                        "Probably it can open some serious door.";
+    }
 }

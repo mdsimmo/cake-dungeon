@@ -24,42 +24,42 @@ import com.github.mdsimmo.utils.Random;
 
 public class Rat extends Mob {
 
-	{
-		name = "marsupial rat";
-		spriteClass = RatSprite.class;
-		
-		HP = HT = 8;
-		defenseSkill = 3;
-		
-		maxLvl = 5;
-	}
-	
-	@Override
-	public int damageRoll() {
-		return Random.NormalIntRange( 1, 5 );
-	}
-	
-	@Override
-	public int attackSkill( Char target ) {
-		return 8;
-	}
-	
-	@Override
-	public int dr() {
-		return 1;
-	}
-	
-	@Override
-	public void die( Object cause ) {
-		Ghost.Quest.process( pos );
-		
-		super.die( cause );
-	}
-	
-	@Override
-	public String description() {
-		return
-			"Marsupial rats are aggressive, but rather weak denizens " +
-			"of the sewers. They can be dangerous only in big numbers.";
-	}
+    {
+        name = "marsupial rat";
+        spriteClass = RatSprite.class;
+
+        HP = HT = 8;
+        defenseSkill = 3;
+
+        maxLvl = 5;
+    }
+
+    @Override
+    public int damageRoll() {
+        return Random.NormalIntRange( 1, 5 );
+    }
+
+    @Override
+    public int attackSkill( Char target ) {
+        return 8;
+    }
+
+    @Override
+    public int dr() {
+        return 1;
+    }
+
+    @Override
+    public void die( Object cause ) {
+        Ghost.Quest.process( pos );
+
+        super.die( cause );
+    }
+
+    @Override
+    public String description() {
+        return
+                "Marsupial rats are aggressive, but rather weak denizens " +
+                        "of the sewers. They can be dangerous only in big numbers.";
+    }
 }

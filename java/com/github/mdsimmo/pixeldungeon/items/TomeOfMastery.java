@@ -17,8 +17,6 @@
  */
 package com.github.mdsimmo.pixeldungeon.items;
 
-import java.util.ArrayList;
-
 import com.github.mdsimmo.noosa.audio.Sample;
 import com.github.mdsimmo.pixeldungeon.Assets;
 import com.github.mdsimmo.pixeldungeon.Badges;
@@ -35,111 +33,113 @@ import com.github.mdsimmo.pixeldungeon.utils.GLog;
 import com.github.mdsimmo.pixeldungeon.utils.Utils;
 import com.github.mdsimmo.pixeldungeon.windows.WndChooseWay;
 
+import java.util.ArrayList;
+
 public class TomeOfMastery extends Item {
 
-	private static final String TXT_BLINDED	= "You can't read while blinded";
-	
-	public static final float TIME_TO_READ = 10;
-	
-	public static final String AC_READ	= "READ";
-	
-	{
-		stackable = false;
-		name = "Tome of Mastery";
-		image = ItemSpriteSheet.MASTERY;
-		
-		unique = true;
-	}
-	
-	@Override
-	public ArrayList<String> actions( Hero hero ) {
-		ArrayList<String> actions = super.actions( hero );
-		actions.add( AC_READ );
-		return actions;
-	}
-	
-	@Override
-	public void execute( Hero hero, String action ) {
-		if (action.equals( AC_READ )) {
-			
-			if (hero.buff( Blindness.class ) != null) {
-				GLog.w( TXT_BLINDED );
-				return;
-			}
-			
-			curUser = hero;
-			
-			HeroSubClass way1 = null;
-			HeroSubClass way2 = null;
-			switch (hero.heroClass) {
-			case WARRIOR:
-				way1 = HeroSubClass.GLADIATOR;
-				way2 = HeroSubClass.BERSERKER;
-				break;
-			case MAGE:
-				way1 = HeroSubClass.BATTLEMAGE;
-				way2 = HeroSubClass.WARLOCK;
-				break;
-			case ROGUE:
-				way1 = HeroSubClass.FREERUNNER;
-				way2 = HeroSubClass.ASSASSIN;
-				break;
-			case HUNTRESS:
-				way1 = HeroSubClass.SNIPER;
-				way2 = HeroSubClass.WARDEN;
-				break;
-			}
-			GameScene.show( new WndChooseWay( this, way1, way2 ) );
-			
-		} else {
-			
-			super.execute( hero, action );
-			
-		}
-	}
-	
-	@Override
-	public boolean doPickUp( Hero hero ) {
-		Badges.validateMastery();
-		return super.doPickUp( hero );
-	}
-	
-	@Override
-	public boolean isUpgradable() {
-		return false;
-	}
-	
-	@Override
-	public boolean isIdentified() {
-		return true;
-	}
-	
-	@Override
-	public String info() {
-		return 
-			"This worn leather book is not that thick, but you feel somehow, " +
-			"that you can gather a lot from it. Remember though that reading " +
-			"this tome may require some time.";
-	}
-	
-	public void choose( HeroSubClass way ) {
-		
-		detach( curUser.belongings.backpack );
-		
-		curUser.spend( TomeOfMastery.TIME_TO_READ );
-		curUser.busy();
-		
-		curUser.subClass = way;
-		
-		curUser.sprite.operate( curUser.pos );
-		Sample.INSTANCE.play( Assets.SND_MASTERY );
-		
-		SpellSprite.show( curUser, SpellSprite.MASTERY );
-		curUser.sprite.emitter().burst( Speck.factory( Speck.MASTERY ), 12 );
-		GLog.w( "You have chosen the way of the %s!", Utils.capitalize( way.title() ) );
-		
-		if (way == HeroSubClass.BERSERKER && curUser.HP <= curUser.HT * Fury.LEVEL) {
-			Buff.affect( curUser, Fury.class );
-		}
-	}
+    private static final String TXT_BLINDED = "You can't read while blinded";
+
+    public static final float TIME_TO_READ = 10;
+
+    public static final String AC_READ = "READ";
+
+    {
+        stackable = false;
+        name = "Tome of Mastery";
+        image = ItemSpriteSheet.MASTERY;
+
+        unique = true;
+    }
+
+    @Override
+    public ArrayList<String> actions( Hero hero ) {
+        ArrayList<String> actions = super.actions( hero );
+        actions.add( AC_READ );
+        return actions;
+    }
+
+    @Override
+    public void execute( Hero hero, String action ) {
+        if ( action.equals( AC_READ ) ) {
+
+            if ( hero.buff( Blindness.class ) != null ) {
+                GLog.w( TXT_BLINDED );
+                return;
+            }
+
+            curUser = hero;
+
+            HeroSubClass way1 = null;
+            HeroSubClass way2 = null;
+            switch ( hero.heroClass ) {
+                case WARRIOR:
+                    way1 = HeroSubClass.GLADIATOR;
+                    way2 = HeroSubClass.BERSERKER;
+                    break;
+                case MAGE:
+                    way1 = HeroSubClass.BATTLEMAGE;
+                    way2 = HeroSubClass.WARLOCK;
+                    break;
+                case ROGUE:
+                    way1 = HeroSubClass.FREERUNNER;
+                    way2 = HeroSubClass.ASSASSIN;
+                    break;
+                case HUNTRESS:
+                    way1 = HeroSubClass.SNIPER;
+                    way2 = HeroSubClass.WARDEN;
+                    break;
+            }
+            GameScene.show( new WndChooseWay( this, way1, way2 ) );
+
+        } else {
+
+            super.execute( hero, action );
+
+        }
+    }
+
+    @Override
+    public boolean doPickUp( Hero hero ) {
+        Badges.validateMastery();
+        return super.doPickUp( hero );
+    }
+
+    @Override
+    public boolean isUpgradable() {
+        return false;
+    }
+
+    @Override
+    public boolean isIdentified() {
+        return true;
+    }
+
+    @Override
+    public String info() {
+        return
+                "This worn leather book is not that thick, but you feel somehow, " +
+                        "that you can gather a lot from it. Remember though that reading " +
+                        "this tome may require some time.";
+    }
+
+    public void choose( HeroSubClass way ) {
+
+        detach( curUser.belongings.backpack );
+
+        curUser.spend( TomeOfMastery.TIME_TO_READ );
+        curUser.busy();
+
+        curUser.subClass = way;
+
+        curUser.sprite.operate( curUser.pos );
+        Sample.INSTANCE.play( Assets.SND_MASTERY );
+
+        SpellSprite.show( curUser, SpellSprite.MASTERY );
+        curUser.sprite.emitter().burst( Speck.factory( Speck.MASTERY ), 12 );
+        GLog.w( "You have chosen the way of the %s!", Utils.capitalize( way.title() ) );
+
+        if ( way == HeroSubClass.BERSERKER && curUser.HP <= curUser.HT * Fury.LEVEL ) {
+            Buff.affect( curUser, Fury.class );
+        }
+    }
 }

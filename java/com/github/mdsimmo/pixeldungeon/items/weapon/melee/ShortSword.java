@@ -17,8 +17,6 @@
  */
 package com.github.mdsimmo.pixeldungeon.items.weapon.melee;
 
-import java.util.ArrayList;
-
 import com.github.mdsimmo.noosa.audio.Sample;
 import com.github.mdsimmo.pixeldungeon.Assets;
 import com.github.mdsimmo.pixeldungeon.Badges;
@@ -31,99 +29,101 @@ import com.github.mdsimmo.pixeldungeon.sprites.ItemSpriteSheet;
 import com.github.mdsimmo.pixeldungeon.utils.GLog;
 import com.github.mdsimmo.pixeldungeon.windows.WndBag;
 
+import java.util.ArrayList;
+
 public class ShortSword extends MeleeWeapon {
-	
-	public static final String AC_REFORGE	= "REFORGE";
-	
-	private static final String TXT_SELECT_WEAPON	= "Select a weapon to upgrade";
-	
-	private static final String TXT_REFORGED = 
-		"you reforged the short sword to upgrade your %s";
-	private static final String TXT_NOT_BOOMERANG = 
-		"you can't upgrade a boomerang this way";
-	
-	private static final float TIME_TO_REFORGE	= 2f;
-	
-	private boolean  equipped;
-	
-	{
-		name = "short sword";
-		image = ItemSpriteSheet.SHORT_SWORD;
-	}
-	
-	public ShortSword() {
-		super( 1, 1f, 1f );
-		
-		STR = 11;
-		MAX = 12;
-	}
-	
-	@Override
-	public ArrayList<String> actions( Hero hero ) {
-		ArrayList<String> actions = super.actions( hero );
-		if (level > 0) {
-			actions.add( AC_REFORGE );
-		}
-		return actions;
-	}
-	
-	@Override
-	public void execute( Hero hero, String action ) {
-		if (action == AC_REFORGE) {
-			
-			if (hero.belongings.weapon == this) {
-				equipped = true;
-				hero.belongings.weapon = null;
-			} else {
-				equipped = false;
-				detach( hero.belongings.backpack );
-			}
-			
-			curUser = hero;
-			
-			GameScene.selectItem( itemSelector, WndBag.Mode.WEAPON, TXT_SELECT_WEAPON );
-			
-		} else {
-			
-			super.execute( hero, action );
-			
-		}
-	}
-	
-	@Override
-	public String desc() {
-		return 
-			"It is indeed quite short, just a few inches longer, than a dagger.";
-	}
-	
-	private final WndBag.Listener itemSelector = new WndBag.Listener() {
-		@Override
-		public void onSelect( Item item ) {
-			if (item != null && !(item instanceof Boomerang)) {
-				
-				Sample.INSTANCE.play( Assets.SND_EVOKE );
-				ScrollOfUpgrade.upgrade( curUser );
-				evoke( curUser );
-				
-				GLog.w( TXT_REFORGED, item.name() );
-				
-				((MeleeWeapon)item).safeUpgrade();
-				curUser.spendAndNext( TIME_TO_REFORGE );
-				
-				Badges.validateItemLevelAquired( item );
-				
-			} else {
-				
-				if (item instanceof Boomerang) {
-					GLog.w( TXT_NOT_BOOMERANG );
-				}
-				
-				if (equipped) {
-					curUser.belongings.weapon = ShortSword.this;
-				} else {
-					collect( curUser.belongings.backpack );
-				}
-			}
-		}
-	};
+
+    public static final String AC_REFORGE = "REFORGE";
+
+    private static final String TXT_SELECT_WEAPON = "Select a weapon to upgrade";
+
+    private static final String TXT_REFORGED =
+            "you reforged the short sword to upgrade your %s";
+    private static final String TXT_NOT_BOOMERANG =
+            "you can't upgrade a boomerang this way";
+
+    private static final float TIME_TO_REFORGE = 2f;
+
+    private boolean equipped;
+
+    {
+        name = "short sword";
+        image = ItemSpriteSheet.SHORT_SWORD;
+    }
+
+    public ShortSword() {
+        super( 1, 1f, 1f );
+
+        STR = 11;
+        MAX = 12;
+    }
+
+    @Override
+    public ArrayList<String> actions( Hero hero ) {
+        ArrayList<String> actions = super.actions( hero );
+        if ( level > 0 ) {
+            actions.add( AC_REFORGE );
+        }
+        return actions;
+    }
+
+    @Override
+    public void execute( Hero hero, String action ) {
+        if ( action == AC_REFORGE ) {
+
+            if ( hero.belongings.weapon == this ) {
+                equipped = true;
+                hero.belongings.weapon = null;
+            } else {
+                equipped = false;
+                detach( hero.belongings.backpack );
+            }
+
+            curUser = hero;
+
+            GameScene.selectItem( itemSelector, WndBag.Mode.WEAPON, TXT_SELECT_WEAPON );
+
+        } else {
+
+            super.execute( hero, action );
+
+        }
+    }
+
+    @Override
+    public String desc() {
+        return
+                "It is indeed quite short, just a few inches longer, than a dagger.";
+    }
+
+    private final WndBag.Listener itemSelector = new WndBag.Listener() {
+        @Override
+        public void onSelect( Item item ) {
+            if ( item != null && !(item instanceof Boomerang) ) {
+
+                Sample.INSTANCE.play( Assets.SND_EVOKE );
+                ScrollOfUpgrade.upgrade( curUser );
+                evoke( curUser );
+
+                GLog.w( TXT_REFORGED, item.name() );
+
+                ((MeleeWeapon) item).safeUpgrade();
+                curUser.spendAndNext( TIME_TO_REFORGE );
+
+                Badges.validateItemLevelAquired( item );
+
+            } else {
+
+                if ( item instanceof Boomerang ) {
+                    GLog.w( TXT_NOT_BOOMERANG );
+                }
+
+                if ( equipped ) {
+                    curUser.belongings.weapon = ShortSword.this;
+                } else {
+                    collect( curUser.belongings.backpack );
+                }
+            }
+        }
+    };
 }

@@ -34,7 +34,7 @@ import com.github.mdsimmo.pixeldungeon.effects.Splash;
 import com.github.mdsimmo.pixeldungeon.effects.particles.ElmoParticle;
 import com.github.mdsimmo.pixeldungeon.effects.particles.FlameParticle;
 import com.github.mdsimmo.pixeldungeon.effects.particles.ShadowParticle;
-import com.github.mdsimmo.pixeldungeon.items.food.Food;
+import com.github.mdsimmo.pixeldungeon.items.food.Recipes;
 import com.github.mdsimmo.pixeldungeon.items.scrolls.Scroll;
 import com.github.mdsimmo.pixeldungeon.plants.Plant.Seed;
 import com.github.mdsimmo.pixeldungeon.sprites.ItemSprite;
@@ -178,6 +178,8 @@ public class Heap implements Bundlable {
         if ( sprite != null ) {
             sprite.view( image(), glowing() );
         }
+
+        Recipes.combine( this );
     }
 
     public void replace( Item a, Item b ) {
@@ -212,10 +214,10 @@ public class Heap implements Bundlable {
             } else if ( item instanceof Dewdrop ) {
                 items.remove( item );
                 evaporated = true;
-            } else if ( item instanceof Food ) {
-                burnt = ((Food) item).onCook( this );
             }
         }
+
+        burnt = Recipes.cook( this ) || burnt;
 
         if ( burnt || evaporated ) {
 
@@ -249,14 +251,7 @@ public class Heap implements Bundlable {
             return;
         }
 
-        boolean frozen = false;
-        for ( Item item : items.toArray( new Item[items.size()] ) ) {
-            if ( item instanceof Food ) {
-                frozen = ((Food) item).onFreeze( this );
-            }
-        }
-
-        if ( frozen ) {
+        if ( Recipes.freeze( this ) ) {
             if ( isEmpty() ) {
                 destroy();
             } else if ( sprite != null ) {

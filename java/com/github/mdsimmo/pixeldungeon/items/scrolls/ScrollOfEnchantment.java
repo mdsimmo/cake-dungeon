@@ -27,39 +27,39 @@ import com.github.mdsimmo.pixeldungeon.windows.WndBag;
 
 public class ScrollOfEnchantment extends InventoryScroll {
 
-	private static final String TXT_GLOWS	= "your %s glows in the dark";
-	
-	{
-		name = "Scroll of Enchantment";
-		inventoryTitle = "Select an enchantable item";
-		mode = WndBag.Mode.ENCHANTABLE;
-	}
-	
-	@Override
-	protected void onItemSelected( Item item ) {
+    private static final String TXT_GLOWS = "your %s glows in the dark";
 
-		ScrollOfRemoveCurse.uncurse( Dungeon.hero, item );
-		
-		if (item instanceof Weapon) {
-			
-			((Weapon)item).enchant();
-			
-		} else {
+    {
+        name = "Scroll of Enchantment";
+        inventoryTitle = "Select an enchantable item";
+        mode = WndBag.Mode.ENCHANTABLE;
+    }
 
-			((Armor)item).inscribe();
-		
-		}
-		
-		item.fix();
-		
-		curUser.sprite.emitter().start( Speck.factory( Speck.LIGHT ), 0.1f, 5 );
-		GLog.w( TXT_GLOWS, item.name() );
-	}
-	
-	@Override
-	public String desc() {
-		return
-			"This scroll is able to imbue a weapon or an armor " +
-			"with a random enchantment, granting it a special power.";
-	}
+    @Override
+    protected void onItemSelected( Item item ) {
+
+        ScrollOfRemoveCurse.uncurse( Dungeon.hero, item );
+
+        if ( item instanceof Weapon ) {
+
+            ((Weapon) item).enchant();
+
+        } else {
+
+            ((Armor) item).inscribe();
+
+        }
+
+        item.fix();
+
+        curUser.sprite.emitter().start( Speck.factory( Speck.LIGHT ), 0.1f, 5 );
+        GLog.w( TXT_GLOWS, item.name() );
+    }
+
+    @Override
+    public String desc() {
+        return
+                "This scroll is able to imbue a weapon or an armor " +
+                        "with a random enchantment, granting it a special power.";
+    }
 }

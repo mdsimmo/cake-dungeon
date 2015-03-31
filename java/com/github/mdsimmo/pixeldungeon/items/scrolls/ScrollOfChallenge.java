@@ -29,42 +29,42 @@ import com.github.mdsimmo.pixeldungeon.utils.GLog;
 
 public class ScrollOfChallenge extends Scroll {
 
-	{
-		name = "Scroll of Challenge";
-	}
-	
-	@Override
-	protected void doRead() {
-		
-		for (Mob mob : Dungeon.level.mobs) {
-			mob.beckon( curUser.pos );
-		}
-		
-		
-		for (Heap heap : Dungeon.level.heaps.values()) {
-			if (heap.type == Heap.Type.MIMIC) {
-				Mimic m = Mimic.spawnAt( heap.pos, heap.items );
-				if (m != null) {
-					m.beckon( curUser.pos );
-					heap.destroy();
-				}
-			}
-		}
-		
-		GLog.w( "The scroll emits a challenging roar that echoes throughout the dungeon!" );
-		setKnown();
-		
-		curUser.sprite.centerEmitter().start( Speck.factory( Speck.SCREAM ), 0.3f, 3 );		
-		Sample.INSTANCE.play( Assets.SND_CHALLENGE );
-		Invisibility.dispel();
-		
-		curUser.spendAndNext( TIME_TO_READ );
-	}
-	
-	@Override
-	public String desc() {
-		return 
-			"When read aloud, this scroll will unleash a challenging roar " +
-			"that will awaken all monsters and alert them to the reader's location.";
-	}
+    {
+        name = "Scroll of Challenge";
+    }
+
+    @Override
+    protected void doRead() {
+
+        for ( Mob mob : Dungeon.level.mobs ) {
+            mob.beckon( curUser.pos );
+        }
+
+
+        for ( Heap heap : Dungeon.level.heaps.values() ) {
+            if ( heap.type == Heap.Type.MIMIC ) {
+                Mimic m = Mimic.spawnAt( heap.pos, heap.items );
+                if ( m != null ) {
+                    m.beckon( curUser.pos );
+                    heap.destroy();
+                }
+            }
+        }
+
+        GLog.w( "The scroll emits a challenging roar that echoes throughout the dungeon!" );
+        setKnown();
+
+        curUser.sprite.centerEmitter().start( Speck.factory( Speck.SCREAM ), 0.3f, 3 );
+        Sample.INSTANCE.play( Assets.SND_CHALLENGE );
+        Invisibility.dispel();
+
+        curUser.spendAndNext( TIME_TO_READ );
+    }
+
+    @Override
+    public String desc() {
+        return
+                "When read aloud, this scroll will unleash a challenging roar " +
+                        "that will awaken all monsters and alert them to the reader's location.";
+    }
 }

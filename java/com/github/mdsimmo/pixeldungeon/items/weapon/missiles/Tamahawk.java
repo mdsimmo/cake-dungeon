@@ -26,46 +26,46 @@ import com.github.mdsimmo.utils.Random;
 
 public class Tamahawk extends MissileWeapon {
 
-	{
-		name = "tomahawk";
-		image = ItemSpriteSheet.TOMAHAWK;
-		
-		STR = 17;
-		
-		MIN = 4;
-		MAX = 20;
-	}
-	
-	public Tamahawk() {
-		this( 1 );
-	}
-	
-	public Tamahawk( int number ) {
-		super();
-		quantity = number;
-	}
-	
-	@Override
-	public void proc( Char attacker, Char defender, int damage ) {
-		super.proc( attacker, defender, damage );
-		Buff.affect( defender, Bleeding.class ).set( damage );
-	}	
-	
-	@Override
-	public String desc() {
-		return 
-			"This throwing axe is not that heavy, but it still " +
-			"requires significant strength to be used effectively.";
-	}
-	
-	@Override
-	public Item random() {
-		quantity = Random.Int( 5, 12 );
-		return this;
-	}
-	
-	@Override
-	public int price() {
-		return 20 * quantity;
-	}
+    {
+        name = "tomahawk";
+        image = ItemSpriteSheet.TOMAHAWK;
+
+        STR = 17;
+
+        MIN = 4;
+        MAX = 20;
+    }
+
+    public Tamahawk() {
+        this( 1 );
+    }
+
+    public Tamahawk( int number ) {
+        super();
+        quantity = number;
+    }
+
+    @Override
+    public void proc( Char attacker, Char defender, int damage ) {
+        super.proc( attacker, defender, damage );
+        Buff.affect( defender, Bleeding.class ).set( damage );
+    }
+
+    @Override
+    public String desc() {
+        return
+                "This throwing axe is not that heavy, but it still " +
+                        "requires significant strength to be used effectively.";
+    }
+
+    @Override
+    public Item random() {
+        quantity = Random.Int( 5, 12 );
+        return this;
+    }
+
+    @Override
+    public int price() {
+        return 20 * quantity;
+    }
 }

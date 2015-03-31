@@ -29,48 +29,48 @@ import com.github.mdsimmo.pixeldungeon.levels.Terrain;
 import com.github.mdsimmo.pixeldungeon.scenes.GameScene;
 
 public class Regrowth extends Blob {
-	
-	@Override
-	protected void evolve() {
-		super.evolve();
-		
-		if (volume > 0) {
-			
-			boolean mapUpdated = false;
-			
-			for (int i=0; i < LENGTH; i++) {
-				if (off[i] > 0) {
-					int c = Dungeon.level.map[i];
-					if (c == Terrain.EMPTY || c == Terrain.EMBERS || c == Terrain.EMPTY_DECO) {
-						
-						Level.set( i, cur[i] > 9 ? Terrain.HIGH_GRASS : Terrain.GRASS );
-						mapUpdated = true;
-						
-					} else if (c == Terrain.GRASS && cur[i] > 9) {
-						
-						Level.set( i, Terrain.HIGH_GRASS );
-						mapUpdated = true;
-						
-					}
-					
-					Char ch = Actor.findChar( i );
-					if (ch != null) {
-						Buff.prolong( ch, Roots.class, TICK );
-					}
-				}
-			}
-			
-			if (mapUpdated) {
-				GameScene.updateMap();
-				Dungeon.observe();
-			}
-		}
-	}
-	
-	@Override
-	public void use( BlobEmitter emitter ) {
-		super.use( emitter );
-		
-		emitter.start( LeafParticle.LEVEL_SPECIFIC, 0.2f, 0 );
-	}
+
+    @Override
+    protected void evolve() {
+        super.evolve();
+
+        if ( volume > 0 ) {
+
+            boolean mapUpdated = false;
+
+            for ( int i = 0; i < LENGTH; i++ ) {
+                if ( off[i] > 0 ) {
+                    int c = Dungeon.level.map[i];
+                    if ( c == Terrain.EMPTY || c == Terrain.EMBERS || c == Terrain.EMPTY_DECO ) {
+
+                        Level.set( i, cur[i] > 9 ? Terrain.HIGH_GRASS : Terrain.GRASS );
+                        mapUpdated = true;
+
+                    } else if ( c == Terrain.GRASS && cur[i] > 9 ) {
+
+                        Level.set( i, Terrain.HIGH_GRASS );
+                        mapUpdated = true;
+
+                    }
+
+                    Char ch = Actor.findChar( i );
+                    if ( ch != null ) {
+                        Buff.prolong( ch, Roots.class, TICK );
+                    }
+                }
+            }
+
+            if ( mapUpdated ) {
+                GameScene.updateMap();
+                Dungeon.observe();
+            }
+        }
+    }
+
+    @Override
+    public void use( BlobEmitter emitter ) {
+        super.use( emitter );
+
+        emitter.start( LeafParticle.LEVEL_SPECIFIC, 0.2f, 0 );
+    }
 }

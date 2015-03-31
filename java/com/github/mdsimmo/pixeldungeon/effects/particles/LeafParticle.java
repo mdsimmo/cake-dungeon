@@ -18,52 +18,52 @@
 package com.github.mdsimmo.pixeldungeon.effects.particles;
 
 import com.github.mdsimmo.noosa.particles.Emitter;
-import com.github.mdsimmo.noosa.particles.PixelParticle;
 import com.github.mdsimmo.noosa.particles.Emitter.Factory;
+import com.github.mdsimmo.noosa.particles.PixelParticle;
 import com.github.mdsimmo.pixeldungeon.Dungeon;
 import com.github.mdsimmo.utils.ColorMath;
 import com.github.mdsimmo.utils.Random;
 
 public class LeafParticle extends PixelParticle.Shrinking {
-	
-	public static int color1;
-	public static int color2;
-	
-	
-	public static final Emitter.Factory GENERAL = new Factory() {	
-		@Override
-		public void emit( Emitter emitter, int index, float x, float y ) {
-			LeafParticle p = ((LeafParticle)emitter.recycle( LeafParticle.class ));
-			p.color( ColorMath.random( 0x004400, 0x88CC44 ) );
-			p.reset( x, y );
-		}
-	};
-	
-	public static final Emitter.Factory LEVEL_SPECIFIC = new Factory() {	
-		@Override
-		public void emit( Emitter emitter, int index, float x, float y ) {
-			LeafParticle p = ((LeafParticle)emitter.recycle( LeafParticle.class ));
-			p.color( ColorMath.random( Dungeon.level.color1, Dungeon.level.color2 ) );
-			p.reset( x, y );
-		}
-	};
-	
-	public LeafParticle() {
-		super();
-		
-		lifespan = 1.2f;
-		acc.set( 0, 25 );
-	}
-	
-	public void reset( float x, float y ) {
-		revive();
-		
-		this.x = x;
-		this.y = y;
-		
-		speed.set( Random.Float( -8, +8 ), -20 );
-		
-		left = lifespan;
-		size = Random.Float( 2, 3 );
-	}
+
+    public static int color1;
+    public static int color2;
+
+
+    public static final Emitter.Factory GENERAL = new Factory() {
+        @Override
+        public void emit( Emitter emitter, int index, float x, float y ) {
+            LeafParticle p = ((LeafParticle) emitter.recycle( LeafParticle.class ));
+            p.color( ColorMath.random( 0x004400, 0x88CC44 ) );
+            p.reset( x, y );
+        }
+    };
+
+    public static final Emitter.Factory LEVEL_SPECIFIC = new Factory() {
+        @Override
+        public void emit( Emitter emitter, int index, float x, float y ) {
+            LeafParticle p = ((LeafParticle) emitter.recycle( LeafParticle.class ));
+            p.color( ColorMath.random( Dungeon.level.color1, Dungeon.level.color2 ) );
+            p.reset( x, y );
+        }
+    };
+
+    public LeafParticle() {
+        super();
+
+        lifespan = 1.2f;
+        acc.set( 0, 25 );
+    }
+
+    public void reset( float x, float y ) {
+        revive();
+
+        this.x = x;
+        this.y = y;
+
+        speed.set( Random.Float( -8, +8 ), -20 );
+
+        left = lifespan;
+        size = Random.Float( 2, 3 );
+    }
 }

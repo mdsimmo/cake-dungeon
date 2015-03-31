@@ -17,8 +17,6 @@
  */
 package com.github.mdsimmo.pixeldungeon.actors.mobs;
 
-import java.util.HashSet;
-
 import com.github.mdsimmo.pixeldungeon.actors.Char;
 import com.github.mdsimmo.pixeldungeon.actors.buffs.Amok;
 import com.github.mdsimmo.pixeldungeon.actors.buffs.Sleep;
@@ -28,78 +26,82 @@ import com.github.mdsimmo.pixeldungeon.items.scrolls.ScrollOfPsionicBlast;
 import com.github.mdsimmo.pixeldungeon.sprites.GolemSprite;
 import com.github.mdsimmo.utils.Random;
 
+import java.util.HashSet;
+
 public class Golem extends Mob {
-	
-	{
-		name = "golem";
-		spriteClass = GolemSprite.class;
-		
-		HP = HT = 85;
-		defenseSkill = 18;
-		
-		EXP = 12;
-		maxLvl = 22;
-	}
-	
-	@Override
-	public int damageRoll() {
-		return Random.NormalIntRange( 20, 40 );
-	}
-	
-	@Override
-	public int attackSkill( Char target ) {
-		return 28;
-	}
-	
-	@Override
-	protected float attackDelay() {
-		return 1.5f;
-	}
-	
-	@Override
-	public int dr() {
-		return 12;
-	}
-	
-	@Override
-	public String defenseVerb() {
-		return "blocked";
-	}
-	
-	@Override
-	public void die( Object cause ) {
-		Imp.Quest.process( this );
-		
-		super.die( cause );
-	}
-	
-	@Override
-	public String description() {
-		return
-			"The Dwarves tried to combine their knowledge of mechanisms with their newfound power of elemental binding. " +
-			"They used spirits of earth as the \"soul\" for the mechanical bodies of golems, which were believed to be " +
-			"most controllable of all. Despite this, the tiniest mistake in the ritual could cause an outbreak.";
-	}
-	
-	private static final HashSet<Class<?>> RESISTANCES = new HashSet<Class<?>>();
-	static {
-		RESISTANCES.add( ScrollOfPsionicBlast.class );
-	}
-	
-	@Override
-	public HashSet<Class<?>> resistances() {
-		return RESISTANCES;
-	}
-	
-	private static final HashSet<Class<?>> IMMUNITIES = new HashSet<Class<?>>();
-	static {
-		IMMUNITIES.add( Amok.class );
-		IMMUNITIES.add( Terror.class );
-		IMMUNITIES.add( Sleep.class );
-	}
-	
-	@Override
-	public HashSet<Class<?>> immunities() {
-		return IMMUNITIES;
-	}
+
+    {
+        name = "golem";
+        spriteClass = GolemSprite.class;
+
+        HP = HT = 85;
+        defenseSkill = 18;
+
+        EXP = 12;
+        maxLvl = 22;
+    }
+
+    @Override
+    public int damageRoll() {
+        return Random.NormalIntRange( 20, 40 );
+    }
+
+    @Override
+    public int attackSkill( Char target ) {
+        return 28;
+    }
+
+    @Override
+    protected float attackDelay() {
+        return 1.5f;
+    }
+
+    @Override
+    public int dr() {
+        return 12;
+    }
+
+    @Override
+    public String defenseVerb() {
+        return "blocked";
+    }
+
+    @Override
+    public void die( Object cause ) {
+        Imp.Quest.process( this );
+
+        super.die( cause );
+    }
+
+    @Override
+    public String description() {
+        return
+                "The Dwarves tried to combine their knowledge of mechanisms with their newfound power of elemental binding. " +
+                        "They used spirits of earth as the \"soul\" for the mechanical bodies of golems, which were believed to be " +
+                        "most controllable of all. Despite this, the tiniest mistake in the ritual could cause an outbreak.";
+    }
+
+    private static final HashSet<Class<?>> RESISTANCES = new HashSet<Class<?>>();
+
+    static {
+        RESISTANCES.add( ScrollOfPsionicBlast.class );
+    }
+
+    @Override
+    public HashSet<Class<?>> resistances() {
+        return RESISTANCES;
+    }
+
+    private static final HashSet<Class<?>> IMMUNITIES = new HashSet<Class<?>>();
+
+    static {
+        IMMUNITIES.add( Amok.class );
+        IMMUNITIES.add( Terror.class );
+        IMMUNITIES.add( Sleep.class );
+    }
+
+    @Override
+    public HashSet<Class<?>> immunities() {
+        return IMMUNITIES;
+    }
 }

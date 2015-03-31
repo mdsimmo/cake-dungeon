@@ -17,8 +17,6 @@
  */
 package com.github.mdsimmo.pixeldungeon.items.wands;
 
-import java.util.ArrayList;
-
 import com.github.mdsimmo.pixeldungeon.Dungeon;
 import com.github.mdsimmo.pixeldungeon.DungeonTilemap;
 import com.github.mdsimmo.pixeldungeon.actors.Actor;
@@ -33,82 +31,84 @@ import com.github.mdsimmo.pixeldungeon.scenes.GameScene;
 import com.github.mdsimmo.utils.Callback;
 import com.github.mdsimmo.utils.Random;
 
+import java.util.ArrayList;
+
 public class WandOfDisintegration extends Wand {
 
-	{
-		name = "Wand of Disintegration";
-		hitChars = false;
-	}
-	
-	@Override
-	protected void onZap( int cell ) {
-		
-		boolean terrainAffected = false;
-		
-		int level = level();
-		
-		int maxDistance = distance();
-		Ballistica.distance = Math.min( Ballistica.distance, maxDistance );
-		
-		ArrayList<Char> chars = new ArrayList<Char>();
-		
-		for (int i=1; i < Ballistica.distance; i++) {
-			
-			int c = Ballistica.trace[i];
-			
-			Char ch;
-			if ((ch = Actor.findChar( c )) != null) {
-				chars.add( ch );
-			}
-			
-			int terr = Dungeon.level.map[c];
-			if (terr == Terrain.DOOR || terr == Terrain.BARRICADE) {
-				
-				Level.set( c, Terrain.EMBERS );
-				GameScene.updateMap( c );
-				terrainAffected = true;
-				
-			} else if (terr == Terrain.HIGH_GRASS) {
-				
-				Level.set( c, Terrain.GRASS );
-				GameScene.updateMap( c );
-				terrainAffected = true;
-				
-			}
-			
-			CellEmitter.center( c ).burst( PurpleParticle.BURST, Random.IntRange( 1, 2 ) );
-		}
-		
-		if (terrainAffected) {
-			Dungeon.observe();
-		}
-		
-		int lvl = level + chars.size();
-		int dmgMin = lvl;
-		int dmgMax = 8 + lvl * lvl / 3;
-		for (Char ch : chars) {
-			ch.damage( Random.NormalIntRange( dmgMin, dmgMax ), this );
-			ch.sprite.centerEmitter().burst( PurpleParticle.BURST, Random.IntRange( 1, 2 ) );
-			ch.sprite.flash();
-		}
-	}
-	
-	private int distance() {
-		return level() + 4;
-	}
-	
-	@Override
-	protected void fx( int cell, Callback callback ) {
-		
-		cell = Ballistica.trace[Math.min( Ballistica.distance, distance() ) - 1];
-		curUser.sprite.parent.add( new DeathRay( curUser.sprite.center(), DungeonTilemap.tileCenterToWorld( cell ) ) );		
-		callback.call();
-	}
-	
-	@Override
-	public String desc() {
-		return
-			"This wand emits a beam of destructive energy, which pierces all creatures in its way. " +
-			"The more targets it hits, the more damage it inflicts to each of them.";
-	}
+    {
+        name = "Wand of Disintegration";
+        hitChars = false;
+    }
+
+    @Override
+    protected void onZap( int cell ) {
+
+        boolean terrainAffected = false;
+
+        int level = level();
+
+        int maxDistance = distance();
+        Ballistica.distance = Math.min( Ballistica.distance, maxDistance );
+
+        ArrayList<Char> chars = new ArrayList<Char>();
+
+        for ( int i = 1; i < Ballistica.distance; i++ ) {
+
+            int c = Ballistica.trace[i];
+
+            Char ch;
+            if ( (ch = Actor.findChar( c )) != null ) {
+                chars.add( ch );
+            }
+
+            int terr = Dungeon.level.map[c];
+            if ( terr == Terrain.DOOR || terr == Terrain.BARRICADE ) {
+
+                Level.set( c, Terrain.EMBERS );
+                GameScene.updateMap( c );
+                terrainAffected = true;
+
+            } else if ( terr == Terrain.HIGH_GRASS ) {
+
+                Level.set( c, Terrain.GRASS );
+                GameScene.updateMap( c );
+                terrainAffected = true;
+
+            }
+
+            CellEmitter.center( c ).burst( PurpleParticle.BURST, Random.IntRange( 1, 2 ) );
+        }
+
+        if ( terrainAffected ) {
+            Dungeon.observe();
+        }
+
+        int lvl = level + chars.size();
+        int dmgMin = lvl;
+        int dmgMax = 8 + lvl * lvl / 3;
+        for ( Char ch : chars ) {
+            ch.damage( Random.NormalIntRange( dmgMin, dmgMax ), this );
+            ch.sprite.centerEmitter().burst( PurpleParticle.BURST, Random.IntRange( 1, 2 ) );
+            ch.sprite.flash();
+        }
+    }
+
+    private int distance() {
+        return level() + 4;
+    }
+
+    @Override
+    protected void fx( int cell, Callback callback ) {
+
+        cell = Ballistica.trace[Math.min( Ballistica.distance, distance() ) - 1];
+        curUser.sprite.parent.add( new DeathRay( curUser.sprite.center(), DungeonTilemap.tileCenterToWorld( cell ) ) );
+        callback.call();
+    }
+
+    @Override
+    public String desc() {
+        return
+                "This wand emits a beam of destructive energy, which pierces all creatures in its way. " +
+                        "The more targets it hits, the more damage it inflicts to each of them.";
+    }
 }

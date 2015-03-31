@@ -17,29 +17,30 @@
  */
 package com.github.mdsimmo.pixeldungeon.actors.buffs;
 
-import java.util.HashSet;
-
 import com.github.mdsimmo.pixeldungeon.actors.blobs.ToxicGas;
 import com.github.mdsimmo.pixeldungeon.ui.BuffIndicator;
 
+import java.util.HashSet;
+
 public class GasesImmunity extends FlavourBuff {
-	
-	public static final float DURATION	= 5f;
-	
-	@Override
-	public int icon() {
-		return BuffIndicator.IMMUNITY;
-	}
-	
-	@Override
-	public String toString() {
-		return "Immune to gases";
-	}
-	
-	public static final HashSet<Class<?>> IMMUNITIES = new HashSet<Class<?>>();
-	static {
-		IMMUNITIES.add( Paralysis.class );
-		IMMUNITIES.add( ToxicGas.class );
-		IMMUNITIES.add( Vertigo.class );
-	}
+
+    public static final float DURATION = 5f;
+
+    @Override
+    public int icon() {
+        return BuffIndicator.IMMUNITY;
+    }
+
+    @Override
+    public String toString() {
+        return "Immune to gases";
+    }
+
+    public static final HashSet<Class<?>> IMMUNITIES = new HashSet<Class<?>>();
+
+    static {
+        IMMUNITIES.add( Paralysis.class );
+        IMMUNITIES.add( ToxicGas.class );
+        IMMUNITIES.add( Vertigo.class );
+    }
 }

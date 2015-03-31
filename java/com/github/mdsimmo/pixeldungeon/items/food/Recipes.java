@@ -17,6 +17,8 @@
  */
 package com.github.mdsimmo.pixeldungeon.items.food;
 
+import android.util.Log;
+
 import com.github.mdsimmo.pixeldungeon.items.Heap;
 import com.github.mdsimmo.pixeldungeon.items.Item;
 
@@ -45,7 +47,7 @@ public class Recipes {
         }
 
         public boolean cook( Heap heap, boolean burning, boolean frozen ) {
-            if ( ( this.baked == true && burning == false ) || ( this.frozen == true && frozen == false ) )
+            if ( ( this.baked && !burning ) || ( this.frozen && !frozen ) )
                 return false;
             Item[] heapItems = heap.items.toArray( new Item[heap.items.size()]);
 
@@ -83,6 +85,7 @@ public class Recipes {
             try {
                 heap.drop( result.newInstance() );
             } catch ( Exception e ) {
+                Log.w( "Recipes", "Unable to make prize " + result );
             }
 
         }

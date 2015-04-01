@@ -68,8 +68,6 @@ public class DungeonTilemap extends Tilemap {
                 tile.killAndErase();
                 killAndErase();
             }
-
-            ;
         } );
     }
 

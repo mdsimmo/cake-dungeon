@@ -24,7 +24,7 @@ import java.util.HashMap;
 
 public class GamesInProgress {
 
-    private static HashMap<HeroClass, Info> state = new HashMap<HeroClass, Info>();
+    private static HashMap<HeroClass, Info> state = new HashMap<>();
 
     public static Info check( HeroClass cl ) {
 

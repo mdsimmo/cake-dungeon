@@ -44,8 +44,6 @@ public class Journal {
         }
     }
 
-    ;
-
     public static class Record implements Comparable<Record>, Bundlable {
 
         private static final String FEATURE = "feature";
@@ -54,9 +52,6 @@ public class Journal {
         public Feature feature;
         public int depth;
 
-        public Record() {
-        }
-
         public Record( Feature feature, int depth ) {
             this.feature = feature;
             this.depth = depth;
@@ -64,6 +59,8 @@ public class Journal {
 
         @Override
         public int compareTo( Record another ) {
+            if ( another == null )
+                return 1;
             return another.depth - depth;
         }
 
@@ -83,7 +80,7 @@ public class Journal {
     public static ArrayList<Record> records;
 
     public static void reset() {
-        records = new ArrayList<Journal.Record>();
+        records = new ArrayList<>();
     }
 
     private static final String JOURNAL = "journal";
@@ -93,7 +90,7 @@ public class Journal {
     }
 
     public static void restoreFromBundle( Bundle bundle ) {
-        records = new ArrayList<Record>();
+        records = new ArrayList<>();
         for ( Bundlable rec : bundle.getCollection( JOURNAL ) ) {
             records.add( (Record) rec );
         }

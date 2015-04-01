@@ -33,8 +33,6 @@ public class Chrome {
         TAB_UNSELECTED
     }
 
-    ;
-
     public static NinePatch get( Type type ) {
         switch ( type ) {
             case WINDOW:

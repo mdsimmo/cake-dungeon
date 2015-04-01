@@ -21,6 +21,7 @@ import android.util.Log;
 
 import com.github.mdsimmo.pixeldungeon.items.Heap;
 import com.github.mdsimmo.pixeldungeon.items.Item;
+import com.github.mdsimmo.pixeldungeon.levels.Level;
 
 public class Recipes {
 
@@ -28,28 +29,27 @@ public class Recipes {
 
         private final Item[] ingredients;
         private final Class<? extends Item> result;
-        private boolean baked = false;
-        private boolean frozen = false;
+        private Method method = null;
 
-        public Recipe ( Class<? extends Item> result, Item ... items ) {
+        public Recipe( Class<? extends Item> result, Item... items ) {
             this.ingredients = items;
             this.result = result;
         }
 
-        public Recipe baked() {
-            this.baked = true;
+        public Recipe set( Method method ) {
+            this.method = method;
             return this;
         }
 
-        public Recipe frozen() {
-            this.frozen = true;
-            return this;
+        public boolean correctEnvironment( Heap heap, Method method ) {
+            return this.method == null || this.method == method;
         }
 
-        public boolean cook( Heap heap, boolean burning, boolean frozen ) {
-            if ( ( this.baked && !burning ) || ( this.frozen && !frozen ) )
+        public boolean make( Heap heap, Method method ) {
+            if ( !correctEnvironment( heap, method ) )
                 return false;
-            Item[] heapItems = heap.items.toArray( new Item[heap.items.size()]);
+
+            Item[] heapItems = heap.items.toArray( new Item[heap.items.size()] );
 
             // check that the item matches
             for ( Item item : ingredients ) {
@@ -93,34 +93,36 @@ public class Recipes {
     }
 
     private static Recipe[] recipes = {
-            new Recipe( ChargrilledMeat.class, new MysteryMeat() ).baked(),
-            new Recipe( FrozenCarpaccio.class, new MysteryMeat() ).frozen(),
+            new Recipe( ChargrilledMeat.class, new MysteryMeat() ).set( Method.BAKED ),
+            new Recipe( FrozenCarpaccio.class, new MysteryMeat() ).set( Method.FROZEN ),
             new Recipe( Cake.class, new MysteryMeat(), new FrozenCarpaccio() ),
+            new Recipe( HardBoiledEgg.class, new RawEgg() ) {
+                @Override
+                public boolean correctEnvironment( Heap heap, Method method ) {
+                    return Level.water[heap.pos] && super.correctEnvironment( heap, method );
+                }
+
+                @Override
+                public void makePrize( Heap heap ) {
+                    super.makePrize( heap );
+                    Heap.evaporateFX( heap.pos );
+                }
+            }.set( Method.BAKED ),
+            //new Recipe( FriedEgg.class, new RawEgg() ).set( Method.BAKED ), // FIXME doubled method
+            new Recipe( ScrambledEgg.class, new RawEgg() ).set( Method.EXPLODED ),
     };
 
-    public static boolean cook( Heap heap ) {
-        for ( Recipe recipe : recipes ) {
-            if (recipe.cook( heap, true, false ))
-                return true;
-        }
-        return false;
+    public enum Method {
+        BAKED, FROZEN, EXPLODED;
     }
 
-    public static boolean freeze( Heap heap ) {
+    public static void make( Heap heap, Method method ) {
         for ( Recipe recipe : recipes ) {
-            if (recipe.cook( heap, false, true ))
-                return true;
+            if ( recipe.make( heap ,method ) ) {
+                make( heap, method );
+                return;
+            }
         }
-        return false;
-    }
-
-    public static boolean combine( Heap heap ) {
-        for ( Recipe recipe : recipes ) {
-            if (recipe.cook( heap, false, false ))
-                return true;
-        }
-        return false;
-
     }
 
 }

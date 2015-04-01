@@ -27,6 +27,7 @@ import com.github.mdsimmo.pixeldungeon.actors.buffs.Paralysis;
 import com.github.mdsimmo.pixeldungeon.effects.CellEmitter;
 import com.github.mdsimmo.pixeldungeon.effects.particles.BlastParticle;
 import com.github.mdsimmo.pixeldungeon.effects.particles.SmokeParticle;
+import com.github.mdsimmo.pixeldungeon.items.food.Recipes;
 import com.github.mdsimmo.pixeldungeon.levels.Level;
 import com.github.mdsimmo.pixeldungeon.levels.Terrain;
 import com.github.mdsimmo.pixeldungeon.scenes.GameScene;
@@ -66,6 +67,10 @@ public class Bomb extends Item {
                         GameScene.updateMap( c );
                         terrainAffected = true;
                     }
+
+                    Heap heap = Dungeon.level.heaps.get( c );
+                    if ( heap != null )
+                        Recipes.make( heap, Recipes.Method.EXPLODED );
 
                     Char ch = Actor.findChar( c );
                     if ( ch != null ) {

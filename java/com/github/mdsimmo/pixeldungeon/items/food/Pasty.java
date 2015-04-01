@@ -32,11 +32,6 @@ public class Pasty extends Food {
     }
 
     @Override
-    public int price() {
-        return 20 * quantity;
-    }
-
-    @Override
     public float getEnergy() {
         return Food.FULL_FILL;
     }

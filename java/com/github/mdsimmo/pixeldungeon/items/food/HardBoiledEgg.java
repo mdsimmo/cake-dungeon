@@ -9,28 +9,28 @@
  *
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>
+ * along with this program. If not, see <http://www.gnu.org/licenses/>
  */
 package com.github.mdsimmo.pixeldungeon.items.food;
 
 import com.github.mdsimmo.pixeldungeon.sprites.ItemSpriteSheet;
 
-public class OverpricedRation extends Food {
+public class HardBoiledEgg extends Food {
 
-    public static final String MESSAGE = "That food tasted ok.";
+    public static final String MESSAGE = "That was tasty";
 
     {
-        name = "overpriced food ration";
-        image = ItemSpriteSheet.OVERPRICED;
+        name = "hard boiled egg";
+        image = ItemSpriteSheet.EGG;
     }
 
     @Override
     public String info() {
-        return "It looks exactly like a standard ration of food but smaller.";
+        return "A hard boiled egg. Good with bacon.";
     }
 
     @Override
@@ -42,4 +42,5 @@ public class OverpricedRation extends Food {
     public String getMessage() {
         return MESSAGE;
     }
+
 }

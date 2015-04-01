@@ -17,8 +17,6 @@
  */
 package com.github.mdsimmo.pixeldungeon.items.food;
 
-import android.util.Log;
-
 import com.github.mdsimmo.pixeldungeon.actors.buffs.Buff;
 import com.github.mdsimmo.pixeldungeon.actors.buffs.Speed;
 import com.github.mdsimmo.pixeldungeon.actors.hero.Hero;
@@ -31,7 +29,6 @@ public class Sugar extends Food {
     public static class Hyperactive extends Speed {
         @Override
         public float factor() {
-            Log.i( "Hyperactive", "" + (cooldown() / 5 + 1) );
             return cooldown() / 5 + 1;
         }
     }
@@ -53,14 +50,8 @@ public class Sugar extends Food {
     }
 
     @Override
-    public int price() {
-        return 5 * quantity;
-    }
-
-
-    @Override
     public float getEnergy() {
-        return Food.JUNK_FOOD;
+        return Food.VERY_LITTLE;
     }
 
     @Override

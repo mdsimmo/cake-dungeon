@@ -32,11 +32,6 @@ public class ChargrilledMeat extends Food {
     }
 
     @Override
-    public int price() {
-        return 5 * quantity;
-    }
-
-    @Override
     public float getEnergy() {
         return Food.HALF_VALUE;
     }

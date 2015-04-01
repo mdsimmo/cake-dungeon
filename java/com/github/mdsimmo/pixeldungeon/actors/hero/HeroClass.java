@@ -19,6 +19,7 @@ package com.github.mdsimmo.pixeldungeon.actors.hero;
 
 import com.github.mdsimmo.pixeldungeon.Assets;
 import com.github.mdsimmo.pixeldungeon.Badges;
+import com.github.mdsimmo.pixeldungeon.items.Bomb;
 import com.github.mdsimmo.pixeldungeon.items.TomeOfMastery;
 import com.github.mdsimmo.pixeldungeon.items.armor.ClothArmor;
 import com.github.mdsimmo.pixeldungeon.items.bags.Keyring;
@@ -26,6 +27,7 @@ import com.github.mdsimmo.pixeldungeon.items.food.Cake;
 import com.github.mdsimmo.pixeldungeon.items.food.FoodRation;
 import com.github.mdsimmo.pixeldungeon.items.food.FrozenCarpaccio;
 import com.github.mdsimmo.pixeldungeon.items.food.MysteryMeat;
+import com.github.mdsimmo.pixeldungeon.items.food.RawEgg;
 import com.github.mdsimmo.pixeldungeon.items.food.Sugar;
 import com.github.mdsimmo.pixeldungeon.items.potions.PotionOfFrost;
 import com.github.mdsimmo.pixeldungeon.items.potions.PotionOfLiquidFlame;
@@ -127,6 +129,8 @@ public enum HeroClass {
             new MysteryMeat().collect();
             new FrozenCarpaccio().collect();
             new Sugar().collect();
+            new RawEgg().collect();
+            new Bomb().collect();
         }
     }
 

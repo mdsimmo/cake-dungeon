@@ -75,18 +75,6 @@ public class FrozenCarpaccio extends Food {
                         "by cutting thin slices of it. And this way it's surprisingly good.";
     }
 
-    public int price() {
-        return 10 * quantity;
-    }
-
-    ;
-
-    public static Food cook( MysteryMeat ingredient ) {
-        FrozenCarpaccio result = new FrozenCarpaccio();
-        result.quantity = ingredient.quantity();
-        return result;
-    }
-
     @Override
     public float getEnergy() {
         return Food.HALF_VALUE;

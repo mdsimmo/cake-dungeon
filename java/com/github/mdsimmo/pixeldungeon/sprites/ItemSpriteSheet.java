@@ -168,6 +168,7 @@ public class ItemSpriteSheet {
     public static final int FRIED_EGG = 152;
     public static final int SCRAMBLED = 153;
     public static final int DONUT = 154;
+    public static final int FLOUR = 155;
 
     // Bags
     public static final int POUCH = 224;
@@ -189,6 +190,7 @@ public class ItemSpriteSheet {
     public static final int MASTERY = 168;
     public static final int WEIGHT = 169;
     public static final int HONEYPOT = 170;
-    public static final int RECIPIE = 171;
-    public static final int STYLUS = 172;
+    public static final int HONEYPOT_EMPTY = 171;
+    public static final int RECIPE = 172;
+    public static final int STYLUS = 173;
 }

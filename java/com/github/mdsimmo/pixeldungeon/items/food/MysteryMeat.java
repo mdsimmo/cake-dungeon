@@ -24,7 +24,6 @@ import com.github.mdsimmo.pixeldungeon.actors.buffs.Poison;
 import com.github.mdsimmo.pixeldungeon.actors.buffs.Roots;
 import com.github.mdsimmo.pixeldungeon.actors.buffs.Slow;
 import com.github.mdsimmo.pixeldungeon.actors.hero.Hero;
-import com.github.mdsimmo.pixeldungeon.items.Heap;
 import com.github.mdsimmo.pixeldungeon.sprites.ItemSpriteSheet;
 import com.github.mdsimmo.pixeldungeon.utils.GLog;
 import com.github.mdsimmo.utils.Random;
@@ -66,10 +65,6 @@ public class MysteryMeat extends Food {
         return "Eat at your own risk!";
     }
 
-    public int price() {
-        return 5 * quantity;
-    }
-
     @Override
     public float getEnergy() {
         return Food.HALF_VALUE;
@@ -80,15 +75,4 @@ public class MysteryMeat extends Food {
         return MESSAGE;
     }
 
-    @Override
-    public boolean onCook( Heap heap ) {
-        heap.replace( this, new ChargrilledMeat().quantity( quantity ) );
-        return true;
-    }
-
-    @Override
-    public boolean onFreeze( Heap heap ) {
-        heap.replace( this, new FrozenCarpaccio().quantity( quantity ) );
-        return true;
-    }
 }

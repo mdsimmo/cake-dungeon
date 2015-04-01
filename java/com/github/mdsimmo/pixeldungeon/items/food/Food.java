@@ -25,7 +25,6 @@ import com.github.mdsimmo.pixeldungeon.actors.buffs.Hunger;
 import com.github.mdsimmo.pixeldungeon.actors.hero.Hero;
 import com.github.mdsimmo.pixeldungeon.effects.Speck;
 import com.github.mdsimmo.pixeldungeon.effects.SpellSprite;
-import com.github.mdsimmo.pixeldungeon.items.Heap;
 import com.github.mdsimmo.pixeldungeon.items.Item;
 import com.github.mdsimmo.pixeldungeon.items.scrolls.ScrollOfRecharging;
 import com.github.mdsimmo.pixeldungeon.utils.GLog;
@@ -34,10 +33,11 @@ import java.util.ArrayList;
 
 public abstract class Food extends Item {
 
-    public static final float FULL_FILL = Hunger.HUNGRY;
+    public static final float FULL_FILL = Hunger.STARVING;
     public static final float NORMAL = Hunger.HUNGRY;
     public static final float HALF_VALUE = Hunger.STARVING - Hunger.HUNGRY;
     public static final float JUNK_FOOD = HALF_VALUE / 2;
+    public static final float VERY_LITTLE = JUNK_FOOD / 5;
 
     private static final float TIME_TO_EAT = 3f;
 
@@ -112,12 +112,10 @@ public abstract class Food extends Item {
 
     public abstract String getMessage();
 
-    public boolean onFreeze( Heap heap ) {
-        return false;
+    @Override
+    public int price() {
+        // the energy/10. Minimum of 2
+        // ~= 5 to 20 gold
+        return Math.max( (int)(quantity()*getEnergy()/10), 2 );
     }
-
-    public boolean onCook( Heap heap ) {
-        return false;
-    }
-
 }

@@ -36,11 +36,6 @@ public class FoodRation extends Food {
     }
 
     @Override
-    public int price() {
-        return 10 * quantity;
-    }
-
-    @Override
     public float getEnergy() {
         return Food.NORMAL;
     }

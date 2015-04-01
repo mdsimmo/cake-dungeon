@@ -9,37 +9,47 @@
  *
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>
+ * along with this program. If not, see <http://www.gnu.org/licenses/>
  */
 package com.github.mdsimmo.pixeldungeon.items.food;
 
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Buff;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Poison;
+import com.github.mdsimmo.pixeldungeon.actors.hero.Hero;
 import com.github.mdsimmo.pixeldungeon.sprites.ItemSpriteSheet;
 
-public class OverpricedRation extends Food {
+public class RawEgg extends Food {
 
-    public static final String MESSAGE = "That food tasted ok.";
+    public static final String MESSAGE = "Yuck! I feel queazy";
 
     {
-        name = "overpriced food ration";
-        image = ItemSpriteSheet.OVERPRICED;
+        name = "raw egg";
+        image = ItemSpriteSheet.EGG;
     }
 
     @Override
     public String info() {
-        return "It looks exactly like a standard ration of food but smaller.";
+        return "A raw egg. I think it might be rotten. ";
+    }
+
+    @Override
+    public void eat( Hero hero ) {
+        super.eat( hero );
+        Buff.prolong( hero, Poison.class, 10 );
     }
 
     @Override
     public float getEnergy() {
-        return Food.HALF_VALUE;
+        return Food.VERY_LITTLE;
     }
 
     @Override
     public String getMessage() {
         return MESSAGE;
     }
+
 }

@@ -179,7 +179,7 @@ public class Heap implements Bundlable {
             sprite.view( image(), glowing() );
         }
 
-        Recipes.combine( this );
+        Recipes.make( this, null );
     }
 
     public void replace( Item a, Item b ) {
@@ -204,37 +204,22 @@ public class Heap implements Bundlable {
             return;
         }
 
-        boolean burnt = false;
-        boolean evaporated = false;
+        Recipes.make( this, Recipes.Method.BAKED );
 
         for ( Item item : items.toArray( new Item[items.size()] ) ) {
             if ( item instanceof Scroll ) {
                 items.remove( item );
-                burnt = true;
             } else if ( item instanceof Dewdrop ) {
                 items.remove( item );
-                evaporated = true;
+                if ( Dungeon.visible[pos] )
+                    evaporateFX( pos );
             }
         }
 
-        burnt = Recipes.cook( this ) || burnt;
-
-        if ( burnt || evaporated ) {
-
-            if ( Dungeon.visible[pos] ) {
-                if ( burnt ) {
-                    burnFX( pos );
-                } else {
-                    evaporateFX( pos );
-                }
-            }
-
-            if ( isEmpty() ) {
-                destroy();
-            } else if ( sprite != null ) {
-                sprite.view( image(), glowing() );
-            }
-
+        if ( isEmpty() ) {
+            destroy();
+        } else if ( sprite != null ) {
+            sprite.view( image(), glowing() );
         }
     }
 
@@ -251,12 +236,12 @@ public class Heap implements Bundlable {
             return;
         }
 
-        if ( Recipes.freeze( this ) ) {
-            if ( isEmpty() ) {
-                destroy();
-            } else if ( sprite != null ) {
-                sprite.view( image(), glowing() );
-            }
+        Recipes.make( this, Recipes.Method.FROZEN );
+
+        if ( isEmpty() ) {
+            destroy();
+        } else if ( sprite != null ) {
+            sprite.view( image(), glowing() );
         }
     }
 

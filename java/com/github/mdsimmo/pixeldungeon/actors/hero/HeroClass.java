@@ -23,9 +23,9 @@ import com.github.mdsimmo.pixeldungeon.items.Bomb;
 import com.github.mdsimmo.pixeldungeon.items.TomeOfMastery;
 import com.github.mdsimmo.pixeldungeon.items.armor.ClothArmor;
 import com.github.mdsimmo.pixeldungeon.items.bags.Keyring;
-import com.github.mdsimmo.pixeldungeon.items.food.Cake;
+import com.github.mdsimmo.pixeldungeon.items.food.RawPotato;
+import com.github.mdsimmo.pixeldungeon.items.food.Flour;
 import com.github.mdsimmo.pixeldungeon.items.food.FoodRation;
-import com.github.mdsimmo.pixeldungeon.items.food.FrozenCarpaccio;
 import com.github.mdsimmo.pixeldungeon.items.food.MysteryMeat;
 import com.github.mdsimmo.pixeldungeon.items.food.RawEgg;
 import com.github.mdsimmo.pixeldungeon.items.food.Sugar;
@@ -35,6 +35,7 @@ import com.github.mdsimmo.pixeldungeon.items.potions.PotionOfStrength;
 import com.github.mdsimmo.pixeldungeon.items.rings.RingOfShadows;
 import com.github.mdsimmo.pixeldungeon.items.scrolls.ScrollOfIdentify;
 import com.github.mdsimmo.pixeldungeon.items.scrolls.ScrollOfMagicMapping;
+import com.github.mdsimmo.pixeldungeon.items.wands.WandOfFlock;
 import com.github.mdsimmo.pixeldungeon.items.wands.WandOfMagicMissile;
 import com.github.mdsimmo.pixeldungeon.items.weapon.melee.Dagger;
 import com.github.mdsimmo.pixeldungeon.items.weapon.melee.Knuckles;
@@ -125,13 +126,17 @@ public enum HeroClass {
         for ( int i = 0; i < 10; i++ ) {
             new PotionOfLiquidFlame().identify().collect();
             new PotionOfFrost().identify().collect();
-            new Cake().collect();
+            new Bomb().collect();
+
             new MysteryMeat().collect();
-            new FrozenCarpaccio().collect();
             new Sugar().collect();
             new RawEgg().collect();
-            new Bomb().collect();
+            new Flour().collect();
+            new RawPotato().collect();
         }
+        WandOfFlock f = new WandOfFlock();
+        f.level = 10;
+        f.collect();
     }
 
     public Badges.Badge masteryBadge() {

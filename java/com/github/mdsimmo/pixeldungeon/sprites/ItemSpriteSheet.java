@@ -158,7 +158,7 @@ public class ItemSpriteSheet {
     public static final int CARPACCIO = 133;
 
     public static final int CAKE = 144;
-    public static final int BEAN = 145;
+    public static final int POTATO = 145;
     public static final int EGG = 146;
     public static final int SUGAR = 147;
     public static final int COOKED_CHOP = 148;

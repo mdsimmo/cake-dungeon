@@ -100,19 +100,31 @@ public class Recipes {
     }
 
     private static Recipe[] recipes = {
+            // basic cooking
             new Recipe( ChargrilledMeat.class, new MysteryMeat() ).set( Method.BAKED ),
-            new Recipe( FrozenCarpaccio.class, new MysteryMeat() ).set( Method.FROZEN ),
-            new Recipe( Cake.class, new Sugar().quantity( 3 ),
-                    new Flour().quantity( 2 ) ).set( Method.BAKED ).damp(),
+            new Recipe( CookedBacon.class, new Bacon() ).set( Method.BAKED ),
+            new Recipe( GrilledLambChop.class, new LambChop() ).set( Method.BAKED ),
             new Recipe( HardBoiledEgg.class, new RawEgg() ) {
                 @Override
                 public void makePrize( Heap heap ) {
-                    super.makePrize( heap );
+
                     Heap.evaporateFX( heap.pos );
+                    super.makePrize( heap );
                 }
             }.set( Method.BAKED ).damp(),
+            new Recipe( FriedEgg.class, new RawEgg() ).set( Method.BAKED ),
+            new Recipe( BakedPotato.class, new RawPotato() ).set( Method.BAKED ),
+
+            // not so obvious
+            new Recipe( FrozenCarpaccio.class, new MysteryMeat() ).set( Method.FROZEN ),
             new Recipe( ScrambledEgg.class, new RawEgg() ).set( Method.EXPLODED ),
-            new Recipe( CookedBacon.class, new Bacon() ).set( Method.BAKED ),
+
+            // Full recipes
+            new Recipe( Cake.class, new Sugar().quantity( 3 ),
+                    new Flour().quantity( 2 ), new RawEgg() ).set( Method.BAKED ).damp(),
+            new Recipe( Pasty.class, new Flour(), new ChargrilledMeat(), new BakedPotato(),
+                    new RawEgg() ).set( Method.BAKED ),
+
     };
 
     public enum Method {
@@ -121,10 +133,8 @@ public class Recipes {
 
     public static void make( Heap heap, Method method ) {
         for ( Recipe recipe : recipes ) {
-            if ( recipe.make( heap ,method ) ) {
-                make( heap, method );
+            if ( recipe.make( heap ,method ) )
                 return;
-            }
         }
     }
 

@@ -20,11 +20,16 @@ package com.github.mdsimmo.pixeldungeon.items.food;
 import com.github.mdsimmo.pixeldungeon.actors.hero.Hero;
 import com.github.mdsimmo.pixeldungeon.sprites.ItemSpriteSheet;
 
-public class Bacon extends Food {
+public class LambChop extends Food {
 
     {
-        name = "raw bacon";
-        image = ItemSpriteSheet.BACON;
+        name = "lamb chop";
+        image = ItemSpriteSheet.LAMB_CHOP;
+    }
+
+    @Override
+    public String info() {
+        return "Very delicious with a few herbs. Much better when cooked.";
     }
 
     @Override
@@ -34,17 +39,12 @@ public class Bacon extends Food {
     }
 
     @Override
-    public String info() {
-        return "A thick juicy cut of bacon. It would be much nicer cooked.";
-    }
-
-    @Override
     public float getEnergy() {
         return Food.HALF_VALUE;
     }
 
     @Override
     public String getMessage() {
-        return "Mmm. Bacon...";
+        return "Very tasty!";
     }
 }

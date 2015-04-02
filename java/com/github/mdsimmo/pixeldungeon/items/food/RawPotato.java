@@ -17,34 +17,27 @@
  */
 package com.github.mdsimmo.pixeldungeon.items.food;
 
-import com.github.mdsimmo.pixeldungeon.actors.hero.Hero;
 import com.github.mdsimmo.pixeldungeon.sprites.ItemSpriteSheet;
 
-public class Bacon extends Food {
+public class RawPotato extends Food {
 
     {
-        name = "raw bacon";
-        image = ItemSpriteSheet.BACON;
-    }
-
-    @Override
-    public void eat( Hero hero ) {
-        super.eat( hero );
-        rawEat( hero );
+        name = "raw potato";
+        image = ItemSpriteSheet.POTATO;
     }
 
     @Override
     public String info() {
-        return "A thick juicy cut of bacon. It would be much nicer cooked.";
+        return "A good cooking ingredient but rather plain on its own.";
     }
 
     @Override
     public float getEnergy() {
-        return Food.HALF_VALUE;
+        return Food.VERY_LITTLE;
     }
 
     @Override
     public String getMessage() {
-        return "Mmm. Bacon...";
+        return "That was rather bland";
     }
 }

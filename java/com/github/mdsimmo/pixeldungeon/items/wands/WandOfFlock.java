@@ -22,18 +22,16 @@ import com.github.mdsimmo.pixeldungeon.Assets;
 import com.github.mdsimmo.pixeldungeon.Dungeon;
 import com.github.mdsimmo.pixeldungeon.actors.Actor;
 import com.github.mdsimmo.pixeldungeon.actors.Char;
-import com.github.mdsimmo.pixeldungeon.actors.mobs.npcs.NPC;
+import com.github.mdsimmo.pixeldungeon.actors.mobs.neutralmob.Sheep;
 import com.github.mdsimmo.pixeldungeon.effects.CellEmitter;
 import com.github.mdsimmo.pixeldungeon.effects.MagicMissile;
 import com.github.mdsimmo.pixeldungeon.effects.Speck;
 import com.github.mdsimmo.pixeldungeon.levels.Level;
 import com.github.mdsimmo.pixeldungeon.mechanics.Ballistica;
 import com.github.mdsimmo.pixeldungeon.scenes.GameScene;
-import com.github.mdsimmo.pixeldungeon.sprites.SheepSprite;
 import com.github.mdsimmo.pixeldungeon.utils.BArray;
 import com.github.mdsimmo.utils.Callback;
 import com.github.mdsimmo.utils.PathFinder;
-import com.github.mdsimmo.utils.Random;
 
 public class WandOfFlock extends Wand {
 
@@ -102,50 +100,5 @@ public class WandOfFlock extends Wand {
     public String desc() {
         return
                 "A flick of this wand summons a flock of magic sheep, creating temporary impenetrable obstacle.";
-    }
-
-    public static class Sheep extends NPC {
-
-        private static final String[] QUOTES = {"Baa!", "Baa?", "Baa.", "Baa..."};
-
-        {
-            name = "sheep";
-            spriteClass = SheepSprite.class;
-        }
-
-        public float lifespan;
-
-        private boolean initialized = false;
-
-        @Override
-        protected boolean act() {
-            if ( initialized ) {
-                HP = 0;
-
-                destroy();
-                sprite.die();
-
-            } else {
-                initialized = true;
-                spend( lifespan + Random.Float( 2 ) );
-            }
-            return true;
-        }
-
-        @Override
-        public void damage( int dmg, Object src ) {
-        }
-
-        @Override
-        public String description() {
-            return
-                    "This is a magic sheep. What's so magical about it? You can't kill it. " +
-                            "It will stand there until it magcially fades away, all the while chewing cud with a blank stare.";
-        }
-
-        @Override
-        public void interact() {
-            yell( Random.element( QUOTES ) );
-        }
     }
 }

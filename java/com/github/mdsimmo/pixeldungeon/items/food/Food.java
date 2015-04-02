@@ -21,13 +21,20 @@ import com.github.mdsimmo.noosa.audio.Sample;
 import com.github.mdsimmo.pixeldungeon.Assets;
 import com.github.mdsimmo.pixeldungeon.Badges;
 import com.github.mdsimmo.pixeldungeon.Statistics;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Buff;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Burning;
 import com.github.mdsimmo.pixeldungeon.actors.buffs.Hunger;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Paralysis;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Poison;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Roots;
+import com.github.mdsimmo.pixeldungeon.actors.buffs.Slow;
 import com.github.mdsimmo.pixeldungeon.actors.hero.Hero;
 import com.github.mdsimmo.pixeldungeon.effects.Speck;
 import com.github.mdsimmo.pixeldungeon.effects.SpellSprite;
 import com.github.mdsimmo.pixeldungeon.items.Item;
 import com.github.mdsimmo.pixeldungeon.items.scrolls.ScrollOfRecharging;
 import com.github.mdsimmo.pixeldungeon.utils.GLog;
+import com.github.mdsimmo.utils.Random;
 
 import java.util.ArrayList;
 
@@ -118,5 +125,26 @@ public abstract class Food extends Item {
         // the energy/10. Minimum of 2
         // ~= 5 to 20 gold
         return Math.max( (int)(quantity()*getEnergy()/10), 2 );
+    }
+
+    protected void rawEat( Hero hero ) {
+        switch ( Random.Int( 5 ) ) {
+            case 0:
+                GLog.w( "Oh it's hot!" );
+                Buff.affect( hero, Burning.class ).reignite( hero );
+                break;
+            case 1:
+                GLog.w( "You can't feel your legs!" );
+                Buff.prolong( hero, Roots.class, Paralysis.duration( hero ) );
+                break;
+            case 2:
+                GLog.w( "You are not feeling well." );
+                Buff.affect( hero, Poison.class ).set( Poison.durationFactor( hero ) * hero.HT / 5 );
+                break;
+            case 3:
+                GLog.w( "You are stuffed." );
+                Buff.prolong( hero, Slow.class, Slow.duration( hero ) );
+                break;
+        }
     }
 }

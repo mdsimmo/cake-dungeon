@@ -17,10 +17,13 @@
  */
 package com.github.mdsimmo.pixeldungeon.actors.mobs.neutralmob;
 
+import com.github.mdsimmo.noosa.audio.Sample;
+import com.github.mdsimmo.pixeldungeon.Assets;
 import com.github.mdsimmo.pixeldungeon.Dungeon;
 import com.github.mdsimmo.pixeldungeon.actors.mobs.Mob;
+import com.github.mdsimmo.pixeldungeon.effects.CellEmitter;
+import com.github.mdsimmo.pixeldungeon.effects.Speck;
 import com.github.mdsimmo.pixeldungeon.items.food.Bacon;
-import com.github.mdsimmo.pixeldungeon.items.scrolls.ScrollOfChallenge;
 import com.github.mdsimmo.pixeldungeon.scenes.GameScene;
 import com.github.mdsimmo.pixeldungeon.sprites.PigSprite;
 import com.github.mdsimmo.pixeldungeon.utils.GLog;
@@ -62,8 +65,8 @@ public class Pig extends NeutralMob {
     @Override
     public void die( Object cause ) {
         super.die( cause );
-        GLog.w( "The pig squeals echo deep into the dungeon" );
-        // Call the dungeon to attack
+
+        // Find the mother
         MotherPig mother = null;
         for ( Mob mob : Dungeon.level.mobs )
             if ( mob instanceof MotherPig ) {
@@ -71,12 +74,17 @@ public class Pig extends NeutralMob {
                 break;
             }
 
+        // no mother. create her
         if ( mother == null ) {
             mother = new MotherPig();
             mother.pos = Dungeon.level.randomRespawnCell();
             GameScene.add( mother );
         }
 
-        ScrollOfChallenge.evoke( Dungeon.hero );
+        // tell the mother to take revenge
+        mother.beckon( pos );
+        GLog.w( "The pig squeals echo deep into the dungeon" );
+        CellEmitter.center( pos ).start( Speck.factory( Speck.SCREAM ), 0.3f, 3 );
+        Sample.INSTANCE.play( Assets.SND_SQUEAL ); //TODO pig squeal
     }
 }

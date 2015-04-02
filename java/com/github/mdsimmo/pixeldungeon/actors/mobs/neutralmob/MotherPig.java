@@ -46,8 +46,6 @@ public class MotherPig extends Mob {
 
         loot = MysteryMeat.class;
         lootChance = 1.0f;
-
-        state = HUNTING;
     }
 
     @Override

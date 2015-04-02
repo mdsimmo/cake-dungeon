@@ -38,6 +38,7 @@ public abstract class Food extends Item {
     public static final float HALF_VALUE = Hunger.STARVING - Hunger.HUNGRY;
     public static final float JUNK_FOOD = HALF_VALUE / 2;
     public static final float VERY_LITTLE = JUNK_FOOD / 5;
+    public static final float BAD = -JUNK_FOOD;
 
     private static final float TIME_TO_EAT = 3f;
 

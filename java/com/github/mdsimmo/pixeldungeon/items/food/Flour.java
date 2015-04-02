@@ -17,40 +17,27 @@
  */
 package com.github.mdsimmo.pixeldungeon.items.food;
 
-import com.github.mdsimmo.pixeldungeon.actors.buffs.Buff;
-import com.github.mdsimmo.pixeldungeon.actors.buffs.Poison;
-import com.github.mdsimmo.pixeldungeon.actors.hero.Hero;
 import com.github.mdsimmo.pixeldungeon.sprites.ItemSpriteSheet;
 
-public class RawEgg extends Food {
-
-    public static final String MESSAGE = "Yuck! I feel queazy";
+public class Flour extends Food {
 
     {
-        name = "raw egg";
-        image = ItemSpriteSheet.EGG;
+        name = "bag of flour";
+        image = ItemSpriteSheet.FLOUR;
     }
 
     @Override
     public String info() {
-        return "A raw egg. I think it might be rotten. ";
-    }
-
-    @Override
-    public void eat( Hero hero ) {
-        super.eat( hero );
-        Poison poison = Buff.affect( hero, Poison.class );
-        poison.set( Poison.durationFactor( hero ) * 6 );
+        return "Flour is a very useful ingredient. I wouldn't recommend eating it raw.";
     }
 
     @Override
     public float getEnergy() {
-        return Food.VERY_LITTLE;
+        return Food.BAD;
     }
 
     @Override
     public String getMessage() {
-        return MESSAGE;
+        return "So ver dry...";
     }
-
 }

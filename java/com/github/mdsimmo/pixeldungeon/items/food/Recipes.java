@@ -30,6 +30,7 @@ public class Recipes {
         private final Item[] ingredients;
         private final Class<? extends Item> result;
         private Method method = null;
+        private boolean damp = false;
 
         public Recipe( Class<? extends Item> result, Item... items ) {
             this.ingredients = items;
@@ -41,8 +42,14 @@ public class Recipes {
             return this;
         }
 
+        public Recipe damp() {
+            this.damp = true;
+            return this;
+        }
+
         public boolean correctEnvironment( Heap heap, Method method ) {
-            return this.method == null || this.method == method;
+            return (this.method == null || this.method == method)
+                    && ( this.damp == false || Level.water[heap.pos]);
         }
 
         public boolean make( Heap heap, Method method ) {
@@ -95,21 +102,17 @@ public class Recipes {
     private static Recipe[] recipes = {
             new Recipe( ChargrilledMeat.class, new MysteryMeat() ).set( Method.BAKED ),
             new Recipe( FrozenCarpaccio.class, new MysteryMeat() ).set( Method.FROZEN ),
-            new Recipe( Cake.class, new MysteryMeat(), new FrozenCarpaccio() ),
+            new Recipe( Cake.class, new Sugar().quantity( 3 ),
+                    new Flour().quantity( 2 ) ).set( Method.BAKED ).damp(),
             new Recipe( HardBoiledEgg.class, new RawEgg() ) {
-                @Override
-                public boolean correctEnvironment( Heap heap, Method method ) {
-                    return Level.water[heap.pos] && super.correctEnvironment( heap, method );
-                }
-
                 @Override
                 public void makePrize( Heap heap ) {
                     super.makePrize( heap );
                     Heap.evaporateFX( heap.pos );
                 }
-            }.set( Method.BAKED ),
-            //new Recipe( FriedEgg.class, new RawEgg() ).set( Method.BAKED ), // FIXME doubled method
+            }.set( Method.BAKED ).damp(),
             new Recipe( ScrambledEgg.class, new RawEgg() ).set( Method.EXPLODED ),
+            new Recipe( CookedBacon.class, new Bacon() ).set( Method.BAKED ),
     };
 
     public enum Method {

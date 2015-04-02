@@ -17,6 +17,7 @@
  */
 package com.github.mdsimmo.pixeldungeon.actors;
 
+import android.util.Log;
 import android.util.SparseArray;
 
 import com.github.mdsimmo.pixeldungeon.Dungeon;
@@ -198,8 +199,10 @@ public abstract class Actor implements Bundlable {
                     current = null;
                     break;
                 }
-
+                Actor temp = current;
                 doNext = current.act();
+                Log.i("Actor", "Do next: " + doNext + " " + temp + " " + current );
+
                 if ( doNext && !Dungeon.hero.isAlive() ) {
                     doNext = false;
                     current = null;

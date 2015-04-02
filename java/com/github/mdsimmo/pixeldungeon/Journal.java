@@ -17,6 +17,8 @@
  */
 package com.github.mdsimmo.pixeldungeon;
 
+import android.util.Log;
+
 import com.github.mdsimmo.utils.Bundlable;
 import com.github.mdsimmo.utils.Bundle;
 
@@ -92,11 +94,16 @@ public class Journal {
     public static void restoreFromBundle( Bundle bundle ) {
         records = new ArrayList<>();
         for ( Bundlable rec : bundle.getCollection( JOURNAL ) ) {
-            records.add( (Record) rec );
+            if ( rec != null )
+                records.add( (Record) rec );
+            else
+                Log.w("Record", "A null feature was loaded!");
         }
     }
 
     public static void add( Feature feature ) {
+        if ( feature == null )
+            throw new NullPointerException( "Cannot add a null feature" );
         int size = records.size();
         for ( int i = 0; i < size; i++ ) {
             Record rec = records.get( i );

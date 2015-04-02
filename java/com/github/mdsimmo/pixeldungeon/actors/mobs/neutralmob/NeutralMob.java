@@ -19,7 +19,6 @@ package com.github.mdsimmo.pixeldungeon.actors.mobs.neutralmob;
 
 import android.util.Log;
 
-import com.github.mdsimmo.pixeldungeon.Dungeon;
 import com.github.mdsimmo.pixeldungeon.actors.Char;
 import com.github.mdsimmo.pixeldungeon.actors.mobs.Mob;
 import com.github.mdsimmo.pixeldungeon.levels.Level;
@@ -37,8 +36,6 @@ public abstract class NeutralMob extends Mob {
 
         if ( state != SLEEPING )
             state = FLEEING;
-        Log.i("NeutralMob", "Acting");
-
 
         return super.act();
     }
@@ -47,6 +44,7 @@ public abstract class NeutralMob extends Mob {
 
         @Override
         protected void nowhereToRun() {
+            Log.i( "NeutralMob", "Nowhere to run" );
             int nextStep = -1;
             for ( int i = 0; i < 10; i++ ) {
                 int n = Level.NEIGHBOURS8[Random.Int( 8 )];
@@ -56,18 +54,15 @@ public abstract class NeutralMob extends Mob {
                 nextStep = -1;
             }
             if ( nextStep == -1 ) {
-                Log.i("NeutralMob", "No next step");
                 return;
             }
 
             Char c = findChar( nextStep );
             if ( c != null ) {
                 attack( c );
-                Log.i("NeutralMob", "ATTACK!");
             } else {
+                moveSprite( pos, nextStep );
                 move( nextStep );
-                Dungeon.observe();
-                Log.i( "NeutralMob", "Move " + cooldown() + " " + pos + toString() );
             }
 
         }

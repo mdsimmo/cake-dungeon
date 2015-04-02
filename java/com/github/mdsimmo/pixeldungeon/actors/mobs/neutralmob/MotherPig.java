@@ -17,8 +17,6 @@
  */
 package com.github.mdsimmo.pixeldungeon.actors.mobs.neutralmob;
 
-import android.util.Log;
-
 import com.github.mdsimmo.pixeldungeon.Dungeon;
 import com.github.mdsimmo.pixeldungeon.actors.Char;
 import com.github.mdsimmo.pixeldungeon.actors.buffs.Burning;
@@ -46,15 +44,6 @@ public class MotherPig extends Mob {
 
         loot = MysteryMeat.class;
         lootChance = 1.0f;
-    }
-
-    @Override
-    protected boolean act() {
-        Log.i("Mother pig", "acting " + this );
-        boolean r = super.act();
-        Log.i("Mother pig", "fin " + r + " " + this);
-        return r;
-
     }
 
     @Override
